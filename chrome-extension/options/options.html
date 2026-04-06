@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Election Pulse — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+  <div class="options-container">
+
+    <!-- Header -->
+    <header class="options-header">
+      <span class="header-icon">&#9737;</span>
+      <h1>Election Pulse &mdash; Settings</h1>
+    </header>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">Saved</div>
+
+    <!-- Section 1: Active Constituency -->
+    <section class="section" id="sectionConstituency">
+      <h2 class="section-heading">Active Constituency</h2>
+      <div class="field-group">
+        <label for="optConstituency">Constituency</label>
+        <select id="optConstituency"></select>
+      </div>
+      <div class="candidate-info" id="candidateInfo">
+        <p class="muted">Select a constituency to view candidates.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Platform Settings -->
+    <section class="section" id="sectionPlatforms">
+      <h2 class="section-heading">Platform Settings</h2>
+
+      <!-- Reddit -->
+      <div class="platform-block">
+        <div class="platform-header">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleReddit" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="platform-title">Reddit</span>
+        </div>
+        <div class="platform-config" id="configReddit">
+          <label>Tracked Subreddits</label>
+          <div class="tag-list" id="tagListReddit"></div>
+          <div class="tag-input-row">
+            <input type="text" id="inputReddit" placeholder="e.g. r/Kerala">
+            <button class="btn-small" id="addReddit">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="platform-block">
+        <div class="platform-header">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleFacebook" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="platform-title">Facebook</span>
+        </div>
+        <div class="platform-config" id="configFacebook">
+          <label>Tracked Pages / Groups</label>
+          <div class="tag-list" id="tagListFacebook"></div>
+          <div class="tag-input-row">
+            <input type="text" id="inputFacebook" placeholder="Page or group name">
+            <button class="btn-small" id="addFacebook">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Twitter -->
+      <div class="platform-block">
+        <div class="platform-header">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleTwitter" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="platform-title">Twitter</span>
+        </div>
+        <div class="platform-config" id="configTwitter">
+          <label>Tracked Hashtags / Handles</label>
+          <div class="tag-list" id="tagListTwitter"></div>
+          <div class="tag-input-row">
+            <input type="text" id="inputTwitter" placeholder="e.g. #KeralaElection2026">
+            <button class="btn-small" id="addTwitter">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="platform-block">
+        <div class="platform-header">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleInstagram" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="platform-title">Instagram</span>
+        </div>
+        <div class="platform-config" id="configInstagram">
+          <label>Tracked Hashtags</label>
+          <div class="tag-list" id="tagListInstagram"></div>
+          <div class="tag-input-row">
+            <input type="text" id="inputInstagram" placeholder="e.g. #Kochi">
+            <button class="btn-small" id="addInstagram">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Keyword Management -->
+    <section class="section" id="sectionKeywords">
+      <h2 class="section-heading">Keyword Management</h2>
+      <p class="hint">Custom keywords per front as JSON. Example: <code>{"ldf":["CPM","Pinarayi"],"udf":["Congress","UDF"],"nda":["BJP","NDA"]}</code></p>
+      <textarea id="keywordsEditor" rows="8" spellcheck="false"></textarea>
+      <button class="btn-primary" id="saveKeywords">Save Keywords</button>
+    </section>
+
+    <!-- Section 4: Rate Limiting -->
+    <section class="section" id="sectionRate">
+      <h2 class="section-heading">Rate Limiting</h2>
+      <div class="field-group">
+        <label for="rateSlider">Extraction Interval: <strong id="rateValue">5</strong> seconds</label>
+        <input type="range" id="rateSlider" min="3" max="15" value="5" step="1">
+      </div>
+      <button class="btn-primary" id="saveRate">Save Interval</button>
+    </section>
+
+    <!-- Section 5: Data Management -->
+    <section class="section" id="sectionData">
+      <h2 class="section-heading">Data Management</h2>
+      <div class="storage-stats" id="storageStats">
+        <span>Posts: <strong id="statPostCount">0</strong></span>
+        <span>DB Size: <strong id="statDbSize">0 KB</strong></span>
+        <span>Oldest: <strong id="statOldest">--</strong></span>
+        <span>Newest: <strong id="statNewest">--</strong></span>
+      </div>
+      <div class="btn-row">
+        <button class="btn-danger" id="btnClearAll">Clear All Posts</button>
+        <button class="btn-primary" id="btnExportSnapshots">Export Snapshots</button>
+        <button class="btn-primary" id="btnImport">Import Data</button>
+        <input type="file" id="importFile" accept=".json" style="display:none">
+      </div>
+    </section>
+
+    <!-- Section 6: Ground Reports -->
+    <section class="section" id="sectionGround">
+      <h2 class="section-heading">Ground Reports</h2>
+      <p class="hint">Manual ground intelligence. These inputs feed into the 45% ground reports weight in the prediction model.</p>
+
+      <div class="ground-grid">
+        <div class="field-group">
+          <label for="rallyLDF">LDF Rally Count</label>
+          <input type="number" id="rallyLDF" min="0" value="0">
+        </div>
+        <div class="field-group">
+          <label for="rallyUDF">UDF Rally Count</label>
+          <input type="number" id="rallyUDF" min="0" value="0">
+        </div>
+        <div class="field-group">
+          <label for="rallyNDA">NDA Rally Count</label>
+          <input type="number" id="rallyNDA" min="0" value="0">
+        </div>
+      </div>
+
+      <div class="ground-grid">
+        <div class="field-group">
+          <label for="doorToDoor">Door-to-Door Quality</label>
+          <select id="doorToDoor">
+            <option value="">-- Select --</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+            <option value="none">None observed</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="mediaPresence">Media Presence</label>
+          <select id="mediaPresence">
+            <option value="">-- Select --</option>
+            <option value="dominant">Dominant</option>
+            <option value="strong">Strong</option>
+            <option value="moderate">Moderate</option>
+            <option value="weak">Weak</option>
+            <option value="absent">Absent</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn-primary" id="saveGround">Save Ground Reports</button>
+    </section>
+
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

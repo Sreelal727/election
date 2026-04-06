@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "constituency": "Kochi",
+    "district": "Ernakulam",
+    "last_updated": "2026-03-31T06:20:30.923969",
+    "collection_method": "manual_entry",
+    "notes": "Sentiment scores: -1.0 (strongly negative) to +1.0 (strongly positive)"
+  },
+  "reddit_sentiment": {
+    "subreddits_tracked": [
+      "r/Kerala",
+      "r/Kochi",
+      "r/india"
+    ],
+    "sample_size": 0,
+    "date_range": {
+      "from": "",
+      "to": ""
+    },
+    "topics": [],
+    "front_sentiment": {
+      "LDF": {
+        "score": 0.0,
+        "positive_mentions": 0,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "key_themes": [],
+        "sample_posts": []
+      },
+      "UDF": {
+        "score": 0.0,
+        "positive_mentions": 0,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "key_themes": [],
+        "sample_posts": []
+      },
+      "NDA": {
+        "score": 0.0,
+        "positive_mentions": 0,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "key_themes": [],
+        "sample_posts": []
+      }
+    }
+  },
+  "facebook_sentiment": {
+    "pages_tracked": [],
+    "groups_tracked": [],
+    "sample_size": 0,
+    "date_range": {"from": "", "to": ""},
+    "front_sentiment": {
+      "LDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "UDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "NDA": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []}
+    }
+  },
+  "twitter_sentiment": {
+    "handles_tracked": [],
+    "hashtags_tracked": [],
+    "sample_size": 0,
+    "date_range": {"from": "", "to": ""},
+    "front_sentiment": {
+      "LDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "UDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "NDA": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []}
+    }
+  },
+  "instagram_sentiment": {
+    "hashtags_tracked": [],
+    "pages_tracked": [],
+    "sample_size": 0,
+    "date_range": {"from": "", "to": ""},
+    "front_sentiment": {
+      "LDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "UDF": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []},
+      "NDA": {"score": 0.0, "positive_mentions": 0, "negative_mentions": 0, "neutral_mentions": 0, "key_themes": [], "sample_posts": []}
+    }
+  },
+  "meme_sentiment": {
+    "platforms_tracked": [
+      "Instagram",
+      "Facebook",
+      "Twitter/X",
+      "WhatsApp_groups"
+    ],
+    "total_memes_analyzed": 0,
+    "date_range": {
+      "from": "",
+      "to": ""
+    },
+    "ernakulam_targeted": {
+      "total": 0,
+      "pro_LDF": 0,
+      "pro_UDF": 0,
+      "pro_NDA": 0,
+      "anti_LDF": 0,
+      "anti_UDF": 0,
+      "anti_NDA": 0,
+      "neutral_political": 0,
+      "viral_memes": []
+    },
+    "kochi_specific": {
+      "total": 0,
+      "candidate_memes": {
+        "K. J. Maxi (CPM)": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        },
+        "Mohammad Shiyas (INC)": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        },
+        "Xavier Joolappan (Twenty20)": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        }
+      },
+      "development_memes": 0,
+      "corruption_memes": 0,
+      "communal_memes": 0
+    }
+  },
+  "social_media_general": {
+    "candidate_followings": {
+      "K. J. Maxi (CPM)": {
+        "followers": 0,
+        "engagement_rate": 0.0,
+        "growth_30d": 0.0
+      },
+      "Mohammad Shiyas (INC)": {
+        "followers": 0,
+        "engagement_rate": 0.0,
+        "growth_30d": 0.0
+      },
+      "Xavier Joolappan (Twenty20)": {
+        "followers": 0,
+        "engagement_rate": 0.0,
+        "growth_30d": 0.0
+      }
+    },
+    "trending_hashtags": [],
+    "issue_sentiment": {
+      "development": {
+        "dominant_front": "",
+        "score": 0.0
+      },
+      "corruption": {
+        "dominant_front": "",
+        "score": 0.0
+      },
+      "employment": {
+        "dominant_front": "",
+        "score": 0.0
+      },
+      "welfare": {
+        "dominant_front": "",
+        "score": 0.0
+      },
+      "communal_harmony": {
+        "dominant_front": "",
+        "score": 0.0
+      },
+      "local_issues": []
+    }
+  },
+  "ground_reports": {
+    "booth_level_intel": [],
+    "local_events": [],
+    "candidate_visibility": {
+      "LDF": {
+        "rallies": 0,
+        "door_to_door": "",
+        "media_presence": ""
+      },
+      "UDF": {
+        "rallies": 0,
+        "door_to_door": "",
+        "media_presence": ""
+      },
+      "NDA": {
+        "rallies": 0,
+        "door_to_door": "",
+        "media_presence": ""
+      }
+    }
+  },
+  "computed_sentiment_adjustment": {
+    "LDF_adjustment": 0.0,
+    "UDF_adjustment": 0.0,
+    "NDA_adjustment": 0.0,
+    "confidence": "low",
+    "methodology": "Weighted average: Reddit(0.10) + Facebook(0.10) + Twitter(0.05) + Instagram(0.20) + Memes(0.10) + GroundReports(0.45)"
+  }
+}

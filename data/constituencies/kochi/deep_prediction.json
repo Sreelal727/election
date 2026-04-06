@@ -1,0 +1,114 @@
+{
+  "constituency_no": 80,
+  "constituency": "Kochi",
+  "district": "Ernakulam",
+  "candidates": {
+    "LDF": "K. J. Maxi (CPM)",
+    "UDF": "Mohammad Shiyas (INC)",
+    "NDA": "Xavier Joolappan (Twenty20)"
+  },
+  "layers": {
+    "base_2021": {
+      "LDF": 42.61,
+      "UDF": 31.63,
+      "NDA": 8.57
+    },
+    "district_swing": {
+      "LDF": -15.81,
+      "UDF": 23.9,
+      "NDA": 0.13
+    },
+    "constituency_swing": {
+      "LDF": -15.92,
+      "UDF": 25.54,
+      "NDA": -0.08
+    },
+    "booth_projection": {
+      "vote_shares": {
+        "UDF": 43.13,
+        "LDF": 29.86,
+        "NDA": 27.01
+      },
+      "booth_stats": {
+        "type_counts": {
+          "A": 23,
+          "C": 52,
+          "B": 50,
+          "F": 5,
+          "E": 12,
+          "D": 15
+        },
+        "mp_2024_shares": {
+          "UDF": 66.38,
+          "LDF": 23.94,
+          "NDA": 9.68
+        },
+        "booths_counted": 157
+      },
+      "source": "booth_data + vote_arithmetic (2016-2024 multi-election analysis)"
+    },
+    "sentiment": null,
+    "has_booth_data": true
+  },
+  "adjusted_vote_shares": {
+    "LDF": 28.69,
+    "UDF": 38.38,
+    "NDA": 17.34
+  },
+  "vote_estimates": {
+    "LDF": {
+      "vote_share_pct": 28.69,
+      "estimated_votes": 43426,
+      "arithmetic_estimate": 31500,
+      "blended_estimate": 36270,
+      "range": [
+        30000,
+        33000
+      ]
+    },
+    "UDF": {
+      "vote_share_pct": 38.38,
+      "estimated_votes": 58094,
+      "arithmetic_estimate": 45500,
+      "blended_estimate": 50538,
+      "range": [
+        44000,
+        47000
+      ]
+    },
+    "NDA": {
+      "vote_share_pct": 17.34,
+      "estimated_votes": 26255,
+      "arithmetic_estimate": 28500,
+      "blended_estimate": 27602,
+      "range": [
+        27000,
+        30000
+      ]
+    }
+  },
+  "total_voters": 151376,
+  "estimated_margin": 14268,
+  "estimated_winner": "UDF",
+  "volatility": 8.07,
+  "win_probabilities": {
+    "LDF": 19.59,
+    "UDF": 79.83,
+    "NDA": 0.59
+  },
+  "category": "Likely UDF",
+  "avg_simulated_margin": 11.58,
+  "comparison_with_main": {
+    "main_probs": {
+      "LDF": 15.25,
+      "UDF": 84.75,
+      "NDA": 0.0
+    },
+    "main_category": "Likely UDF",
+    "delta": {
+      "LDF": 4.34,
+      "UDF": -4.92,
+      "NDA": 0.59
+    }
+  }
+}

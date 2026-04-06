@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Constituency Analysis - Kerala 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ldf: #e53935; --ldf-bg: rgba(229,57,53,0.12); --ldf-glow: rgba(229,57,53,0.4);
+      --udf: #1e88e5; --udf-bg: rgba(30,136,229,0.12); --udf-glow: rgba(30,136,229,0.4);
+      --nda: #f9a825; --nda-bg: rgba(249,168,37,0.12); --nda-glow: rgba(249,168,37,0.4);
+      --bg: #07080c; --surface: #11131a; --surface2: #1a1e2a; --surface3: #232838;
+      --text: #eaedf3; --text2: #6b7280; --text3: #3d4451;
+      --border: #1f2433; --accent: #4ecdc4; --green: #22c55e; --red: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    /* Topbar */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(7,8,12,0.9); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px; display: flex; align-items: center; gap: 16px;
+    }
+    .topbar .logo {
+      font-weight: 800; font-size: 1rem;
+      background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .topbar .back-link {
+      color: var(--text2); text-decoration: none; font-size: 0.85rem;
+      padding: 6px 14px; border: 1px solid var(--border); border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .topbar .back-link:hover { border-color: var(--accent); color: var(--text); }
+    .topbar select {
+      background: var(--surface); color: var(--text); border: 1px solid var(--border);
+      border-radius: 8px; padding: 6px 12px; font-family: inherit; font-size: 0.85rem;
+      margin-left: auto;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 72px 20px 40px; }
+
+    /* Hero */
+    .hero {
+      text-align: center; padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border); margin-bottom: 32px;
+    }
+    .hero-tag { font-size: 0.75rem; color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .hero h1 { font-size: 2.8rem; font-weight: 900; margin: 8px 0 4px; line-height: 1.1; }
+    .hero .hero-sub { color: var(--text2); font-size: 1rem; }
+    .hero .hero-category {
+      display: inline-block; margin-top: 16px; padding: 8px 20px;
+      border-radius: 10px; font-weight: 800; font-size: 1.1rem;
+    }
+    .cat-ldf { background: var(--ldf-bg); color: var(--ldf); border: 1px solid rgba(229,57,53,0.3); }
+    .cat-udf { background: var(--udf-bg); color: var(--udf); border: 1px solid rgba(30,136,229,0.3); }
+    .cat-nda { background: var(--nda-bg); color: var(--nda); border: 1px solid rgba(249,168,37,0.3); }
+
+    /* Cards grid */
+    .cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+    .cards-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 20px; position: relative; overflow: hidden;
+    }
+    .card-full { grid-column: 1 / -1; }
+    .card h3 {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.5px; color: var(--text2); margin-bottom: 12px;
+    }
+
+    /* Vote estimate cards */
+    .vote-card { text-align: center; padding: 24px 16px; }
+    .vote-card .front-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .vote-card .candidate { font-size: 0.85rem; color: var(--text2); margin: 4px 0 12px; }
+    .vote-card .prob { font-size: 2.8rem; font-weight: 900; line-height: 1; }
+    .vote-card .prob-label { font-size: 0.7rem; color: var(--text2); margin: 2px 0 16px; }
+    .vote-card .est-votes { font-size: 1.6rem; font-weight: 800; }
+    .vote-card .est-label { font-size: 0.7rem; color: var(--text2); }
+    .vote-card .vote-range { font-size: 0.8rem; color: var(--text2); margin-top: 4px; }
+
+    .vote-card.ldf { border-top: 3px solid var(--ldf); }
+    .vote-card.ldf .front-label, .vote-card.ldf .prob { color: var(--ldf); }
+    .vote-card.udf { border-top: 3px solid var(--udf); }
+    .vote-card.udf .front-label, .vote-card.udf .prob { color: var(--udf); }
+    .vote-card.nda { border-top: 3px solid var(--nda); }
+    .vote-card.nda .front-label, .vote-card.nda .prob { color: var(--nda); }
+    .vote-card.winner-card { box-shadow: 0 0 30px var(--glow); }
+
+    /* Layers */
+    .layer-section { margin-bottom: 24px; }
+    .layer-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+    }
+    .layer-num {
+      width: 28px; height: 28px; border-radius: 50%; background: var(--accent);
+      color: var(--bg); font-weight: 800; font-size: 0.8rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .layer-title { font-weight: 700; font-size: 0.95rem; }
+    .layer-desc { font-size: 0.8rem; color: var(--text2); }
+
+    /* Swing bars */
+    .swing-row { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+    .swing-label { width: 36px; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+    .swing-bar-wrap {
+      flex: 1; height: 24px; background: var(--surface3); border-radius: 4px;
+      position: relative; overflow: hidden;
+    }
+    .swing-bar-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--text3); }
+    .swing-bar {
+      position: absolute; top: 2px; bottom: 2px; border-radius: 3px;
+      transition: width 0.8s ease;
+    }
+    .swing-bar.positive { left: 50%; }
+    .swing-bar.negative { right: 50%; }
+    .swing-value { width: 60px; text-align: right; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+    .swing-value.pos { color: var(--green); }
+    .swing-value.neg { color: var(--red); }
+
+    /* Comparison table */
+    .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .cmp-table th {
+      text-align: left; padding: 8px 12px; font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px; color: var(--text2);
+      border-bottom: 1px solid var(--border);
+    }
+    .cmp-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    .cmp-table tr:last-child td { border-bottom: none; }
+    .cmp-table .delta-pos { color: var(--green); font-weight: 700; }
+    .cmp-table .delta-neg { color: var(--red); font-weight: 700; }
+
+    /* Booth breakdown */
+    .booth-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+    .booth-type-card {
+      background: var(--surface2); border-radius: 10px; padding: 14px; text-align: center;
+    }
+    .booth-type-card .type-letter {
+      font-size: 1.4rem; font-weight: 900; margin-bottom: 4px;
+    }
+    .booth-type-card .type-count { font-size: 0.85rem; color: var(--text2); }
+    .booth-type-card .type-desc { font-size: 0.7rem; color: var(--text2); margin-top: 4px; }
+
+    /* Zone cards */
+    .zone-card {
+      background: var(--surface2); border-radius: 10px; padding: 16px; margin-bottom: 8px;
+    }
+    .zone-name { font-weight: 700; font-size: 0.95rem; }
+    .zone-booths { font-size: 0.8rem; color: var(--text2); }
+    .zone-detail { font-size: 0.8rem; margin-top: 6px; color: var(--text); }
+    .zone-tag {
+      display: inline-block; font-size: 0.65rem; font-weight: 700; padding: 2px 8px;
+      border-radius: 4px; margin-top: 6px;
+    }
+    .zone-tag.high-risk { background: rgba(239,68,68,0.15); color: var(--red); }
+    .zone-tag.udf-strong { background: var(--udf-bg); color: var(--udf); }
+    .zone-tag.nda-zone { background: var(--nda-bg); color: var(--nda); }
+    .zone-tag.toss-up { background: rgba(249,168,37,0.15); color: var(--nda); }
+
+    /* Community */
+    .community-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 8px 0; gap: 1px; }
+    .community-bar div { display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; }
+    .community-list { font-size: 0.85rem; }
+    .community-list li { margin: 6px 0; padding-left: 4px; list-style: none; }
+    .community-list li::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+
+    /* Risk cards */
+    .risk-item {
+      background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.15);
+      border-radius: 8px; padding: 10px 14px; margin: 6px 0; font-size: 0.85rem;
+    }
+
+    /* Chart containers */
+    .chart-wrap { max-width: 340px; margin: 0 auto; }
+
+    /* Methodology */
+    .method-footer {
+      text-align: center; margin-top: 40px; padding: 24px;
+      border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text2);
+    }
+
+    @media (max-width: 700px) {
+      .cards-row { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="logo">Kerala 2026 Deep Analysis</span>
+  <a href="index.html" class="back-link">Overview</a>
+  <a href="booths.html" class="back-link">Booth Estimates</a>
+  <select id="constituencySelect">
+    <option value="kochi">Kochi (#80)</option>
+    <option value="kalamassery">Kalamassery (#77)</option>
+  </select>
+</div>
+
+<div class="container" id="mainContainer">
+  <div style="text-align:center;padding:80px 0;color:var(--text2)">Loading analysis...</div>
+</div>
+
+<script>
+const FRONT_COLORS = { LDF: '#e53935', UDF: '#1e88e5', NDA: '#f9a825' };
+const BOOTH_TYPE_INFO = {
+  A: { label: 'UDF Stronghold', color: '#1e88e5', desc: 'Won in 2021, protect & boost turnout' },
+  B: { label: 'Close LDF, NDA Weak', color: '#22c55e', desc: 'Primary battleground, UDF leads 2024' },
+  C: { label: 'Recoverable', color: '#f59e0b', desc: 'LDF gap 101-300, trend favors UDF' },
+  D: { label: 'Former T20 → NDA', color: '#f97316', desc: 'T20 now NDA, 3-way fight' },
+  E: { label: 'BJP/NDA Dominant', color: '#ef4444', desc: 'Accept NDA dominance, skip' },
+  F: { label: 'LDF Stronghold', color: '#7c3aed', desc: 'LDF 300+ gap, minimal investment' },
+};
+const COMMUNITY_COLORS = ['#1e88e5','#22c55e','#e53935','#f9a825','#8b5cf6','#ec4899'];
+
+let currentData = null;
+let currentArithmetic = null;
+let charts = [];
+
+document.getElementById('constituencySelect').addEventListener('change', (e) => loadConstituency(e.target.value));
+
+async function loadConstituency(key) {
+  charts.forEach(c => c.destroy());
+  charts = [];
+  try {
+    const res = await fetch(`constituencies/${key}.json`);
+    currentData = await res.json();
+  } catch(e) {
+    document.getElementById('mainContainer').innerHTML = `<div style="text-align:center;padding:80px 0;color:var(--text2)">No deep analysis data for ${key}</div>`;
+    return;
+  }
+  try {
+    const res2 = await fetch(`constituencies/${key}_arithmetic.json`);
+    currentArithmetic = await res2.json();
+  } catch(e) { currentArithmetic = null; }
+
+  render();
+}
+
+function num(n) { return n != null ? Number(n).toLocaleString() : '—'; }
+function pct(n) { return n != null ? Number(n).toFixed(1) + '%' : '—'; }
+function signPct(n) { return n > 0 ? '+' + pct(n) : pct(n); }
+
+function render() {
+  const d = currentData;
+  const a = currentArithmetic;
+  const wp = d.win_probabilities;
+  const ve = d.vote_estimates;
+  const layers = d.layers;
+  const winner = d.estimated_winner;
+  const winnerLow = winner.toLowerCase();
+
+  let html = '';
+
+  // Hero
+  html += `<div class="hero">
+    <div class="hero-tag">Deep Constituency Analysis</div>
+    <h1>${d.constituency}</h1>
+    <div class="hero-sub">#${d.constituency_no} &middot; ${d.district} District &middot; ~${num(d.total_voters)} voters</div>
+    <div class="hero-category cat-${winnerLow}">${d.category}</div>
+  </div>`;
+
+  // Vote estimate cards
+  html += `<div class="cards-row">`;
+  for (const front of ['LDF', 'UDF', 'NDA']) {
+    const fl = front.toLowerCase();
+    const v = ve[front];
+    const est = v.blended_estimate || v.estimated_votes;
+    const range = v.range ? `${num(v.range[0])} - ${num(v.range[1])}` : `~${num(est)}`;
+    const isWinner = front === winner;
+    const glow = isWinner ? `--glow: var(--${fl}-glow)` : '';
+    html += `<div class="card vote-card ${fl} ${isWinner ? 'winner-card' : ''}" style="${glow}">
+      <div class="front-label">${front}</div>
+      <div class="candidate">${d.candidates[front]}</div>
+      <div class="prob mono">${pct(wp[front])}</div>
+      <div class="prob-label">Win Probability</div>
+      <div class="est-votes mono">${num(est)}</div>
+      <div class="est-label">Estimated Votes</div>
+      <div class="vote-range">${range}</div>
+    </div>`;
+  }
+  html += `</div>`;
+
+  // Margin callout
+  html += `<div class="card card-full" style="text-align:center;padding:16px;">
+    <span style="color:var(--text2);font-size:0.85rem">Estimated winning margin: </span>
+    <span class="mono" style="font-size:1.3rem;font-weight:800;color:var(--${winnerLow})">~${num(d.estimated_margin)} votes</span>
+    <span style="color:var(--text2);font-size:0.85rem"> for ${winner}</span>
+  </div>`;
+
+  // Donut + Comparison side by side
+  html += `<div class="cards-row cards-row-2" style="margin-top:12px">`;
+
+  // Donut chart
+  html += `<div class="card"><h3>Win Probability</h3><div class="chart-wrap"><canvas id="probDonut"></canvas></div></div>`;
+
+  // Model comparison
+  if (d.comparison_with_main) {
+    const cmp = d.comparison_with_main;
+    html += `<div class="card"><h3>Model Comparison</h3>
+      <table class="cmp-table">
+        <tr><th>Front</th><th>Main Model</th><th>Deep Model</th><th>Delta</th></tr>
+        ${['LDF','UDF','NDA'].map(f => {
+          const delta = cmp.delta[f];
+          const cls = delta > 0 ? 'delta-pos' : (delta < 0 ? 'delta-neg' : '');
+          return `<tr>
+            <td style="color:var(--${f.toLowerCase()});font-weight:700">${f}</td>
+            <td>${pct(cmp.main_probs[f])}</td>
+            <td style="font-weight:700">${pct(wp[f])}</td>
+            <td class="${cls}">${delta > 0 ? '+' : ''}${pct(delta)}</td>
+          </tr>`;
+        }).join('')}
+      </table>
+      <div style="margin-top:12px;font-size:0.75rem;color:var(--text2)">
+        Main: ${cmp.main_category} &rarr; Deep: ${d.category}
+      </div>
+    </div>`;
+  } else {
+    html += `<div class="card"><h3>Model Comparison</h3><p style="color:var(--text2);font-size:0.85rem">No main model data available</p></div>`;
+  }
+  html += `</div>`;
+
+  // ===== LAYERS SECTION =====
+  html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:20px">Prediction Layers</h2></div>`;
+
+  // Layer 1: Base 2021
+  const base = layers.base_2021;
+  html += layerCard(0, 'Base - 2021 Assembly Results', 'Starting point: actual vote shares from the last election', `
+    ${swingBars({LDF: base.LDF, UDF: base.UDF, NDA: base.NDA}, false, 50)}
+  `);
+
+  // Layer 2: District Swing
+  const ds = layers.district_swing;
+  html += layerCard(1, 'District LSG Swing (Ernakulam)', 'LSG 2020 → 2025 vote share change across the district', `
+    ${swingBars(ds, true, 30)}
+  `);
+
+  // Layer 3: Constituency Swing
+  if (layers.constituency_swing) {
+    const cs = layers.constituency_swing;
+    html += layerCard(2, 'Constituency Ward Swing', 'Ward-level LSG swing from local bodies within the constituency', `
+      ${swingBars(cs, true, 30)}
+    `);
+  }
+
+  // Layer 4: Booth-level intel
+  if (layers.has_booth_data && layers.booth_projection) {
+    const bp = layers.booth_projection;
+    let boothHtml = `<div style="margin-bottom:12px">
+      ${swingBars(bp.vote_shares, false, 50)}
+    </div>`;
+
+    if (bp.booth_stats && bp.booth_stats.mp_2024_shares) {
+      const mp = bp.booth_stats.mp_2024_shares;
+      boothHtml += `<div style="background:var(--surface2);border-radius:8px;padding:12px;margin:8px 0">
+        <div style="font-size:0.75rem;font-weight:700;color:var(--text2);margin-bottom:6px">2024 PARLIAMENT ACTUAL</div>
+        <div style="display:flex;gap:16px;font-size:0.9rem">
+          <span><span style="color:var(--ldf);font-weight:700">LDF</span> ${pct(mp.LDF)}</span>
+          <span><span style="color:var(--udf);font-weight:700">UDF</span> ${pct(mp.UDF)}</span>
+          <span><span style="color:var(--nda);font-weight:700">NDA</span> ${pct(mp.NDA)}</span>
+        </div>
+      </div>`;
+    }
+    html += layerCard(3, 'Booth-Level Intel (2024 MP + Vote Arithmetic)', bp.source, boothHtml);
+  }
+
+  // Layer 5: Final adjusted
+  html += layerCard(layers.has_booth_data ? 4 : 3, 'Final Adjusted Vote Shares', `Volatility: ${d.volatility} | ${d.category}`, `
+    ${swingBars(d.adjusted_vote_shares, false, 50)}
+  `);
+
+  // ===== BOOTH BREAKDOWN (if available) =====
+  if (a && a.booth_categories) {
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Booth Classification (${a.total_booths} booths)</h2></div>`;
+    html += `<div class="booth-grid">`;
+    for (const [type, info] of Object.entries(a.booth_categories)) {
+      const letter = type.charAt(0);
+      const ti = BOOTH_TYPE_INFO[letter] || { label: type, color: '#888', desc: '' };
+      html += `<div class="booth-type-card">
+        <div class="type-letter" style="color:${ti.color}">${letter}</div>
+        <div style="font-weight:700;font-size:0.85rem">${ti.label}</div>
+        <div class="type-count">${info.count} booths</div>
+        <div class="type-desc">${ti.desc}</div>
+      </div>`;
+    }
+    html += `</div>`;
+
+    // Booth type chart
+    html += `<div class="card" style="margin-top:12px"><h3>Booth Distribution</h3>
+      <div style="max-width:400px;margin:0 auto"><canvas id="boothChart"></canvas></div></div>`;
+  }
+
+  // ===== ZONE ANALYSIS =====
+  if (a && a.zone_analysis) {
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Zone-by-Zone Analysis</h2></div>`;
+    for (const [zone, info] of Object.entries(a.zone_analysis)) {
+      const zoneName = zone.replace(/_/g, ' ');
+      let tagCls = '';
+      if (info.NDA_likely_wins) tagCls = 'nda-zone';
+      else if (info.note && info.note.includes('BEST UDF')) tagCls = 'udf-strong';
+      else if (info.note && info.note.includes('HIGH')) tagCls = 'high-risk';
+
+      html += `<div class="zone-card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="zone-name">${zoneName}</div>
+          <div class="zone-booths">Booths ${info.booths}</div>
+        </div>
+        ${info.key_issues ? `<div class="zone-detail"><strong>Issues:</strong> ${info.key_issues}</div>` : ''}
+        ${info.UDF_strengths ? `<div class="zone-detail"><strong>UDF strengths:</strong> ${info.UDF_strengths}</div>` : ''}
+        ${info.NDA_likely_wins ? `<div class="zone-detail"><strong>NDA likely wins:</strong> Booths ${info.NDA_likely_wins}</div>` : ''}
+        ${info.note ? `<div class="zone-tag ${tagCls}">${info.note}</div>` : ''}
+      </div>`;
+    }
+  }
+
+  // ===== T20 / GAME CHANGER =====
+  if (a && a.game_changer_2026 && a.game_changer_2026.T20_joined_NDA) {
+    const gc = a.game_changer_2026;
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Game Changer: T20 → NDA</h2></div>`;
+    html += `<div class="card" style="border:1px solid rgba(249,168,37,0.3);background:rgba(249,168,37,0.04)">
+      <div style="font-weight:800;font-size:1rem;color:var(--nda);margin-bottom:12px">
+        T20's ${num(gc.T20_2021_votes)} votes from 2021 are now split
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">`;
+    for (const [grp, info] of Object.entries(gc.T20_voter_split_2026)) {
+      const label = grp.replace(/_/g, ' ');
+      html += `<div style="background:var(--surface2);border-radius:10px;padding:14px;text-align:center">
+        <div style="font-size:1.4rem;font-weight:800" class="mono">~${num(info.votes)}</div>
+        <div style="font-size:0.75rem;color:var(--text2);margin:4px 0">${info.pct}% &middot; ${label}</div>
+        <div style="font-size:0.8rem">${info.reason}</div>
+      </div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // ===== COMMUNITY BREAKDOWN =====
+  if (a && a.community_breakdown) {
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Community Breakdown</h2></div>`;
+    html += `<div class="card">`;
+
+    // Bar
+    html += `<div class="community-bar">`;
+    let ci = 0;
+    for (const [name, info] of Object.entries(a.community_breakdown)) {
+      const pctVal = info.pct;
+      html += `<div style="width:${pctVal}%;background:${COMMUNITY_COLORS[ci % COMMUNITY_COLORS.length]}">${pctVal}%</div>`;
+      ci++;
+    }
+    html += `</div>`;
+
+    // List
+    html += `<ul class="community-list">`;
+    ci = 0;
+    for (const [name, info] of Object.entries(a.community_breakdown)) {
+      const displayName = name.replace(/_/g, ' ');
+      const color = COMMUNITY_COLORS[ci % COMMUNITY_COLORS.length];
+      html += `<li style="--dot-color:${color}"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:8px"></span>
+        <strong>${displayName}</strong> (~${info.pct}%) — ${info.lean}
+        <div style="font-size:0.8rem;color:var(--text2);margin-left:16px">${info.issues}</div>
+      </li>`;
+      ci++;
+    }
+    html += `</ul></div>`;
+  }
+
+  // ===== CRITICAL RISKS =====
+  if (a && a.critical_risks) {
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Critical Risks</h2></div>`;
+    a.critical_risks.forEach(risk => {
+      html += `<div class="risk-item">${risk}</div>`;
+    });
+  }
+
+  // ===== HISTORICAL =====
+  if (a && a.historical_results) {
+    html += `<div style="margin-top:32px"><h2 style="font-size:1.3rem;margin-bottom:16px">Historical Results</h2></div>`;
+    html += `<div class="card"><div style="max-width:600px;margin:0 auto"><canvas id="histChart"></canvas></div></div>`;
+  }
+
+  // Footer
+  html += `<div class="method-footer">
+    Deep Monte Carlo Model (1M simulations) | Layers: 2021 base + LSG swing + Ward-level swing + 2024 MP booth data + Vote arithmetic + Sentiment<br>
+    Data sources: ECI 2016-2024, LSG 2020 &amp; 2025, Booth-level 2024 Parliament
+  </div>`;
+
+  document.getElementById('mainContainer').innerHTML = html;
+  renderCharts();
+}
+
+function layerCard(num, title, desc, content) {
+  return `<div class="card layer-section" style="margin-bottom:12px">
+    <div class="layer-header">
+      <div class="layer-num">${num}</div>
+      <div><div class="layer-title">${title}</div><div class="layer-desc">${desc}</div></div>
+    </div>
+    ${content}
+  </div>`;
+}
+
+function swingBars(data, showSign, maxScale) {
+  let html = '';
+  for (const front of ['LDF', 'UDF', 'NDA']) {
+    const val = data[front];
+    if (val == null) continue;
+    const fl = front.toLowerCase();
+    const isPos = val >= 0;
+    const absVal = Math.abs(val);
+    const barWidth = Math.min(absVal / maxScale * 50, 50);
+
+    if (showSign) {
+      html += `<div class="swing-row">
+        <div class="swing-label" style="color:var(--${fl})">${front}</div>
+        <div class="swing-bar-wrap">
+          <div class="swing-bar-center"></div>
+          <div class="swing-bar ${isPos ? 'positive' : 'negative'}" style="width:${barWidth}%;background:var(--${fl})"></div>
+        </div>
+        <div class="swing-value ${isPos ? 'pos' : 'neg'}">${isPos ? '+' : ''}${val.toFixed(1)}%</div>
+      </div>`;
+    } else {
+      html += `<div class="swing-row">
+        <div class="swing-label" style="color:var(--${fl})">${front}</div>
+        <div style="flex:1;height:24px;background:var(--surface3);border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:${val}%;background:var(--${fl});border-radius:4px;transition:width 0.8s"></div>
+        </div>
+        <div style="width:50px;text-align:right;font-weight:700;font-size:0.85rem" class="mono">${val.toFixed(1)}%</div>
+      </div>`;
+    }
+  }
+  return html;
+}
+
+function renderCharts() {
+  const d = currentData;
+  const a = currentArithmetic;
+  const wp = d.win_probabilities;
+
+  // Donut
+  const donutEl = document.getElementById('probDonut');
+  if (donutEl) {
+    charts.push(new Chart(donutEl, {
+      type: 'doughnut',
+      data: {
+        labels: ['LDF', 'UDF', 'NDA'],
+        datasets: [{ data: [wp.LDF, wp.UDF, wp.NDA], backgroundColor: ['#e53935','#1e88e5','#f9a825'], borderWidth: 0 }]
+      },
+      options: {
+        cutout: '60%',
+        plugins: { legend: { position: 'bottom', labels: { color: '#8b8fa3', padding: 14, font: { size: 12 } } } },
+        animation: { animateScale: true, duration: 1000 }
+      }
+    }));
+  }
+
+  // Booth type chart
+  if (a && a.booth_categories) {
+    const boothEl = document.getElementById('boothChart');
+    if (boothEl) {
+      const types = Object.entries(a.booth_categories);
+      charts.push(new Chart(boothEl, {
+        type: 'bar',
+        data: {
+          labels: types.map(([k]) => k.charAt(0)),
+          datasets: [{
+            data: types.map(([,v]) => v.count),
+            backgroundColor: types.map(([k]) => (BOOTH_TYPE_INFO[k.charAt(0)] || {}).color || '#888'),
+            borderRadius: 6,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#6b7280' } },
+            y: { grid: { display: false }, ticks: { color: '#eaedf3', font: { weight: 700, size: 14 } } }
+          }
+        }
+      }));
+    }
+  }
+
+  // Historical chart
+  if (a && a.historical_results) {
+    const histEl = document.getElementById('histChart');
+    if (histEl) {
+      const years = Object.keys(a.historical_results);
+      const getData = (key) => years.map(y => a.historical_results[y][key] || 0);
+      charts.push(new Chart(histEl, {
+        type: 'bar',
+        data: {
+          labels: years.map(y => y.replace('_parliament', ' MP')),
+          datasets: [
+            { label: 'UDF', data: getData('UDF'), backgroundColor: '#1e88e5', borderRadius: 4 },
+            { label: 'LDF', data: getData('LDF'), backgroundColor: '#e53935', borderRadius: 4 },
+            { label: 'NDA/BJP', data: years.map(y => (a.historical_results[y].NDA_BJP || 0)), backgroundColor: '#f9a825', borderRadius: 4 },
+            { label: 'T20/Others', data: years.map(y => (a.historical_results[y].T20_Others || 0)), backgroundColor: '#7c3aed', borderRadius: 4 },
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom', labels: { color: '#8b8fa3', padding: 12 } } },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: '#6b7280', font: { size: 11 } } },
+            y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#6b7280', callback: v => (v/1000)+'K' } }
+          }
+        }
+      }));
+    }
+  }
+}
+
+// Init
+loadConstituency('kochi');
+</script>
+</body>
+</html>

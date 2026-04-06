@@ -1,0 +1,241 @@
+Part_No,Mapped_Booth,Location,Zone,Booth_Type,Registered_Voters,SIR_Corrected,Est_Polled,Est_UDF,Est_LDF,Est_NDA,Est_Winner,Est_Margin,Verdict_2026,Est_Method
+1,1,Our Lady of Hope School,Fort Kochi,A,462,,356,276,71,9,UDF,205,UDF safe,booth_pattern
+2,1,Our Lady of Hope School,Fort Kochi,A,623,Y,480,372,96,13,UDF,276,UDF safe,booth_pattern
+3,2,Temporary Shed Ramanthuruthu,Fort Kochi,A,692,,533,418,115,0,UDF,303,UDF safe,booth_pattern
+4,2,Temporary Shed Ramanthuruthu,Fort Kochi,A,511,,393,308,85,0,UDF,223,UDF safe,booth_pattern
+5,3,Women Dev Corp Training Centre,Fort Kochi,C,560,,431,238,189,4,UDF,49,UDF recoverable,booth_pattern
+6,4,Santa Cruz HS NE Block,Fort Kochi,A,582,,448,324,98,26,UDF,226,UDF safe,booth_pattern
+7,4,Santa Cruz HS NE Block,Fort Kochi,A,787,,606,439,132,35,UDF,307,UDF safe,booth_pattern
+8,5,Santa Cruz HS W Block,Fort Kochi,A,528,,407,296,93,18,UDF,203,UDF safe,booth_pattern
+9,6,Santa Cruz LP School Fort Kochi,Fort Kochi,B,599,,461,318,128,15,UDF,190,UDF flip,booth_pattern
+10,6,Santa Cruz LP School Fort Kochi,Fort Kochi,B,639,,492,339,136,16,UDF,203,UDF flip,booth_pattern
+11,7,Santa Cruz HS Middle Block,Fort Kochi,B,656,,505,303,176,27,UDF,127,UDF recoverable,booth_pattern
+12,8,St John DBritto AIBHS N,Fort Kochi,C,568,,437,252,167,18,UDF,85,UDF recoverable,booth_pattern
+13,8,St John DBritto AIBHS N,Fort Kochi,C,530,,408,236,155,17,UDF,81,UDF recoverable,booth_pattern
+14,9,St John DBritto AIBHS S,Fort Kochi,C,1258,,969,548,379,42,UDF,169,UDF recoverable,booth_pattern
+15,10,Central Kalvathy LP School W,Fort Kochi,C,1209,,931,543,377,11,UDF,166,UDF recoverable,booth_pattern
+16,10,Central Kalvathy LP School W,Fort Kochi,C,677,,521,304,211,6,UDF,93,UDF recoverable,booth_pattern
+17,11,Central Kalvathy LP School N,Fort Kochi,C,623,Y,480,248,229,4,UDF,19,UDF recoverable,booth_pattern
+18,12,Central Kalvathy LP School E,Fort Kochi,F,795,,612,278,334,0,LDF,56,LDF stronghold,booth_pattern
+19,12,Central Kalvathy LP School E,Fort Kochi,F,956,,736,334,402,0,LDF,68,LDF stronghold,booth_pattern
+20,13,Central Kalvathy HS E,Fort Kochi,F,563,,434,208,226,0,LDF,18,LDF stronghold,booth_pattern
+21,14,LG Pai Memorial Library W,Fort Kochi Mattancherry,E,596,,459,133,68,259,NDA,126,NDA territory,booth_pattern
+22,14,LG Pai Memorial Library W,Fort Kochi Mattancherry,E,571,,440,127,65,248,NDA,121,NDA territory,booth_pattern
+23,15,Govt UPS Amaravathy N,Fort Kochi Mattancherry,E,511,,393,101,47,245,NDA,144,NDA territory,booth_pattern
+24,16,GUPS Amaravathy Mid Block,Fort Kochi,C,621,,478,262,197,19,UDF,65,UDF recoverable,booth_pattern
+25,16,GUPS Amaravathy Mid Block,Fort Kochi,C,541,,417,228,172,17,UDF,56,UDF recoverable,booth_pattern
+26,17,GUPS Amaravathy SW Room S Block,Fort Kochi,B,623,Y,480,299,162,19,UDF,137,UDF flip,booth_pattern
+27,18,GUPS Last Room E S Block,Fort Kochi,A,553,,426,311,94,21,UDF,217,UDF safe,booth_pattern
+28,18,GUPS Last Room E S Block,Fort Kochi,A,410,,316,231,70,16,UDF,161,UDF safe,booth_pattern
+29,19,GUPS North Portion Main Block,Fort Kochi,B,435,,335,201,115,19,UDF,86,UDF recoverable,booth_pattern
+30,19,GUPS North Portion Main Block,Fort Kochi,B,401,,309,185,106,17,UDF,79,UDF recoverable,booth_pattern
+31,20,GUPS Southern Portion Main Block,Fort Kochi,C,454,,350,193,138,20,UDF,55,UDF recoverable,booth_pattern
+32,21,Pallathu Raman Memorial E Block,Fort Kochi,C,623,Y,480,314,145,21,UDF,169,UDF recoverable,booth_pattern
+33,21,Pallathu Raman Memorial E Block,Fort Kochi,C,623,Y,480,314,145,21,UDF,169,UDF recoverable,booth_pattern
+34,22,Pallathu Raman Memorial S Block,Fort Kochi,C,727,,560,337,199,24,UDF,138,UDF recoverable,booth_pattern
+35,23,EMGHS Veli Fortkochi W HS,Fort Kochi,C,623,Y,480,294,161,25,UDF,133,UDF recoverable,booth_pattern
+36,23,EMGHS Veli Fortkochi W HS,Fort Kochi,C,918,,707,433,237,37,UDF,196,UDF recoverable,booth_pattern
+37,24,Edward Memorial GLPS N,Fort Kochi,B,1009,,777,489,260,28,UDF,229,UDF flip,booth_pattern
+38,25,Edward Memorial GLPS S,Fort Kochi,C,567,,437,262,157,18,UDF,105,UDF recoverable,booth_pattern
+39,25,Edward Memorial GLPS S,Fort Kochi,C,530,,408,244,147,17,UDF,97,UDF recoverable,booth_pattern
+40,26,EMGHS Veli Fortkochi UP School,Fort Kochi,C,680,,524,328,171,25,UDF,157,UDF recoverable,booth_pattern
+41,27,Anganvady No 41,Fort Kochi,C,541,,417,246,170,2,UDF,76,UDF recoverable,booth_pattern
+42,27,Anganvady No 41,Fort Kochi,C,507,,390,230,159,2,UDF,71,UDF recoverable,booth_pattern
+43,28,MASSLPS E South Block,Fort Kochi,F,513,,395,168,225,2,LDF,57,LDF stronghold,booth_pattern
+44,29,MASSLPS Eastern Hall,Fort Kochi,F,668,,514,260,251,3,UDF,9,LDF stronghold,booth_pattern
+45,29,MASSLPS Eastern Hall,Fort Kochi,F,529,,407,206,198,2,UDF,8,LDF stronghold,booth_pattern
+46,30,MASSLPS Second Room N Block,Fort Kochi,C,606,,467,244,221,3,UDF,23,UDF recoverable,booth_pattern
+47,31,MASSLPS Sulaiman Master Hall,Fort Kochi,C,572,,440,236,201,3,UDF,35,UDF recoverable,booth_pattern
+48,31,MASSLPS Sulaiman Master Hall,Fort Kochi,C,590,,454,243,208,3,UDF,35,UDF recoverable,booth_pattern
+49,32,Aasia Bai HSS Middle W,Fort Kochi,B,607,,467,291,168,8,UDF,123,UDF flip,booth_pattern
+50,33,Gujarati Vidhyalaya HSS NW,Fort Kochi,C,623,Y,480,274,202,4,UDF,72,UDF recoverable,booth_pattern
+51,33,Gujarati Vidhyalaya HSS NW,Fort Kochi,C,433,,333,190,140,3,UDF,50,UDF recoverable,booth_pattern
+52,34,Gujarati Vidhyalaya HSS SW,Fort Kochi Mattancherry,E,611,,470,126,51,293,NDA,167,NDA territory,booth_pattern
+53,35,Kochi Gujarathi UPS N,Fort Kochi,C,571,,440,256,180,4,UDF,76,UDF recoverable,booth_pattern
+54,35,Kochi Gujarathi UPS N,Fort Kochi,C,845,,651,379,266,5,UDF,113,UDF recoverable,booth_pattern
+55,36,Haji Easa Moosa HS Mid,Fort Kochi,C,661,,509,295,210,4,UDF,85,UDF recoverable,booth_pattern
+56,36,Haji Easa Moosa HS Mid,Fort Kochi,C,580,,447,259,184,3,UDF,75,UDF recoverable,booth_pattern
+57,37,Haji Easa Moosa HS N,Fort Kochi Mattancherry,E,573,,441,157,43,242,NDA,85,NDA territory,booth_pattern
+58,38,Haji Easa Moosa HS E,Fort Kochi,F,832,,641,305,336,0,LDF,31,LDF stronghold,booth_pattern
+59,38,Haji Easa Moosa HS E,Fort Kochi,F,550,,424,202,222,0,LDF,20,LDF stronghold,booth_pattern
+60,39,TD Girls LPS S New Block,Fort Kochi Mattancherry,E,563,,434,131,54,248,NDA,117,NDA territory,booth_pattern
+61,40,TD Girls LPS N New Block,Fort Kochi,C,805,,620,347,259,14,UDF,88,UDF recoverable,booth_pattern
+62,40,TD Girls LPS N New Block,Fort Kochi,C,623,Y,480,268,201,11,UDF,67,UDF recoverable,booth_pattern
+63,41,TD High School W End S,Fort Kochi Mattancherry,E,623,Y,480,175,54,252,NDA,77,NDA territory,booth_pattern
+64,42,TD High School S Blk 4W,Fort Kochi Mattancherry,E,419,,323,66,19,238,NDA,172,NDA territory,booth_pattern
+65,42,TD High School S Blk 4W,Fort Kochi Mattancherry,E,623,Y,480,97,28,354,NDA,257,NDA territory,booth_pattern
+66,43,TD High School S Blk 4E,Fort Kochi Mattancherry,E,584,,450,117,36,298,NDA,181,NDA territory,booth_pattern
+67,44,TD High School S Blk 5E,Fort Kochi Mattancherry,E,535,,412,91,22,300,NDA,209,NDA territory,booth_pattern
+68,44,TD High School S Blk 5E,Fort Kochi Mattancherry,E,557,,429,94,23,312,NDA,218,NDA territory,booth_pattern
+69,45,Govt Girls HS LP W South,Fort Kochi,C,590,,454,246,204,4,UDF,42,UDF recoverable,booth_pattern
+70,46,Govt Girls HS LP E South,Fort Kochi Mattancherry,E,957,,737,182,84,471,NDA,289,NDA territory,booth_pattern
+71,46,Govt Girls HS LP E South,Fort Kochi Mattancherry,E,803,,618,152,70,395,NDA,243,NDA territory,booth_pattern
+72,47,Govt Girls LPS N West Block,Fort Kochi,C,623,Y,480,248,228,4,UDF,20,UDF recoverable,booth_pattern
+73,48,Govt Girls LPS S West Block,Fort Kochi,C,623,Y,480,263,213,4,UDF,50,UDF recoverable,booth_pattern
+74,48,Govt Girls LPS S West Block,Fort Kochi,C,825,,635,347,282,6,UDF,65,UDF recoverable,booth_pattern
+75,49,TD Teacher Training S Hall,Fort Kochi Mattancherry,E,994,,765,115,36,614,NDA,499,NDA territory,booth_pattern
+76,50,TD Teacher Training N Hall,Fort Kochi Mattancherry,E,807,,621,160,60,402,NDA,242,NDA territory,booth_pattern
+77,50,TD Teacher Training N Hall,Fort Kochi Mattancherry,E,577,,444,114,43,287,NDA,173,NDA territory,booth_pattern
+78,51,TDLPS N Portion E Block,Chullickal,B,78,,60,37,20,3,UDF,17,UDF flip,booth_pattern
+79,52,TDLPS S Portion E Block,Chullickal,B,611,,470,258,202,10,UDF,56,UDF recoverable,booth_pattern
+80,52,TDLPS S Portion E Block,Chullickal,B,80,,62,34,27,1,UDF,7,UDF recoverable,booth_pattern
+81,53,Cochin College BioTech W,Chullickal,B,81,,62,38,21,3,UDF,17,UDF flip,booth_pattern
+82,53,Cochin College BioTech W,Chullickal,B,82,,63,39,21,3,UDF,18,UDF flip,booth_pattern
+83,54,Cochin College BioTech E,Chullickal,B,619,,477,307,153,17,UDF,154,UDF flip,booth_pattern
+84,55,Cochin College BioTech Mid,Chullickal,C,551,,424,244,172,8,UDF,72,UDF recoverable,booth_pattern
+85,55,Cochin College BioTech Mid,Chullickal,C,623,Y,480,277,194,9,UDF,83,UDF recoverable,booth_pattern
+86,56,MMOHS Panayappilly W,Chullickal,C,695,,535,320,212,3,UDF,108,UDF recoverable,booth_pattern
+87,57,MMOHS Panayappilly N W,Chullickal,C,584,,450,248,200,2,UDF,48,UDF recoverable,booth_pattern
+88,57,MMOHS Panayappilly N W,Chullickal,C,574,,442,244,196,2,UDF,48,UDF recoverable,booth_pattern
+89,58,MMOHS E Portion S Block,Chullickal,C,802,,618,383,223,12,UDF,160,UDF recoverable,booth_pattern
+90,59,MMOHS W South Block,Chullickal,C,908,,699,389,308,2,UDF,81,UDF recoverable,booth_pattern
+91,59,MMOHS W South Block,Chullickal,C,1245,,959,534,422,3,UDF,112,UDF recoverable,booth_pattern
+92,60,MMOHS Mid W,Chullickal,C,858,,661,401,257,3,UDF,144,UDF recoverable,booth_pattern
+93,61,MMOHS N Portion W,Chullickal,C,740,,570,336,232,2,UDF,104,UDF recoverable,booth_pattern
+94,61,MMOHS N Portion W,Chullickal,C,886,,682,401,278,3,UDF,123,UDF recoverable,booth_pattern
+95,62,MMOHS S Portion W,Chullickal,C,948,,730,389,338,3,UDF,51,UDF recoverable,booth_pattern
+96,63,Corp Library Panayapilly,Chullickal,C,523,,403,232,166,4,UDF,66,UDF recoverable,booth_pattern
+97,63,Corp Library Panayapilly,Chullickal,C,416,,320,184,132,4,UDF,52,UDF recoverable,booth_pattern
+98,64,GHS Panayappilly KG E,Chullickal,C,502,,387,210,170,6,UDF,40,UDF recoverable,booth_pattern
+99,65,GHS Panayappilly KG W,Chullickal,B,538,,414,288,114,12,UDF,174,UDF flip,booth_pattern
+100,65,GHS Panayappilly KG W,Chullickal,B,100,,77,54,21,2,UDF,33,UDF flip,booth_pattern
+101,66,St Joseph HS Chullickal SE E,Chullickal,B,438,,337,224,101,11,UDF,123,UDF flip,booth_pattern
+102,67,St Joseph HS Chullickal 3rd,Chullickal,B,102,,79,54,21,4,UDF,33,UDF flip,booth_pattern
+103,67,St Joseph HS Chullickal 3rd,Chullickal,B,555,,427,294,112,21,UDF,182,UDF flip,booth_pattern
+104,68,St Joseph HS Chullickal Mid SE,Chullickal,B,553,,426,281,128,17,UDF,153,UDF flip,booth_pattern
+105,69,St Joseph HS Chullickal 2W SE,Chullickal,C,623,Y,480,295,167,18,UDF,128,UDF recoverable,booth_pattern
+106,69,St Joseph HS Chullickal 2W SE,Chullickal,C,506,,390,240,136,14,UDF,104,UDF recoverable,booth_pattern
+107,70,St Joseph HS Chullickal W SE,Chullickal,B,563,,434,290,130,14,UDF,160,UDF flip,booth_pattern
+108,70,St Joseph HS Chullickal W SE,Chullickal,B,575,,443,296,133,14,UDF,163,UDF flip,booth_pattern
+109,71,St Joseph HS Chullickal E SW,Chullickal,B,473,,364,230,125,10,UDF,105,UDF flip,booth_pattern
+110,72,St Joseph HS Chullickal Mid SW,Chullickal,B,448,,345,218,118,8,UDF,100,UDF flip,booth_pattern
+111,72,St Joseph HS Chullickal Mid SW,Chullickal,B,586,,451,285,155,11,UDF,130,UDF flip,booth_pattern
+112,73,OLCGHS Main Block 2nd Mid W,Chullickal,C,611,,470,276,178,16,UDF,98,UDF recoverable,booth_pattern
+113,74,OLCGHS Main Block E Portion,Chullickal,A,967,,745,511,221,12,UDF,290,UDF safe,booth_pattern
+114,74,OLCGHS Main Block E Portion,Chullickal,A,548,,422,290,125,7,UDF,165,UDF safe,booth_pattern
+115,75,OLCGHS Main Block S End E,Chullickal,A,511,,393,278,104,12,UDF,174,UDF safe,booth_pattern
+116,76,Our Lady GLPS W Block N,Chullickal,C,634,,488,304,168,16,UDF,136,UDF recoverable,booth_pattern
+117,76,Our Lady GLPS W Block N,Chullickal,C,569,,438,273,151,15,UDF,122,UDF recoverable,booth_pattern
+118,77,St Jacob School Nazreth E,Chullickal,B,620,,477,280,177,20,UDF,103,UDF recoverable,booth_pattern
+119,78,St Jacob School Nazreth W,Chullickal,B,517,,398,262,119,17,UDF,143,UDF flip,booth_pattern
+120,78,St Jacob School Nazreth W,Chullickal,B,432,,333,219,100,14,UDF,119,UDF flip,booth_pattern
+121,79,Chaithanya Sunday School S,Chullickal,B,438,,337,227,96,14,UDF,131,UDF flip,booth_pattern
+122,80,Chaithanya Sunday School N,Chullickal,A,623,Y,480,331,124,25,UDF,207,UDF safe,booth_pattern
+123,80,Chaithanya Sunday School N,Chullickal,A,422,,325,224,84,17,UDF,140,UDF safe,booth_pattern
+124,81,St Sebastian HSS W LP,Chullickal,C,524,,403,242,149,12,UDF,93,UDF recoverable,booth_pattern
+125,82,St Sebastian HSS E LP,Chullickal,B,542,,417,252,151,14,UDF,101,UDF flip,booth_pattern
+126,82,St Sebastian HSS E LP,Chullickal,B,473,,364,220,132,12,UDF,88,UDF flip,booth_pattern
+127,83,St Sebastian HSS W N Bldg,Chullickal,C,489,,377,217,150,10,UDF,67,UDF recoverable,booth_pattern
+128,84,St Sebastian HSS E N Bldg,Chullickal,B,821,,632,390,215,27,UDF,175,UDF flip,booth_pattern
+129,84,St Sebastian HSS E N Bldg,Chullickal,B,477,,367,227,125,15,UDF,102,UDF flip,booth_pattern
+130,85,St Sebastian HSS LP 2nd W,Chullickal,B,518,,399,280,99,20,UDF,181,UDF flip,booth_pattern
+131,86,St Thomas LPS E N Bldg,Chullickal,B,531,,409,242,151,17,UDF,91,UDF flip,booth_pattern
+132,86,St Thomas LPS E N Bldg,Chullickal,B,454,,350,207,129,14,UDF,78,UDF flip,booth_pattern
+133,87,St Thomas LPS N Side Main,Chullickal,C,470,,362,195,159,7,UDF,36,UDF recoverable,booth_pattern
+134,88,St Thomas LPS Mid Main,Chullickal,C,511,,393,232,149,12,UDF,83,UDF recoverable,booth_pattern
+135,88,St Thomas LPS Mid Main,Chullickal,C,574,,442,261,167,14,UDF,94,UDF recoverable,booth_pattern
+136,89,Loretto AILPS S Block W,Chullickal,A,581,,447,295,129,23,UDF,166,UDF safe,booth_pattern
+137,89,Loretto AILPS S Block W,Chullickal,A,601,,463,305,134,24,UDF,171,UDF safe,booth_pattern
+138,90,Loretto AILPS S Block E,Chullickal,C,623,Y,480,283,176,20,UDF,107,UDF recoverable,booth_pattern
+139,91,Loretto AIHS New Block 2E,Chullickal,B,540,,416,266,127,23,UDF,139,UDF flip,booth_pattern
+140,91,Loretto AIHS New Block 2E,Chullickal,B,524,,403,257,123,22,UDF,134,UDF flip,booth_pattern
+141,92,Loretto AIHS New Block 1W,Chullickal,B,544,,419,260,135,24,UDF,125,UDF flip,booth_pattern
+142,93,St Anthony LPS E S Block,Chullickal,B,515,,397,252,126,19,UDF,126,UDF flip,booth_pattern
+143,93,St Anthony LPS E S Block,Chullickal,B,623,Y,480,305,152,23,UDF,153,UDF flip,booth_pattern
+144,94,St Anthony LPS N S Block,Chullickal,C,721,,555,329,207,19,UDF,122,UDF recoverable,booth_pattern
+145,95,St Anthony LPS Mid S Bldg,Chullickal,C,784,,604,321,255,28,UDF,66,UDF recoverable,booth_pattern
+146,95,St Anthony LPS Mid S Bldg,Chullickal,C,547,,421,224,178,19,UDF,46,UDF recoverable,booth_pattern
+147,96,SVDLPS S Portion Main,Chullickal,C,623,Y,480,218,248,13,LDF,30,UDF recoverable,booth_pattern
+148,97,SVDLPS N Portion Main,Chullickal,C,482,,371,198,161,13,UDF,37,UDF recoverable,booth_pattern
+149,97,SVDLPS N Portion Main,Chullickal,C,488,,376,200,163,13,UDF,37,UDF recoverable,booth_pattern
+150,98,SVDLPS E Portion N Bldg,Chullickal,C,481,,370,202,153,15,UDF,49,UDF recoverable,booth_pattern
+151,99,SVDLPS W Portion N Bldg,Chullickal,C,503,,387,225,148,14,UDF,77,UDF recoverable,booth_pattern
+152,99,SVDLPS W Portion N Bldg,Chullickal,C,478,,368,214,140,13,UDF,74,UDF recoverable,booth_pattern
+153,100,SDPY LPS N Side Main,Chullickal,C,483,,372,193,166,12,UDF,27,UDF recoverable,booth_pattern
+154,101,SDPY HSS N Side Main,Chullickal,B,566,,436,230,189,17,UDF,41,UDF flip,booth_pattern
+155,101,SDPY HSS N Side Main,Chullickal,B,623,Y,480,254,208,19,UDF,46,UDF flip,booth_pattern
+156,102,SDPY HSS Mid Main,Chullickal,C,629,,484,182,292,9,LDF,110,LDF holds,booth_pattern
+157,103,St Louis LPS Mid Portion,Kumbalangi,A,542,,417,283,98,36,UDF,185,UDF safe,booth_pattern
+158,103,St Louis LPS Mid Portion,Kumbalangi,A,636,,490,332,115,43,UDF,217,UDF safe,booth_pattern
+159,104,St Louis HS NW New Bldg,Kumbalangi,C,542,,417,248,149,21,UDF,99,UDF recoverable,booth_pattern
+160,105,St Louis HS W New Bldg,Kumbalangi,B,623,Y,480,300,151,30,UDF,149,UDF flip,booth_pattern
+161,105,St Louis HS W New Bldg,Kumbalangi,B,544,,419,262,132,26,UDF,130,UDF flip,booth_pattern
+162,106,St Louis HS 2nd W,Kumbalangi,A,533,,410,277,105,28,UDF,172,UDF safe,booth_pattern
+163,106,St Louis HS 2nd W,Kumbalangi,A,586,,451,305,115,30,UDF,190,UDF safe,booth_pattern
+164,107,St Louis HS Mid Portion,Kumbalangi,B,572,,440,275,137,27,UDF,138,UDF flip,booth_pattern
+165,108,St Louis HS 2nd E Mundamveli,Kumbalangi,B,617,,475,324,124,26,UDF,200,UDF flip,booth_pattern
+166,108,St Louis HS 2nd E Mundamveli,Kumbalangi,B,538,,414,283,108,23,UDF,175,UDF flip,booth_pattern
+167,109,St Louis HS E Portion,Kumbalangi,B,590,,454,293,135,26,UDF,158,UDF flip,booth_pattern
+168,110,St Louis HS NE Portion,Kumbalangi,B,545,,420,265,140,15,UDF,125,UDF flip,booth_pattern
+169,110,St Louis HS NE Portion,Kumbalangi,B,721,,555,350,184,20,UDF,166,UDF flip,booth_pattern
+170,111,St Michael LPS N Bldg,Kumbalangi,A,749,,577,380,140,58,UDF,240,UDF safe,booth_pattern
+171,112,St Michael LPS S Bldg,Kumbalangi,A,826,,636,420,158,59,UDF,262,UDF safe,booth_pattern
+172,112,St Michael LPS S Bldg,Kumbalangi,A,971,,748,493,185,69,UDF,308,UDF safe,booth_pattern
+173,113,St Joseph Girls UPS NW Main,Kumbalangi,B,530,,408,238,135,35,UDF,103,UDF flip,booth_pattern
+174,114,St Joseph Girls UPS NE Main,Kumbalangi,C,468,,360,185,157,18,UDF,28,UDF recoverable,booth_pattern
+175,114,St Joseph Girls UPS NE Main,Kumbalangi,C,627,,483,248,211,24,UDF,37,UDF recoverable,booth_pattern
+176,115,St Joseph LPS S End,Chellanam,D,634,,488,256,56,176,UDF,80,UDF holds,booth_pattern
+177,116,St Joseph LPS Mid Cheriyakadavu,Chellanam,D,545,,420,215,67,138,UDF,77,UDF holds,booth_pattern
+178,116,St Joseph LPS Mid Cheriyakadavu,Chellanam,D,472,,363,186,58,119,UDF,67,UDF holds,booth_pattern
+179,117,St Joseph LPS N Portion,Chellanam,D,623,Y,480,241,72,167,UDF,74,Tight 3-way,booth_pattern
+180,118,Chinmaya Vidyalaya Kalathara,Chellanam,B,654,,504,181,210,113,LDF,29,NDA risk,booth_pattern
+181,118,Chinmaya Vidyalaya Kalathara,Chellanam,B,675,,520,187,216,116,LDF,29,NDA risk,booth_pattern
+182,119,St Anthony LPS W Main,Chellanam,D,633,,487,244,72,171,UDF,73,UDF holds,booth_pattern
+183,120,St Anthony LPS E Main,Chellanam,D,623,Y,480,259,57,165,UDF,94,UDF holds,booth_pattern
+184,120,St Anthony LPS E Main,Chellanam,D,623,Y,480,259,57,165,UDF,94,UDF holds,booth_pattern
+185,121,St Mary HS Mid Main,Chellanam,D,698,,537,285,63,190,UDF,95,UDF holds,booth_pattern
+186,122,St Mary HS E N Bldg,Chellanam,B,1008,,776,389,253,134,UDF,136,UDF recoverable,booth_pattern
+187,122,St Mary HS E N Bldg,Chellanam,B,1106,,852,427,278,147,UDF,149,UDF recoverable,booth_pattern
+188,123,St Mary HS Mid SE Bldg,Chellanam,D,623,Y,480,257,71,152,UDF,105,UDF holds,booth_pattern
+189,123,St Mary HS Mid SE Bldg,Chellanam,D,664,,511,274,76,162,UDF,112,UDF holds,booth_pattern
+190,124,Govt HSS N Tsunami,Chellanam,D,624,,480,212,55,213,NDA,1,NDA likely,booth_pattern
+191,125,Govt HSS S Tsunami Puthenthode,Chellanam,B,532,,410,239,136,36,UDF,103,UDF recoverable,booth_pattern
+192,125,Govt HSS S Tsunami Puthenthode,Chellanam,B,623,Y,480,279,159,42,UDF,120,UDF recoverable,booth_pattern
+193,126,Govt HSS Mid Central,Chellanam,D,1158,,892,436,89,367,UDF,69,NDA risk tight,booth_pattern
+194,127,Chellanam Panchayat Office,Chellanam,B,749,,577,277,205,95,UDF,72,UDF flip,booth_pattern
+195,127,Chellanam Panchayat Office,Chellanam,B,1035,,797,383,283,131,UDF,100,UDF flip,booth_pattern
+196,128,Exodus Public School W,Chellanam,D,603,,464,205,37,221,NDA,16,NDA wins,booth_pattern
+197,129,Exodus Public School E,Chellanam,D,614,,473,230,100,143,UDF,87,NDA wins,booth_pattern
+198,129,Exodus Public School E,Chellanam,D,991,,763,371,161,230,UDF,141,NDA wins,booth_pattern
+199,130,St Mary HS N Room E Bldg,Chellanam,B,1010,,778,395,238,146,UDF,157,UDF holds,booth_pattern
+200,131,St Mary HS E Portion Main,Chellanam,B,848,,653,355,246,53,UDF,109,UDF flip,booth_pattern
+201,131,St Mary HS E Portion Main,Chellanam,B,640,,493,268,185,40,UDF,83,UDF flip,booth_pattern
+202,132,St Mary LPS NW Bldg,Chellanam,D,579,,446,256,72,118,UDF,138,UDF holds,booth_pattern
+203,133,Village Office Chellanam S,Chellanam,B,776,,598,309,242,47,UDF,67,UDF recoverable,booth_pattern
+204,133,Village Office Chellanam S,Chellanam,B,573,,441,228,179,35,UDF,49,UDF recoverable,booth_pattern
+205,134,Village Office Chellanam N,Chellanam,D,547,,421,222,54,145,UDF,77,UDF holds,booth_pattern
+206,135,St George LPS S Chellanam,Chellanam,D,585,,450,248,54,149,UDF,99,UDF holds,booth_pattern
+207,135,St George LPS S Chellanam,Chellanam,D,589,,454,250,54,150,UDF,100,UDF holds,booth_pattern
+208,136,St George LPS W Mid Main,Chellanam,D,599,,461,265,65,131,UDF,134,UDF holds,booth_pattern
+209,137,St George LPS W Main,Chellanam,B,719,,554,325,176,52,UDF,149,UDF flip,booth_pattern
+210,137,St George LPS W Main,Chellanam,B,531,,409,240,130,39,UDF,110,UDF flip,booth_pattern
+211,138,Leo English Medium School,Chellanam,B,555,,427,210,189,28,UDF,21,UDF flip,booth_pattern
+212,139,St Joseph LPS W Main,Kumbalangi,C,553,,426,255,142,29,UDF,113,UDF recoverable,booth_pattern
+213,139,St Joseph LPS W Main,Kumbalangi,C,558,,430,258,143,29,UDF,115,UDF recoverable,booth_pattern
+214,140,St Joseph LPS Mid Main Kumbalangi,Kumbalangi,A,1030,,793,504,245,44,UDF,259,UDF safe,booth_pattern
+215,140,St Joseph LPS Mid Main Kumbalangi,Kumbalangi,A,834,,642,408,199,36,UDF,209,UDF safe,booth_pattern
+216,141,St Joseph LPS E Main Kumbalangi,Kumbalangi,B,566,,436,244,169,23,UDF,75,UDF recoverable,booth_pattern
+217,142,St Joseph LPS W Main Kumbalangi N,Kumbalangi,B,569,,438,239,178,21,UDF,61,UDF flip,booth_pattern
+218,142,St Joseph LPS W Main Kumbalangi N,Kumbalangi,B,717,,552,301,224,27,UDF,77,UDF flip,booth_pattern
+219,143,Village Office Kumbalangi,Kumbalangi,B,647,,498,297,175,26,UDF,122,UDF flip,booth_pattern
+220,144,VPYLPS Mid Main Illickal,Kumbalangi,B,596,,459,256,180,23,UDF,76,UDF flip,booth_pattern
+221,144,VPYLPS Mid Main Illickal,Kumbalangi,B,595,,458,255,180,23,UDF,75,UDF flip,booth_pattern
+222,145,St Peter HSS Mid Main Bldg,Kumbalangi,A,652,,502,222,262,18,LDF,40,LDF holds,booth_pattern
+223,146,St Peter HSS SW Bldg,Kumbalangi,A,631,,486,308,146,31,UDF,162,UDF safe,booth_pattern
+224,146,St Peter HSS SW Bldg,Kumbalangi,A,677,,521,331,157,34,UDF,174,UDF safe,booth_pattern
+225,147,St Peter HSS NW Bldg,Kumbalangi,A,713,,549,367,150,32,UDF,217,UDF safe,booth_pattern
+226,148,St Peter HSS Mid N Bldg,Kumbalangi,B,593,,457,269,165,23,UDF,104,UDF flip,booth_pattern
+227,148,St Peter HSS Mid N Bldg,Kumbalangi,B,633,,487,286,176,25,UDF,110,UDF flip,booth_pattern
+228,149,OLFGHS E Main Bldg,Kumbalangi,A,647,,498,323,150,25,UDF,173,UDF safe,booth_pattern
+229,150,Govt UPS Mid Main Bldg,Kumbalangi,A,620,,477,321,127,28,UDF,194,UDF safe,booth_pattern
+230,150,Govt UPS Mid Main Bldg,Kumbalangi,A,854,,658,443,175,39,UDF,268,UDF safe,booth_pattern
+231,151,Govt UPS Kumbalangi N,Kumbalangi,B,673,,518,306,183,29,UDF,123,UDF flip,booth_pattern
+232,152,Govt UPS Mid N Bldg,Kumbalangi,B,620,,477,273,175,29,UDF,98,UDF flip,booth_pattern
+233,152,Govt UPS Mid N Bldg,Kumbalangi,B,944,,727,415,267,44,UDF,148,UDF flip,booth_pattern
+234,153,St George LPS N Main Kumbalangi,Kumbalangi,A,555,,427,253,147,27,UDF,106,UDF safe,booth_pattern
+235,154,St George LPS S Main Kumbalangi,Kumbalangi,C,558,,430,245,162,23,UDF,83,UDF recoverable,booth_pattern
+236,154,St George LPS S Main Kumbalangi,Kumbalangi,C,515,,397,226,150,21,UDF,76,UDF recoverable,booth_pattern
+237,155,St George UPS NW Bldg,Kumbalangi,A,542,,417,260,132,25,UDF,128,UDF safe,booth_pattern
+238,156,St George LPS Annex Mid,Kumbalangi,A,1081,,832,522,259,51,UDF,263,UDF safe,booth_pattern
+239,156,St George LPS Annex Mid,Kumbalangi,A,987,,760,477,237,46,UDF,240,UDF safe,booth_pattern
+240,157,St George UPS SW Bldg,Kumbalangi,A,554,,427,285,118,24,UDF,167,UDF safe,booth_pattern

@@ -1,0 +1,248 @@
+{
+  "constituency_no": 80,
+  "constituency": "Kochi",
+  "district": "Ernakulam",
+  "total_booths": 157,
+  "total_voters_2026": 151376,
+  "target_to_win": 55000,
+  "historical_results": {
+    "2011": {
+      "UDF": 56352,
+      "LDF": 39849,
+      "NDA_BJP": 5480,
+      "T20_Others": 3911,
+      "winner": "UDF",
+      "margin": 16863
+    },
+    "2016": {
+      "UDF": 46881,
+      "LDF": 47967,
+      "NDA_BJP": 15212,
+      "T20_Others": 12054,
+      "winner": "LDF",
+      "margin": 1086
+    },
+    "2019_parliament": {
+      "UDF": 71270,
+      "LDF": 41957,
+      "NDA_BJP": 14711,
+      "T20_Others": 0,
+      "winner": "UDF",
+      "margin": 29313
+    },
+    "2021": {
+      "UDF": 39865,
+      "LDF": 53973,
+      "NDA_BJP": 10370,
+      "T20_Others": 19536,
+      "winner": "LDF",
+      "margin": 14108
+    },
+    "2024_parliament": {
+      "UDF": 68365,
+      "LDF": 28079,
+      "NDA_BJP": 15072,
+      "T20_Others": 5993,
+      "winner": "UDF",
+      "margin": 40286
+    }
+  },
+  "game_changer_2026": {
+    "T20_joined_NDA": true,
+    "T20_2021_votes": 19536,
+    "T20_voter_split_2026": {
+      "loyal_T20_to_NDA": {
+        "pct": 65,
+        "votes": 12700,
+        "reason": "T20 brand loyalty, Kitex community, fishermen network"
+      },
+      "anti_LDF_to_UDF": {
+        "pct": 25,
+        "votes": 4900,
+        "reason": "Will not vote BJP/RSS, prefer Congress-IUML"
+      },
+      "undecided_floating": {
+        "pct": 10,
+        "votes": 1900,
+        "reason": "Final week messaging decides"
+      }
+    }
+  },
+  "vote_block_projections_2026": {
+    "UDF": {
+      "min": 44000,
+      "max": 47000,
+      "base_2021": 39865,
+      "note": "Genuine base + ~25% T20 converts"
+    },
+    "LDF": {
+      "min": 30000,
+      "max": 33000,
+      "base_2021": 53973,
+      "note": "2024 was low (28K); recovers but BDJS hurts Ezhava base"
+    },
+    "NDA": {
+      "min": 27000,
+      "max": 30000,
+      "base_BJP_2021": 10370,
+      "T20_addition": 12700,
+      "BDJS_from_LDF": 4000,
+      "note": "BJP+T20+BDJS combined; ceiling ~30K, cannot win"
+    }
+  },
+  "scenarios": {
+    "A_T20_full_strength": {
+      "UDF": 55000,
+      "LDF": 32000,
+      "NDA": 29000,
+      "winner": "UDF",
+      "margin": 23000
+    },
+    "B_T20_moderate": {
+      "UDF": 57000,
+      "LDF": 32000,
+      "NDA": 25000,
+      "winner": "UDF",
+      "margin": 25000
+    }
+  },
+  "booth_categories": {
+    "A_UDF_stronghold_2021": {
+      "count": 21,
+      "UDF_2021": 6532,
+      "LDF_2021": 5624,
+      "T20_2021": 2881,
+      "NDA_threat": "Low"
+    },
+    "B_close_LDF_NDA_weak": {
+      "count": 58,
+      "UDF_2021": 13649,
+      "LDF_2021": 16201,
+      "T20_2021": 6216,
+      "NDA_threat": "Low-Medium",
+      "note": "Primary UDF vs LDF battleground, UDF leads in 2024 MP"
+    },
+    "C_recoverable_gap_101_300": {
+      "count": 54,
+      "UDF_2021": 13687,
+      "LDF_2021": 23477,
+      "T20_2021": 3753,
+      "NDA_threat": "Medium",
+      "note": "2024 MP shows complete reversal: UDF 24807 vs LDF 11173"
+    },
+    "D_former_T20_now_NDA": {
+      "count": 16,
+      "UDF_2021": 3145,
+      "LDF_2021": 3493,
+      "T20_2021": 7406,
+      "NDA_est_2026": 9500,
+      "UDF_est_2026": 5800,
+      "note": "3 booths (126,128,129) likely NDA wins; UDF holds 13"
+    },
+    "E_BJP_strongholds": {
+      "count": 12,
+      "UDF_2021": 1647,
+      "LDF_2021": 2041,
+      "BJP_2021": 4446,
+      "NDA_2024": 5083,
+      "note": "Mattancherry BJP territory, accept NDA dominance"
+    },
+    "F_LDF_strongholds": {
+      "count": 5,
+      "UDF_2021": 1205,
+      "LDF_2021": 3137,
+      "note": "LDF leads >300, skip"
+    }
+  },
+  "zone_analysis": {
+    "Fort_Kochi": {
+      "booths": "1-55",
+      "key_issues": "BJP in TD area, Muslim belt",
+      "UDF_strengths": "Santa Cruz, Veli/Nazareth, 21-26",
+      "priority": "6,7,17,21,22,23,24,25,26,32"
+    },
+    "Chullickal_Nazareth": {
+      "booths": "66-95",
+      "key_issues": "Latin Catholic belt, T20 inroads 2021",
+      "UDF_strengths": "Loretto, Chaithanya, OLCGHS",
+      "priority": "67,70,72,74,75,78,79,80,85,91,92",
+      "note": "BEST UDF ZONE"
+    },
+    "Kumbalangi_Panchayat": {
+      "booths": "103-114,140-157",
+      "key_issues": "Fishing community, T20 voters",
+      "UDF_strengths": "140-157 UDF strongholds",
+      "priority": "141,143,144,145,148,151,153"
+    },
+    "Chellanam_Panchayat": {
+      "booths": "115-139",
+      "key_issues": "Sea erosion, FIDF, T20 home ground now NDA",
+      "NDA_likely_wins": "126,128,129",
+      "UDF_contest": "115,116,120,121,123,124,130,132,134,135,136"
+    }
+  },
+  "community_breakdown": {
+    "Latin_Christians_Catholics": {
+      "pct": 30,
+      "lean": "UDF strong",
+      "issues": "Fishermen welfare, FIDF dues, coastal housing"
+    },
+    "Muslims_IUML_base": {
+      "pct": 22,
+      "lean": "UDF must consolidate",
+      "issues": "IUML coordination, block SDPI"
+    },
+    "Hindu_OBC_Ezhava": {
+      "pct": 25,
+      "lean": "Mixed/LDF lean",
+      "issues": "Anti-incumbency, roads, waste, development"
+    },
+    "Gujarati_Marwari": {
+      "pct": 5,
+      "lean": "BJP",
+      "issues": "Only UDF can beat LDF here"
+    },
+    "Fishermen_Latin_Hindu": {
+      "pct": 10,
+      "lean": "T20->NDA in 2026",
+      "issues": "FIDF dues, coastal housing, Matsyafed reforms"
+    },
+    "Urban_Middle_Class": {
+      "pct": 8,
+      "lean": "Anti-incumbent swing",
+      "issues": "Brahmapuram fire, Metro delays, smart city"
+    }
+  },
+  "critical_risks": [
+    "SDPI contesting Mattancherry = fatal Muslim vote split",
+    "UDF dissident fielding independently = repeat of 2016",
+    "Low turnout in Catholic belt while NDA mobilises fishermen",
+    "T20 voters in Chellanam going fully NDA in 16 booths"
+  ],
+  "ldf_weakness_factors": {
+    "anti_incumbency": "10 years in power (2 terms since 2016)",
+    "brahmapuram_fire": "Waste management crisis, environmental damage",
+    "chellanam_sea_erosion": "Unresolved coastal erosion despite promises",
+    "FIDF_dues": "Fishermen welfare fund unpaid",
+    "BDJS_defection": "BDJS joining NDA pulls Ezhava votes from CPM",
+    "estimated_LDF_2026": "30000-33000 (down from 53973 in 2021)"
+  },
+  "swing_booths_ldf_to_udf": {
+    "total_booths": 107,
+    "description": "LDF won in 2021 but UDF-P leads in 2024 Parliament data",
+    "total_LDF_2021_votes_in_these": 42000,
+    "total_UDF_2024_votes_in_these": 55000,
+    "note": "Massive anti-incumbency wave visible in 2024 MP data"
+  },
+  "sir_data": {
+    "total_voters": 151376,
+    "male": 105911,
+    "female": 68698,
+    "third_gender": 131,
+    "parts": 240,
+    "source": "ECI SIR 2026 (OCR extracted from PDFs)",
+    "note": "OCR-extracted from 240 PDFs. 212 clean + 28 estimated at avg (630/part). Actual SIR data may differ by +/- 3%.",
+    "clean_parts": 212,
+    "estimated_parts": 28
+  }
+}

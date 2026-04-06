@@ -1,0 +1,49 @@
+{
+  "constituency_no": 80,
+  "constituency": "Kochi Assembly Constituency - Ernakulam District",
+  "district": "Ernakulam",
+  "local_body_swings": {
+    "Chellanam": {
+      "LDF": -11.44,
+      "UDF": 49.19,
+      "NDA": 0.0,
+      "weight": 11831
+    },
+    "Kumbalanghy": {
+      "LDF": -16.67,
+      "UDF": 8.23,
+      "NDA": 0.0,
+      "weight": 9284
+    },
+    "Mulavukadu": {
+      "LDF": 11.67,
+      "UDF": -20.39,
+      "NDA": 4.95,
+      "weight": 6611
+    },
+    "Palluruthy  ": {
+      "LDF": -26.41,
+      "UDF": 43.22,
+      "NDA": 0.0,
+      "weight": 31174
+    },
+    "Kochi": {
+      "LDF": -15.17,
+      "UDF": 22.73,
+      "NDA": -0.36,
+      "weight": 130426
+    }
+  },
+  "weighted_constituency_swing": {
+    "LDF": -15.92,
+    "UDF": 25.54,
+    "NDA": -0.08
+  },
+  "ward_count_2025": 147,
+  "ward_winners_2025": {
+    "LDF": 45,
+    "UDF": 95,
+    "NDA": 7
+  },
+  "total_voters_2025": 189326
+}

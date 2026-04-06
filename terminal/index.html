@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GreyCell :: Sentinel v4.2.1</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  background: #000;
+  color: #ccc;
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 12px;
+  height: 100vh;
+  overflow: hidden;
+  cursor: default;
+  -webkit-font-smoothing: none;
+}
+
+/* Scanline effect */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.08) 2px,
+    rgba(0,0,0,0.08) 4px
+  );
+  z-index: 1000;
+}
+
+#header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #000;
+  border-bottom: 1px solid #333;
+  padding: 8px 16px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+#header .left { color: #666; }
+#header .left span { color: #999; }
+#header .right { color: #555; }
+#header .right .live { color: #fff; }
+
+#statusbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #000;
+  border-top: 1px solid #333;
+  padding: 6px 16px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #555;
+}
+#statusbar .active { color: #999; }
+
+#terminal {
+  position: absolute;
+  top: 32px;
+  bottom: 28px;
+  left: 0; right: 0;
+  overflow-y: auto;
+  padding: 8px 16px;
+  scroll-behavior: auto;
+}
+#terminal::-webkit-scrollbar { width: 4px; }
+#terminal::-webkit-scrollbar-track { background: #000; }
+#terminal::-webkit-scrollbar-thumb { background: #222; }
+
+.line {
+  white-space: pre;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadein 0.1s forwards;
+}
+@keyframes fadein {
+  to { opacity: 1; }
+}
+
+/* Timestamp */
+.ts { color: #444; }
+
+/* Data values */
+.col-header { color: #666; }
+.val-pos { color: #ddd; }
+.val-neg { color: #888; }
+.val-high { color: #fff; }
+.val-low { color: #555; }
+
+/* System messages */
+.sys { color: #555; font-style: italic; }
+.sys-warn { color: #999; }
+.sys-search { color: #777; animation: blink 1.2s infinite; }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.separator { color: #222; }
+.src-tag { color: #666; }
+.pipe-id { color: #444; }
+.metric { color: #777; }
+
+/* Pause overlay */
+#pauseOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: #000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+#pauseOverlay .msg {
+  font-size: 13px;
+  color: #666;
+  animation: blink 1.8s infinite;
+}
+#pauseOverlay .sub {
+  font-size: 10px;
+  color: #333;
+}
+#pauseOverlay .dots {
+  font-size: 14px;
+  color: #444;
+  letter-spacing: 4px;
+}
+#pauseOverlay .spinner {
+  color: #555;
+  font-size: 11px;
+}
+
+/* Cursor blink at end */
+#cursor {
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: #666;
+  animation: cursorblink 0.8s infinite;
+  vertical-align: text-bottom;
+}
+@keyframes cursorblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div class="left">GREYCELL <span>SENTINEL v4.2.1</span> :: PIPE AGGREGATOR :: NODE <span>kochi-80</span></div>
+  <div class="right"><span class="live" id="headerClock">--:--:--</span> IST &nbsp; | &nbsp; PID <span id="pidDisplay">--</span> &nbsp; | &nbsp; STREAMS: <span id="streamCount">0</span>/10</div>
+</div>
+
+<div id="terminal"></div>
+
+<div id="statusbar">
+  <div>RECV: <span class="active" id="statRecv">0</span> &nbsp; PROC: <span class="active" id="statProc">0</span> &nbsp; DROP: <span id="statDrop">0</span> &nbsp; ERR: <span id="statErr">0</span></div>
+  <div>BUF: <span id="statBuf">0</span>/4096 &nbsp; LAT: <span class="active" id="statLat">--</span>ms &nbsp; UPTIME: <span class="active" id="statUp">00:00:00</span></div>
+</div>
+
+<div id="pauseOverlay">
+  <div class="msg" id="pauseMsg">π-SENTINEL :: SCANNING FOR UPSTREAM NETWORK</div>
+  <div class="dots" id="pauseDots">. . . . .</div>
+  <div class="sub" id="pauseSub">reconnecting to pipe cluster 10.42.8.x</div>
+  <div class="spinner" id="pauseSpinner"></div>
+</div>
+
+<script>
+// ===== CONFIG =====
+const DATASETS = [
+  'dataset_1.csv', 'dataset_2.csv', 'dataset_3.csv',
+  'dataset_4.csv', 'dataset_5.csv'
+];
+const LINE_DELAY_MIN = 30;
+const LINE_DELAY_MAX = 180;
+const PAUSE_CHANCE = 0.003;       // ~0.3% chance per line to trigger pause
+const PAUSE_MIN_MS = 30000;       // 30s minimum pause
+const PAUSE_MAX_MS = 90000;       // 90s max pause
+const MAX_LINES = 800;
+const BATCH_SIZE_MIN = 1;
+const BATCH_SIZE_MAX = 6;
+
+// ===== STATE =====
+let allData = [];
+let dataIndex = 0;
+let totalRecv = 0;
+let totalProc = 0;
+let totalDrop = 0;
+let totalErr = 0;
+let startTime = Date.now();
+let isPaused = false;
+let streamCount = 0;
+
+const terminal = document.getElementById('terminal');
+const overlay = document.getElementById('pauseOverlay');
+
+// ===== LOAD DATA =====
+async function loadAllData() {
+  addSysLine('SENTINEL INIT :: loading pipe manifests...');
+  await sleep(400);
+
+  for (const fname of DATASETS) {
+    addSysLine(`  MOUNT /dev/pipe/${fname.replace('.csv','')} ... `);
+    try {
+      const resp = await fetch(`/dataset/${fname}`);
+      const text = await resp.text();
+      const lines = text.trim().split('\n');
+      const headers = lines[0].split(',');
+      const rows = lines.slice(1).map(l => ({
+        headers,
+        values: l.split(','),
+        source: fname
+      }));
+      allData.push(...rows);
+      streamCount++;
+      document.getElementById('streamCount').textContent = streamCount;
+      addSysLine(`    OK :: ${headers.length} channels, ${rows.length.toLocaleString()} frames loaded`);
+    } catch(e) {
+      addSysLine(`    FAIL :: ${e.message}`);
+      totalErr++;
+    }
+    await sleep(200 + Math.random() * 300);
+  }
+
+  // Shuffle for randomness
+  for (let i = allData.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allData[i], allData[j]] = [allData[j], allData[i]];
+  }
+
+  addSysLine('');
+  addSysLine(`MANIFEST READY :: ${allData.length.toLocaleString()} total frames across ${streamCount} pipes`);
+  addSysLine(`SENTINEL LIVE :: beginning continuous aggregation`);
+  addLine('─'.repeat(90), 'separator');
+  await sleep(600);
+}
+
+// ===== RENDERING =====
+function getTimestamp() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, '0');
+  const m = String(now.getMinutes()).padStart(2, '0');
+  const s = String(now.getSeconds()).padStart(2, '0');
+  const ms = String(now.getMilliseconds()).padStart(3, '0');
+  return `${h}:${m}:${s}.${ms}`;
+}
+
+function addLine(content, cls = '') {
+  const div = document.createElement('div');
+  div.className = `line ${cls}`;
+  div.innerHTML = content;
+  terminal.appendChild(div);
+
+  // Trim old lines
+  while (terminal.children.length > MAX_LINES) {
+    terminal.removeChild(terminal.firstChild);
+  }
+
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function addSysLine(msg) {
+  const ts = getTimestamp();
+  addLine(`<span class="ts">[${ts}]</span> <span class="sys">${msg}</span>`);
+}
+
+function formatValue(v) {
+  const num = parseFloat(v);
+  if (isNaN(num)) return `<span class="val-pos">${v}</span>`;
+  const abs = Math.abs(num);
+  if (abs > 50) return `<span class="val-high">${v.trim()}</span>`;
+  if (abs < 0.5) return `<span class="val-low">${v.trim()}</span>`;
+  if (num < 0) return `<span class="val-neg">${v.trim()}</span>`;
+  return `<span class="val-pos">${v.trim()}</span>`;
+}
+
+function renderDataRow(row) {
+  const ts = getTimestamp();
+  const src = row.source.replace('.csv', '').replace('dataset_', 'pipe_');
+  const pipeId = String(Math.floor(Math.random() * 9999)).padStart(4, '0');
+  const seqNo = String(totalRecv).padStart(8, '0');
+
+  // Randomly choose display format
+  const format = Math.random();
+
+  if (format < 0.4) {
+    // Format 1: Full row with headers
+    const pairs = row.headers.map((h, i) =>
+      `<span class="metric">${h}</span>=` + formatValue(row.values[i] || '0')
+    ).join('  ');
+    addLine(`<span class="ts">[${ts}]</span> <span class="src-tag">${src}</span> <span class="pipe-id">#${seqNo}</span>  ${pairs}`);
+
+  } else if (format < 0.7) {
+    // Format 2: Compact CSV dump
+    const vals = row.values.map(v => formatValue(v)).join('<span class="separator">,</span>');
+    addLine(`<span class="ts">[${ts}]</span> <span class="pipe-id">RX:${pipeId}</span> <span class="src-tag">[${src}]</span> ${vals}`);
+
+  } else if (format < 0.85) {
+    // Format 3: Individual channel readings
+    const idx = Math.floor(Math.random() * row.headers.length);
+    const h = row.headers[idx];
+    const v = row.values[idx];
+    const num = parseFloat(v);
+    const bar = !isNaN(num) ? generateBar(num) : '';
+    addLine(`<span class="ts">[${ts}]</span> <span class="src-tag">${src}</span>.<span class="metric">${h}</span>  ${formatValue(v)}  ${bar}`);
+
+  } else {
+    // Format 4: Hex-style dump
+    const hex = row.values.slice(0, 4).map(v => {
+      const n = parseFloat(v);
+      if (isNaN(n)) return '00000000';
+      const buf = new ArrayBuffer(4);
+      new Float32Array(buf)[0] = n;
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }).join(' ');
+    addLine(`<span class="ts">[${ts}]</span> <span class="pipe-id">0x${pipeId}</span>  ${hex}  <span class="src-tag">${src}</span>  <span class="separator">|</span> ${row.values.length} ch`);
+  }
+
+  totalRecv++;
+  totalProc++;
+}
+
+function generateBar(num) {
+  const normalized = Math.max(-1, Math.min(1, num / 50));
+  const width = 20;
+  const center = Math.floor(width / 2);
+  let bar = '';
+  for (let i = 0; i < width; i++) {
+    const pos = (i - center) / center;
+    if (normalized >= 0 && pos >= 0 && pos <= normalized) bar += '█';
+    else if (normalized < 0 && pos <= 0 && pos >= normalized) bar += '█';
+    else bar += '·';
+  }
+  return `<span class="separator">[${bar}]</span>`;
+}
+
+// ===== PAUSE / NETWORK SEARCH =====
+const PAUSE_MESSAGES = [
+  { msg: 'π-SENTINEL :: SCANNING FOR UPSTREAM NETWORK', sub: 'reconnecting to pipe cluster 10.42.8.x' },
+  { msg: 'PIPE TIMEOUT :: WAITING FOR HANDSHAKE', sub: 'node kochi-80 :: retry 1/∞' },
+  { msg: 'UPSTREAM STALL :: BUFFER FLUSH IN PROGRESS', sub: 'flushing 4096 frames to /dev/null' },
+  { msg: 'NETWORK PROBE :: SEARCHING AVAILABLE RELAYS', sub: 'scanning 172.16.0.0/12 subnet' },
+  { msg: 'SYNC LOST :: REALIGNING TEMPORAL INDEX', sub: 'drift detected: +2.4ms :: recalibrating' },
+  { msg: 'SENTINEL PAUSE :: RATE LIMIT COOLDOWN', sub: 'upstream throttle active :: waiting for window' },
+  { msg: 'PIPE CLUSTER REBALANCE :: STANDBY', sub: 'migrating shards from node-3 to node-7' },
+  { msg: 'DNS PROBE :: RESOLVING FEED ENDPOINTS', sub: 'cache miss on pipe.greycell.internal' },
+];
+
+async function triggerPause() {
+  if (isPaused) return;
+  isPaused = true;
+
+  const pauseData = PAUSE_MESSAGES[Math.floor(Math.random() * PAUSE_MESSAGES.length)];
+  const duration = PAUSE_MIN_MS + Math.random() * (PAUSE_MAX_MS - PAUSE_MIN_MS);
+
+  addSysLine('');
+  addLine(`<span class="ts">[${getTimestamp()}]</span> <span class="sys-warn">WARN :: ${pauseData.msg}</span>`);
+
+  document.getElementById('pauseMsg').textContent = pauseData.msg;
+  document.getElementById('pauseSub').textContent = pauseData.sub;
+  overlay.style.display = 'flex';
+
+  // Animate dots and spinner during pause
+  const spinChars = ['|', '/', '—', '\\'];
+  let dotCount = 0;
+  let spinIdx = 0;
+  const pauseInterval = setInterval(() => {
+    dotCount = (dotCount + 1) % 20;
+    spinIdx = (spinIdx + 1) % spinChars.length;
+    document.getElementById('pauseDots').textContent = '. '.repeat(dotCount + 1);
+    document.getElementById('pauseSpinner').textContent =
+      `[${spinChars[spinIdx]}] elapsed: ${Math.floor((Date.now() - pauseStart) / 1000)}s`;
+  }, 300);
+
+  const pauseStart = Date.now();
+  await sleep(duration);
+
+  clearInterval(pauseInterval);
+  overlay.style.display = 'none';
+
+  addLine(`<span class="ts">[${getTimestamp()}]</span> <span class="sys-warn">OK :: connection re-established (${Math.floor(duration/1000)}s downtime)</span>`);
+  addLine('─'.repeat(90), 'separator');
+  addSysLine('resuming aggregation...');
+  addSysLine('');
+
+  isPaused = false;
+}
+
+// ===== STATUS BAR =====
+function updateStatus() {
+  document.getElementById('statRecv').textContent = totalRecv.toLocaleString();
+  document.getElementById('statProc').textContent = totalProc.toLocaleString();
+  document.getElementById('statDrop').textContent = totalDrop.toLocaleString();
+  document.getElementById('statErr').textContent = totalErr.toLocaleString();
+  document.getElementById('statBuf').textContent = Math.floor(Math.random() * 200);
+  document.getElementById('statLat').textContent = Math.floor(20 + Math.random() * 80);
+
+  const elapsed = Math.floor((Date.now() - startTime) / 1000);
+  const h = String(Math.floor(elapsed / 3600)).padStart(2, '0');
+  const m = String(Math.floor((elapsed % 3600) / 60)).padStart(2, '0');
+  const s = String(elapsed % 60).padStart(2, '0');
+  document.getElementById('statUp').textContent = `${h}:${m}:${s}`;
+}
+
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, '0');
+  const m = String(now.getMinutes()).padStart(2, '0');
+  const s = String(now.getSeconds()).padStart(2, '0');
+  document.getElementById('headerClock').textContent = `${h}:${m}:${s}`;
+}
+
+// ===== MAIN LOOP =====
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+async function mainLoop() {
+  document.getElementById('pidDisplay').textContent = Math.floor(10000 + Math.random() * 89999);
+
+  await loadAllData();
+
+  while (true) {
+    if (isPaused) {
+      await sleep(500);
+      continue;
+    }
+
+    // Random chance to pause
+    if (Math.random() < PAUSE_CHANCE) {
+      await triggerPause();
+      continue;
+    }
+
+    // Batch of lines
+    const batchSize = BATCH_SIZE_MIN + Math.floor(Math.random() * (BATCH_SIZE_MAX - BATCH_SIZE_MIN));
+    for (let i = 0; i < batchSize; i++) {
+      if (dataIndex >= allData.length) {
+        dataIndex = 0;
+        totalDrop += Math.floor(Math.random() * 3);
+        addSysLine('BUFFER CYCLE :: rewinding frame index');
+      }
+      renderDataRow(allData[dataIndex]);
+      dataIndex++;
+    }
+
+    // Occasionally insert system messages
+    if (Math.random() < 0.02) {
+      const sysMsgs = [
+        'HEARTBEAT OK :: all pipes nominal',
+        `THROUGHPUT :: ${Math.floor(100 + Math.random() * 400)} frames/s`,
+        `GC :: freed ${Math.floor(Math.random() * 64)}MB from aggregation buffer`,
+        `CHECKSUM VERIFY :: block ${Math.floor(Math.random() * 9999)} :: PASS`,
+        `SENTIMENT VECTOR RECALC :: 37 dimensions :: ${(Math.random() * 2 - 1).toFixed(6)}`,
+        `PIPE HEALTH :: ${streamCount}/${streamCount} streams active`,
+        `FRAME DEDUP :: ${Math.floor(Math.random() * 20)} collisions resolved`,
+        `INDEX SYNC :: temporal offset +${(Math.random() * 5).toFixed(1)}ms`,
+      ];
+      addSysLine(sysMsgs[Math.floor(Math.random() * sysMsgs.length)]);
+    }
+
+    updateStatus();
+    const delay = LINE_DELAY_MIN + Math.random() * (LINE_DELAY_MAX - LINE_DELAY_MIN);
+    await sleep(delay);
+  }
+}
+
+setInterval(updateClock, 1000);
+setInterval(updateStatus, 2000);
+updateClock();
+
+mainLoop();
+</script>
+</body>
+</html>

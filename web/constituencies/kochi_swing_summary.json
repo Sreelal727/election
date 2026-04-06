@@ -1,0 +1,34 @@
+{
+  "constituency": "kochi",
+  "booths_analyzed": 157,
+  "swing_breakdown": {
+    "Anti-Incumbency (LDF erosion)": 29314,
+    "T20 → NDA (loyal base)": 12404,
+    "T20 → UDF (anti-BJP)": 4770,
+    "T20 → Floating": 1911,
+    "BDJS Defection (LDF→NDA)": 1196,
+    "Genuine UDF Growth": 23676,
+    "Turnout Differential": 15401
+  },
+  "total_swing_pool": 64996,
+  "volatility_distribution": {
+    "HIGH": 89,
+    "LOW": 2,
+    "MODERATE": 20,
+    "EXTREME": 46
+  },
+  "swing_classification": {
+    "UDF SWING": 38,
+    "SLIGHT UDF SWING": 13,
+    "STRONG UDF SWING": 105,
+    "BOTH DECLINE (NDA GAINS)": 1
+  },
+  "methodology": {
+    "anti_incumbency": "LDF_2021 - LDF_2024 per booth (direct erosion)",
+    "t20_redistribution": "T20_2021 * split (65% NDA, 25% UDF, 10% float)",
+    "bdjs_defection": "NDA_2024 - (NDA_2021 + T20_to_NDA) = excess NDA = BDJS effect",
+    "genuine_udf_growth": "UDF_2024 - (UDF_2021 + T20_to_UDF) = new UDF support",
+    "turnout_differential": "abs(Total_2024 - Total_2021) = mobilization change",
+    "total_swing": "Sum of all swing types, capped at booth total (avoid double count)"
+  }
+}

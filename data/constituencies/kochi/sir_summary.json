@@ -1,0 +1,12 @@
+{
+  "constituency": "kochi",
+  "total_voters": 174697,
+  "male": 105911,
+  "female": 68698,
+  "third_gender": 131,
+  "parts_total": 240,
+  "parts_extracted": 240,
+  "parts_failed": 0,
+  "avg_per_part": 727,
+  "source": "ECI SIR Electoral Roll 2026 (OCR extracted)"
+}

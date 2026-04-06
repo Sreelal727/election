@@ -1,0 +1,73 @@
+{
+  "constituency_no": 77,
+  "constituency": "Kalamassery",
+  "district": "Ernakulam",
+  "candidates": {
+    "LDF": "P. Rajeeve (CPM)",
+    "UDF": "V. E. Abdul Gafoor (IUML)",
+    "NDA": "M. P. Binu (BDJS)"
+  },
+  "layers": {
+    "base_2021": {
+      "LDF": 49.98,
+      "UDF": 40.04,
+      "NDA": 7.24
+    },
+    "district_swing": {
+      "LDF": -15.81,
+      "UDF": 23.9,
+      "NDA": 0.13
+    },
+    "constituency_swing": {
+      "LDF": -1.87,
+      "UDF": 13.49,
+      "NDA": -2.63
+    },
+    "booth_projection": null,
+    "sentiment": null,
+    "has_booth_data": false
+  },
+  "adjusted_vote_shares": {
+    "LDF": 45.02,
+    "UDF": 46.06,
+    "NDA": 6.28
+  },
+  "vote_estimates": {
+    "LDF": {
+      "vote_share_pct": 45.02,
+      "estimated_votes": 69491
+    },
+    "UDF": {
+      "vote_share_pct": 46.06,
+      "estimated_votes": 71097
+    },
+    "NDA": {
+      "vote_share_pct": 6.28,
+      "estimated_votes": 9687
+    }
+  },
+  "total_voters": 154345,
+  "estimated_margin": 1606,
+  "estimated_winner": "UDF",
+  "volatility": 7.1,
+  "win_probabilities": {
+    "LDF": 45.9,
+    "UDF": 54.1,
+    "NDA": 0.0
+  },
+  "category": "Toss-up UDF",
+  "avg_simulated_margin": 8.08,
+  "comparison_with_main": {
+    "main_probs": {
+      "LDF": 16.79,
+      "UDF": 83.21,
+      "NDA": 0.0
+    },
+    "main_category": "Likely UDF",
+    "delta": {
+      "LDF": 29.11,
+      "UDF": -29.11,
+      "NDA": 0.0
+    }
+  }
+}

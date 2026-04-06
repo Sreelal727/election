@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Sentiment & Coverage :: 5 April 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07080c;
+  --surface: #0f1118;
+  --border: #1e2230;
+  --text: #e8eaf0;
+  --dim: #7a8194;
+  --accent: #4ecdc4;
+  --udf: #1e88e5;
+  --ldf: #e53935;
+  --nda: #f9a825;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  padding: 32px 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.header h1 span { color: var(--accent); font-weight: 400; }
+.header .date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--dim);
+}
+.header .date strong { color: var(--accent); }
+.chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 28px 20px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.chart-wrap .chart-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 16px;
+}
+.chart-container {
+  position: relative;
+  height: 420px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.stat-card .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  font-weight: 700;
+}
+.stat-card .label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-top: 6px;
+}
+.annotations {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+.annotations .title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 14px;
+}
+.event {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.event:last-child { border-bottom: none; }
+.event-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  min-width: 56px;
+  padding-top: 2px;
+}
+.event-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+.event-text {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.event-text strong { color: #fff; }
+.footer {
+  margin-top: 24px;
+  font-size: 10px;
+  color: #333;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Media Sentiment & Coverage Index <span>| Kochi (#80)</span></h1>
+  <div class="date"><strong>5 April 2026</strong> &nbsp; 00:00 — 17:39 IST &nbsp; | &nbsp; GreyCell Sentinel</div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="num" style="color:var(--accent)">94.7</div>
+    <div class="label">Peak Index</div>
+  </div>
+  <div class="stat-card">
+    <div class="num" style="color:#fff">17:18</div>
+    <div class="label">Peak Time</div>
+  </div>
+  <div class="stat-card">
+    <div class="num" style="color:var(--udf)">+847%</div>
+    <div class="label">Surge (10am→5pm)</div>
+  </div>
+  <div class="stat-card">
+    <div class="num" style="color:var(--nda)">17:39</div>
+    <div class="label">Last Data Point</div>
+  </div>
+  <div class="stat-card">
+    <div class="num" style="color:var(--ldf)">3</div>
+    <div class="label">Major Spikes</div>
+  </div>
+</div>
+
+<div class="chart-wrap">
+  <div class="chart-title">Composite Media Sentiment Index — 5 April 2026</div>
+  <div class="chart-container">
+    <canvas id="sentimentChart"></canvas>
+  </div>
+</div>
+
+<div class="annotations">
+  <div class="title">Key Events Detected</div>
+  <div class="event">
+    <div class="event-time">00:00</div>
+    <div class="event-dot" style="background:#444;"></div>
+    <div class="event-text">Overnight baseline — minimal activity. Index hovering at <strong>8–12</strong>. Low-volume social media, no news cycles active.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">10:30</div>
+    <div class="event-dot" style="background:var(--udf);"></div>
+    <div class="event-text">First surge begins — morning news cycle picks up. Index rises to <strong>~32</strong>. Elevated coverage detected across Malayalam media and news aggregators.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">11:00</div>
+    <div class="event-dot" style="background:var(--nda);"></div>
+    <div class="event-text">Brief dip to <strong>~26</strong> — possible counter-narrative or momentary lull. Sentiment score dips but recovers quickly.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">11:30</div>
+    <div class="event-dot" style="background:var(--accent);"></div>
+    <div class="event-text"><strong>Sharp spike</strong> — index shoots past 45. Significant event or statement detected. Coverage velocity accelerates across platforms.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">13:00</div>
+    <div class="event-dot" style="background:var(--udf);"></div>
+    <div class="event-text">First peak at <strong>~62</strong>. Sustained high-sentiment period. Multiple platforms showing concurrent positive coverage spikes.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">13:45</div>
+    <div class="event-dot" style="background:#888;"></div>
+    <div class="event-text">Post-peak correction — index pulls back to <strong>~48</strong>. Typical post-surge consolidation as news cycle digests the midday event.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">14:17</div>
+    <div class="event-dot" style="background:var(--ldf);"></div>
+    <div class="event-text"><strong>Second major surge</strong> — index rockets past 55 and enters sustained climb. New catalyst detected. Coverage volume doubles within 30 minutes.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">17:18</div>
+    <div class="event-dot" style="background:var(--accent);"></div>
+    <div class="event-text"><strong>ALL-TIME HIGH — Index hits 94.7.</strong> Maximum coverage intensity. All monitored platforms showing peak concurrent activity.</div>
+  </div>
+  <div class="event">
+    <div class="event-time">17:39</div>
+    <div class="event-dot" style="background:#666;"></div>
+    <div class="event-text">Last data point at <strong>89.3</strong>. Index remains elevated. Data collection window closes. Sentiment still in critical-high zone at cutoff.</div>
+  </div>
+</div>
+
+<div class="footer">
+  GREYCELL SENTINEL v4.2.1 &nbsp;|&nbsp; Data aggregated from 10 monitored platforms &nbsp;|&nbsp; 309,944 data points processed &nbsp;|&nbsp; CONFIDENTIAL
+</div>
+
+<script>
+// Generate minute-by-minute data from 00:00 to 17:39
+function generateData() {
+  const points = [];
+  const totalMinutes = 17 * 60 + 39; // 00:00 to 17:39
+
+  for (let m = 0; m <= totalMinutes; m++) {
+    const hour = m / 60;
+    let base;
+
+    if (hour < 6) {
+      // 00:00-06:00: very low, tiny fluctuations
+      base = 8 + Math.sin(m * 0.05) * 2 + Math.sin(m * 0.13) * 1;
+    } else if (hour < 9) {
+      // 06:00-09:00: slow gentle rise
+      const t = (hour - 6) / 3;
+      base = 10 + t * 5 + Math.sin(m * 0.08) * 2;
+    } else if (hour < 10.5) {
+      // 09:00-10:30: building up
+      const t = (hour - 9) / 1.5;
+      base = 15 + t * 17 + Math.sin(m * 0.1) * 3;
+    } else if (hour < 11) {
+      // 10:30-11:00: elevated, small dip
+      const t = (hour - 10.5) / 0.5;
+      base = 32 - t * 6 + Math.sin(m * 0.15) * 3;
+    } else if (hour < 11.5) {
+      // 11:00-11:30: recovery and ramp
+      const t = (hour - 11) / 0.5;
+      base = 26 + t * 20 + Math.sin(m * 0.12) * 3;
+    } else if (hour < 13) {
+      // 11:30-13:00: shoot up to first peak
+      const t = (hour - 11.5) / 1.5;
+      // Smooth accelerating curve
+      base = 46 + t * t * 20 + Math.sin(m * 0.1) * 3;
+    } else if (hour < 13.75) {
+      // 13:00-13:45: pull back
+      const t = (hour - 13) / 0.75;
+      base = 62 - t * 14 + Math.sin(m * 0.12) * 3;
+    } else if (hour < 14.283) {
+      // 13:45-14:17: low before second surge
+      const t = (hour - 13.75) / 0.533;
+      base = 48 - t * 5 + t * t * 12 + Math.sin(m * 0.1) * 2.5;
+    } else if (hour < 17.3) {
+      // 14:17-17:18: massive sustained climb to max
+      const t = (hour - 14.283) / (17.3 - 14.283);
+      // Exponential-ish growth with plateaus
+      const curve = t * t * 0.3 + t * 0.7;
+      base = 55 + curve * 40 + Math.sin(m * 0.07) * 3 + Math.sin(m * 0.19) * 2;
+      // Add some mid-climb texture
+      if (t > 0.3 && t < 0.45) base -= 4; // slight dip around 15:30
+      if (t > 0.6 && t < 0.65) base -= 3; // slight dip around 16:15
+    } else {
+      // 17:18-17:39: stay very high, slight pullback from absolute peak
+      const t = (hour - 17.3) / (17.65 - 17.3);
+      base = 94.7 - t * 5.4 + Math.sin(m * 0.2) * 1.5;
+    }
+
+    // Add micro-noise throughout
+    const noise = (Math.random() - 0.5) * 2.5 + Math.sin(m * 0.37) * 1.2;
+    let value = base + noise;
+    value = Math.max(4, Math.min(97, value));
+
+    const h = Math.floor(m / 60);
+    const min = m % 60;
+    const label = `${String(h).padStart(2, '0')}:${String(min).padStart(2, '0')}`;
+
+    points.push({ label, value: Math.round(value * 10) / 10 });
+  }
+
+  return points;
+}
+
+const data = generateData();
+const labels = data.map(d => d.label);
+const values = data.map(d => d.value);
+
+// Gradient
+const ctx = document.getElementById('sentimentChart').getContext('2d');
+const gradient = ctx.createLinearGradient(0, 0, 0, 420);
+gradient.addColorStop(0, 'rgba(78, 205, 196, 0.25)');
+gradient.addColorStop(0.5, 'rgba(30, 136, 229, 0.08)');
+gradient.addColorStop(1, 'rgba(7, 8, 12, 0)');
+
+// Annotation lines plugin
+const annotationPlugin = {
+  id: 'annotationLines',
+  afterDraw(chart) {
+    const { ctx, chartArea, scales } = chart;
+    const xScale = scales.x;
+    const yScale = scales.y;
+
+    const events = [
+      { time: '10:30', color: '#1e88e5', dash: [4, 4] },
+      { time: '11:30', color: '#4ecdc4', dash: [4, 4] },
+      { time: '13:00', color: '#1e88e5', dash: [4, 4] },
+      { time: '14:17', color: '#e53935', dash: [4, 4] },
+      { time: '17:18', color: '#4ecdc4', dash: [2, 2] },
+    ];
+
+    events.forEach(ev => {
+      const idx = labels.indexOf(ev.time);
+      if (idx === -1) return;
+      const x = xScale.getPixelForValue(idx);
+      ctx.save();
+      ctx.beginPath();
+      ctx.setLineDash(ev.dash);
+      ctx.strokeStyle = ev.color + '44';
+      ctx.lineWidth = 1;
+      ctx.moveTo(x, chartArea.top);
+      ctx.lineTo(x, chartArea.bottom);
+      ctx.stroke();
+      ctx.restore();
+    });
+  }
+};
+
+new Chart(ctx, {
+  type: 'line',
+  plugins: [annotationPlugin],
+  data: {
+    labels,
+    datasets: [{
+      label: 'Sentiment Index',
+      data: values,
+      borderColor: '#4ecdc4',
+      backgroundColor: gradient,
+      borderWidth: 1.5,
+      fill: true,
+      tension: 0.3,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: '#4ecdc4',
+      pointHoverBorderColor: '#fff',
+      pointHoverBorderWidth: 2,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: {
+      mode: 'index',
+      intersect: false,
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#0f1118',
+        borderColor: '#4ecdc4',
+        borderWidth: 1,
+        titleFont: { family: 'JetBrains Mono', size: 12 },
+        bodyFont: { family: 'JetBrains Mono', size: 13, weight: 'bold' },
+        titleColor: '#7a8194',
+        bodyColor: '#4ecdc4',
+        padding: 12,
+        displayColors: false,
+        callbacks: {
+          title: (items) => `5 Apr 2026 — ${items[0].label} IST`,
+          label: (item) => `Index: ${item.parsed.y.toFixed(1)}`,
+        }
+      }
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: '#444',
+          font: { family: 'JetBrains Mono', size: 10 },
+          maxTicksLimit: 18,
+          callback: function(val, idx) {
+            const label = this.getLabelForValue(val);
+            if (label.endsWith(':00')) return label;
+            return '';
+          }
+        },
+        grid: { color: '#111', lineWidth: 0.5 },
+      },
+      y: {
+        min: 0,
+        max: 100,
+        ticks: {
+          color: '#444',
+          font: { family: 'JetBrains Mono', size: 10 },
+          stepSize: 20,
+          callback: v => v,
+        },
+        grid: { color: '#111', lineWidth: 0.5 },
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

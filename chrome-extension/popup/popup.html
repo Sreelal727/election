@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=420">
+  <title>Election Pulse</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <span class="logo-icon">&#9737;</span>
+        <h1 class="app-title">Election Pulse</h1>
+      </div>
+      <div class="header-right">
+        <button id="btnStartCollection" class="btn-start">Start Collection</button>
+        <label class="toggle-switch" title="Enable/Disable collection">
+          <input type="checkbox" id="collectionToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Constituency Selector -->
+    <div class="constituency-bar">
+      <select id="constituencySelect">
+        <option value="">Select Constituency</option>
+      </select>
+    </div>
+
+    <!-- Score Cards -->
+    <div class="score-cards">
+      <div class="score-card ldf">
+        <div class="card-front-name">LDF</div>
+        <div class="card-score" id="scoreLDF">0.00</div>
+        <div class="card-label">Sentiment</div>
+      </div>
+      <div class="score-card udf">
+        <div class="card-front-name">UDF</div>
+        <div class="card-score" id="scoreUDF">0.00</div>
+        <div class="card-label">Sentiment</div>
+      </div>
+      <div class="score-card nda">
+        <div class="card-front-name">NDA</div>
+        <div class="card-score" id="scoreNDA">0.00</div>
+        <div class="card-label">Sentiment</div>
+      </div>
+    </div>
+
+    <!-- Daily/Cumulative Toggle -->
+    <div class="view-toggle">
+      <button id="btnDaily" class="view-btn active">Today</button>
+      <button id="btnCumulative" class="view-btn">Cumulative</button>
+    </div>
+
+    <!-- Platform Breakdown -->
+    <div class="section">
+      <h2 class="section-title">Platform Breakdown</h2>
+      <div class="platform-bars">
+        <div class="platform-row">
+          <span class="platform-name">Reddit</span>
+          <div class="bar-track"><div class="bar-fill" id="barReddit" style="width:0%"></div></div>
+          <span class="bar-count" id="countReddit">0</span>
+        </div>
+        <div class="platform-row">
+          <span class="platform-name">Facebook</span>
+          <div class="bar-track"><div class="bar-fill" id="barFacebook" style="width:0%"></div></div>
+          <span class="bar-count" id="countFacebook">0</span>
+        </div>
+        <div class="platform-row">
+          <span class="platform-name">Twitter</span>
+          <div class="bar-track"><div class="bar-fill" id="barTwitter" style="width:0%"></div></div>
+          <span class="bar-count" id="countTwitter">0</span>
+        </div>
+        <div class="platform-row">
+          <span class="platform-name">Instagram</span>
+          <div class="bar-track"><div class="bar-fill" id="barInstagram" style="width:0%"></div></div>
+          <span class="bar-count" id="countInstagram">0</span>
+        </div>
+        <div class="platform-row">
+          <span class="platform-name">Memes</span>
+          <div class="bar-track"><div class="bar-fill" id="barMemes" style="width:0%"></div></div>
+          <span class="bar-count" id="countMemes">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crowd Reaction -->
+    <div class="section" id="crowdSection">
+      <div class="section-label">Crowd Reaction</div>
+      <div class="crowd-grid">
+        <div class="crowd-card">
+          <span class="crowd-label">Supportive</span>
+          <span class="crowd-value" id="crowdSupportive">0%</span>
+        </div>
+        <div class="crowd-card">
+          <span class="crowd-label">Against</span>
+          <span class="crowd-value" id="crowdAgainst">0%</span>
+        </div>
+        <div class="crowd-card">
+          <span class="crowd-label">Neutral</span>
+          <span class="crowd-value" id="crowdNeutral">0%</span>
+        </div>
+      </div>
+      <div id="narrativeGaps" class="narrative-gaps"></div>
+    </div>
+
+    <!-- Top Posts -->
+    <div class="section" id="topPostsSection">
+      <div class="section-label">Top Posts</div>
+      <div id="topPostsList" class="top-posts-list"></div>
+    </div>
+
+    <!-- Trend Chart -->
+    <div class="section">
+      <h2 class="section-title">30-Day Trend</h2>
+      <canvas id="trendCanvas" width="380" height="120"></canvas>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-value" id="postsToday">0</div>
+        <div class="stat-label">Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="totalPosts">0</div>
+        <div class="stat-label">Total</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="sourcesToday">0</div>
+        <div class="stat-label">Sources Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="lastScrape">--</div>
+        <div class="stat-label">Last Scrape</div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-row">
+      <button class="action-btn" id="btnExport" title="Export JSON">
+        <span class="btn-icon">&#8681;</span> Export
+      </button>
+      <button class="action-btn" id="btnSnapshot" title="Take Snapshot">
+        <span class="btn-icon">&#9745;</span> Snapshot
+      </button>
+      <button class="action-btn" id="btnSettings" title="Settings">
+        <span class="btn-icon">&#9881;</span> Settings
+      </button>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

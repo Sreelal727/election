@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala 2026 Election LIVE | GreyCell</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="live.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="live-topbar">
+  <div class="live-badge">&#9679; LIVE</div>
+  <div class="logo">GreyCell <span>|</span> Kerala 2026</div>
+  <div class="clock" id="clock">--:--:--</div>
+  <div class="last-updated" id="lastUpdated">Connecting...</div>
+  <div class="topbar-spacer"></div>
+  <div class="mode-switcher">
+    <button class="mode-btn active" data-mode="1" onclick="switchMode(1)">Dashboard</button>
+    <button class="mode-btn" data-mode="2" onclick="switchMode(2)">Auto-Cycle</button>
+    <button class="mode-btn" data-mode="3" onclick="switchMode(3)">Split</button>
+  </div>
+</div>
+
+<!-- Connection lost indicator -->
+<div class="connection-lost" id="connectionLost">CONNECTION LOST</div>
+<div class="paused-badge" id="pausedBadge">PAUSED</div>
+
+<!-- MODE 1: Dashboard + Ticker -->
+<div class="mode-panel" id="mode1">
+  <div class="dashboard-main">
+    <div class="seat-cards" id="seatCards"></div>
+    <div class="majority-indicator" id="majorityIndicator"></div>
+    <div class="mid-row">
+      <div class="panel">
+        <div class="panel-title">Sentiment Trend (24h)</div>
+        <div id="sparklines"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Hot Constituencies</div>
+        <div id="hotSeats"></div>
+      </div>
+    </div>
+    <!-- Constituency Grid -->
+    <div class="panel" style="margin-bottom:60px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+        <div class="panel-title" style="margin:0;">All 140 Constituencies</div>
+        <input type="text" id="constSearch" placeholder="Search constituency or district..." class="const-search">
+        <select id="constFilter" class="const-filter">
+          <option value="all">All Categories</option>
+          <option value="toss">Toss-up</option>
+          <option value="lean">Lean</option>
+          <option value="likely">Likely</option>
+          <option value="safe">Safe</option>
+        </select>
+      </div>
+      <div class="const-grid" id="constGrid"></div>
+    </div>
+  </div>
+  <div class="news-ticker" id="newsTicker">
+    <div class="ticker-label">LATEST</div>
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+</div>
+
+<!-- MODE 2: Auto-Cycling Cards -->
+<div class="mode-panel" id="mode2" style="display:none">
+  <div class="card-container" id="cardContainer">
+    <div class="card active" id="card1"></div>
+    <div class="card" id="card2"></div>
+    <div class="card" id="card3"></div>
+    <div class="card" id="card4"></div>
+    <div class="card" id="card5"></div>
+  </div>
+  <div class="card-dots" id="cardDots">
+    <div class="card-dot active" data-card="0"></div>
+    <div class="card-dot" data-card="1"></div>
+    <div class="card-dot" data-card="2"></div>
+    <div class="card-dot" data-card="3"></div>
+    <div class="card-dot" data-card="4"></div>
+  </div>
+</div>
+
+<!-- MODE 3: Split Screen -->
+<div class="mode-panel" id="mode3" style="display:none">
+  <div class="split-container">
+    <div class="split-left" id="splitNews"></div>
+    <div class="split-right" id="splitDashboard"></div>
+  </div>
+</div>
+
+<script src="live.js"></script>
+</body>
+</html>

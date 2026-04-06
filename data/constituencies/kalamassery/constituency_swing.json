@@ -1,0 +1,43 @@
+{
+  "constituency_no": 77,
+  "constituency": "Kalamassery Assembly Constituency - Ernakulam District",
+  "district": "Ernakulam",
+  "local_body_swings": {
+    "Kadungalloor": {
+      "LDF": -6.19,
+      "UDF": 19.17,
+      "NDA": -11.58,
+      "weight": 13932
+    },
+    "Aluva": {
+      "LDF": 1.45,
+      "UDF": 8.41,
+      "NDA": -0.56,
+      "weight": 6627
+    },
+    "Kalamassery": {
+      "LDF": -7.47,
+      "UDF": 16.11,
+      "NDA": -0.68,
+      "weight": 22886
+    },
+    "Thrikkakara": {
+      "LDF": 4.7,
+      "UDF": 9.31,
+      "NDA": 0.0,
+      "weight": 25269
+    }
+  },
+  "weighted_constituency_swing": {
+    "LDF": -1.87,
+    "UDF": 13.49,
+    "NDA": -2.63
+  },
+  "ward_count_2025": 144,
+  "ward_winners_2025": {
+    "LDF": 55,
+    "UDF": 83,
+    "NDA": 6
+  },
+  "total_voters_2025": 68714
+}

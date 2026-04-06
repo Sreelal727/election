@@ -1,0 +1,316 @@
+{
+  "constituencies": {
+    "kochi": {
+      "no": 80,
+      "name": "Kochi",
+      "name_ml": "കൊച്ചി",
+      "district": "Ernakulam",
+      "type": "urban",
+      "candidates": {
+        "LDF": {
+          "name": "K. J. Maxi",
+          "name_ml": "കെ.ജെ. മാക്സി",
+          "party": "CPM",
+          "party_full": "Communist Party of India (Marxist)",
+          "incumbent": false,
+          "aliases": ["Maxi", "KJ Maxi", "K J Maxi", "K.J.Maxi", "Maxi Kochi", "Maxi CPM", "Maxi CPI(M)"]
+        },
+        "UDF": {
+          "name": "Mohammad Shiyas",
+          "name_ml": "മൊഹമ്മദ് ഷിയാസ്",
+          "party": "INC",
+          "party_full": "Indian National Congress",
+          "incumbent": true,
+          "aliases": ["Shiyas", "Mohd Shiyas", "Mohammed Shiyas", "Shiyas Kochi", "Shiyas Congress", "Shiyas INC", "M Shiyas"]
+        },
+        "NDA": {
+          "name": "Xavier Joolappan",
+          "name_ml": "സേവ്യര്‍ ജൂലപ്പന്‍",
+          "party": "Twenty20",
+          "party_full": "Twenty20 Kizhakkambalam",
+          "incumbent": false,
+          "aliases": ["Xavier", "Joolappan", "Kitex Sabu", "Sabu M Jacob", "T20 Xavier", "Twenty20 Xavier", "Xavier Kochi", "Kitex Xavier"]
+        }
+      },
+      "previous_results": {
+        "2021": {
+          "winner": "Mohammad Shiyas",
+          "party": "INC",
+          "front": "UDF",
+          "margin": 3840
+        }
+      }
+    },
+    "kalamassery": {
+      "no": 77,
+      "name": "Kalamassery",
+      "name_ml": "കളമശ്ശേരി",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": {
+          "name": "P. Rajeeve",
+          "name_ml": "പി. രാജീവ്",
+          "party": "CPM",
+          "party_full": "Communist Party of India (Marxist)",
+          "incumbent": true,
+          "aliases": ["Rajeeve", "P Rajeeve", "Rajeev", "P. Rajeev", "Rajeeve minister", "Rajeeve CPM", "Industries Minister Rajeeve", "Minister Rajeeve", "P Rajeev"]
+        },
+        "UDF": {
+          "name": "V. E. Abdul Gafoor",
+          "name_ml": "വി.ഇ. അബ്ദുല്‍ ഗഫൂര്‍",
+          "party": "IUML",
+          "party_full": "Indian Union Muslim League",
+          "incumbent": false,
+          "aliases": ["Gafoor", "Abdul Gafoor", "VE Abdul Gafoor", "V E Abdul Gafoor", "Gafoor IUML", "Gafoor League", "Gafoor Kalamassery"]
+        },
+        "NDA": {
+          "name": "M. P. Binu",
+          "name_ml": "എം.പി. ബിനു",
+          "party": "BDJS",
+          "party_full": "Bharath Dharma Jana Sena",
+          "incumbent": false,
+          "aliases": ["Binu", "MP Binu", "M P Binu", "Binu BDJS", "Binu Kalamassery", "Binu NDA"]
+        }
+      },
+      "previous_results": {
+        "2021": {
+          "winner": "P. Rajeeve",
+          "party": "CPM",
+          "front": "LDF",
+          "margin": 19289
+        }
+      }
+    },
+    "ernakulam": {
+      "no": 79,
+      "name": "Ernakulam",
+      "name_ml": "എറണാകുളം",
+      "district": "Ernakulam",
+      "type": "urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "thrikkakara": {
+      "no": 78,
+      "name": "Thrikkakara",
+      "name_ml": "തൃക്കാക്കര",
+      "district": "Ernakulam",
+      "type": "urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "aluva": {
+      "no": 76,
+      "name": "Aluva",
+      "name_ml": "ആലുവ",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "angamaly": {
+      "no": 75,
+      "name": "Angamaly",
+      "name_ml": "അങ്കമാലി",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "perumbavoor": {
+      "no": 74,
+      "name": "Perumbavoor",
+      "name_ml": "പെരുമ്പാവൂര്‍",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "paravur": {
+      "no": 81,
+      "name": "Paravur",
+      "name_ml": "പറവൂര്‍",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "vypin": {
+      "no": 82,
+      "name": "Vypin",
+      "name_ml": "വൈപ്പിന്‍",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "thrippunithura": {
+      "no": 83,
+      "name": "Thrippunithura",
+      "name_ml": "തൃപ്പൂണിത്തുറ",
+      "district": "Ernakulam",
+      "type": "urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "kunnathunad": {
+      "no": 84,
+      "name": "Kunnathunad",
+      "name_ml": "കുന്നത്തുനാട്",
+      "district": "Ernakulam",
+      "type": "rural",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "piravom": {
+      "no": 85,
+      "name": "Piravom",
+      "name_ml": "പിറവം",
+      "district": "Ernakulam",
+      "type": "rural",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "KC(M)", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "muvattupuzha": {
+      "no": 86,
+      "name": "Muvattupuzha",
+      "name_ml": "മൂവാറ്റുപുഴ",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "KC(M)", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    },
+    "kothamangalam": {
+      "no": 87,
+      "name": "Kothamangalam",
+      "name_ml": "കോതമംഗലം",
+      "district": "Ernakulam",
+      "type": "semi_urban",
+      "candidates": {
+        "LDF": { "name": "TBD", "party": "CPM", "aliases": [] },
+        "UDF": { "name": "TBD", "party": "INC", "aliases": [] },
+        "NDA": { "name": "TBD", "party": "BJP", "aliases": [] }
+      }
+    }
+  },
+  "ernakulam_constituencies": [
+    "perumbavoor",
+    "angamaly",
+    "aluva",
+    "kalamassery",
+    "paravur",
+    "vypin",
+    "kochi",
+    "thrippunithura",
+    "ernakulam",
+    "thrikkakara",
+    "kunnathunad",
+    "piravom",
+    "muvattupuzha",
+    "kothamangalam"
+  ],
+  "party_metadata": {
+    "CPM": {
+      "full_name": "Communist Party of India (Marxist)",
+      "front": "LDF",
+      "color": "#FF0000",
+      "symbol": "hammer_sickle_star"
+    },
+    "CPI": {
+      "full_name": "Communist Party of India",
+      "front": "LDF",
+      "color": "#CC0000",
+      "symbol": "corn_sickle"
+    },
+    "INC": {
+      "full_name": "Indian National Congress",
+      "front": "UDF",
+      "color": "#00BFFF",
+      "symbol": "hand"
+    },
+    "IUML": {
+      "full_name": "Indian Union Muslim League",
+      "front": "UDF",
+      "color": "#006400",
+      "symbol": "ladder"
+    },
+    "KC(M)": {
+      "full_name": "Kerala Congress (M)",
+      "front": "UDF",
+      "color": "#FFD700",
+      "symbol": "two_leaves"
+    },
+    "BJP": {
+      "full_name": "Bharatiya Janata Party",
+      "front": "NDA",
+      "color": "#FF9933",
+      "symbol": "lotus"
+    },
+    "BDJS": {
+      "full_name": "Bharath Dharma Jana Sena",
+      "front": "NDA",
+      "color": "#FF6600",
+      "symbol": "elephant"
+    },
+    "Twenty20": {
+      "full_name": "Twenty20 Kizhakkambalam",
+      "front": "NDA",
+      "color": "#0000FF",
+      "symbol": "cricket_bat"
+    }
+  },
+  "front_metadata": {
+    "LDF": {
+      "full_name": "Left Democratic Front",
+      "full_name_ml": "ഇടതു ജനാധിപത്യ മുന്നണി",
+      "color": "#FF0000",
+      "major_parties": ["CPM", "CPI", "JD(S)", "NCP", "KC(B)"]
+    },
+    "UDF": {
+      "full_name": "United Democratic Front",
+      "full_name_ml": "ഐക്യ ജനാധിപത്യ മുന്നണി",
+      "color": "#00BFFF",
+      "major_parties": ["INC", "IUML", "KC(M)", "RSP", "JD(S)"]
+    },
+    "NDA": {
+      "full_name": "National Democratic Alliance",
+      "full_name_ml": "ദേശീയ ജനാധിപത്യ സഖ്യം",
+      "color": "#FF9933",
+      "major_parties": ["BJP", "BDJS", "Twenty20"]
+    }
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kochi (#80) — Updated Booth-Wise Winning Map</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07080c; --surface: #0f1118; --surface2: #161a25; --border: #1e2230;
+  --text: #e8eaf0; --dim: #7a8194; --accent: #4ecdc4;
+  --ldf: #e53935; --udf: #1e88e5; --nda: #f9a825;
+  --green: #4caf50; --red: #ff5252;
+  --ldf-bg: rgba(229,57,53,0.12); --udf-bg: rgba(30,136,229,0.12); --nda-bg: rgba(249,168,37,0.12);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; padding:28px 36px; }
+
+.header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:24px; padding-bottom:14px; border-bottom:1px solid var(--border); }
+.header h1 { font-size:20px; font-weight:700; }
+.header h1 .num { color:var(--accent); }
+.header .meta { font-size:12px; color:var(--dim); font-family:'JetBrains Mono',monospace; }
+
+/* Summary strip */
+.summary-strip { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-bottom:24px; }
+.sum-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 12px; text-align:center; }
+.sum-card .num { font-family:'JetBrains Mono',monospace; font-size:28px; font-weight:700; }
+.sum-card .label { font-size:9px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--dim); margin-top:4px; }
+
+/* Zone breakdown */
+.zones-row { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:24px; }
+.zone-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; }
+.zone-card .zone-name { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+.zone-card .zone-bar { display:flex; height:24px; border-radius:4px; overflow:hidden; margin-bottom:8px; background:var(--surface2); }
+.zone-card .zone-bar .seg { display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; color:#fff; min-width:18px; }
+.zone-card .zone-stats { font-size:11px; color:var(--dim); line-height:1.7; }
+.zone-card .zone-stats strong { color:var(--text); }
+
+/* Filters */
+.filter-bar { display:flex; gap:12px; align-items:center; margin-bottom:16px; }
+.filter-bar select, .filter-bar input {
+  background:var(--surface2); border:1px solid var(--border); color:var(--text);
+  font-size:12px; padding:7px 12px; border-radius:6px; font-family:'Inter',sans-serif; outline:none;
+}
+.filter-bar input { width:240px; }
+.filter-bar input:focus, .filter-bar select:focus { border-color:var(--accent); }
+.filter-bar .count { font-size:12px; color:var(--dim); margin-left:auto; font-family:'JetBrains Mono',monospace; }
+
+/* Booth grid */
+.booth-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:8px; max-height:600px; overflow-y:auto; padding-right:6px; }
+.booth-grid::-webkit-scrollbar { width:5px; }
+.booth-grid::-webkit-scrollbar-track { background:var(--bg); }
+.booth-grid::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+.booth-item { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:10px 14px; border-left:4px solid transparent; transition:border-color 0.2s; }
+.booth-item:hover { border-color:var(--accent); }
+.booth-item.udf-win { border-left-color:var(--udf); }
+.booth-item.ldf-win { border-left-color:var(--ldf); }
+.booth-item.nda-win { border-left-color:var(--nda); }
+
+.booth-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.booth-head .bno { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--dim); }
+.booth-head .bloc { font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:170px; }
+.booth-head .bzone { font-size:9px; padding:2px 7px; border-radius:3px; background:var(--surface); color:var(--dim); }
+
+.booth-bar { display:flex; height:18px; border-radius:3px; overflow:hidden; background:var(--surface); margin-bottom:6px; }
+.booth-bar .seg { display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; color:#fff; min-width:22px; }
+
+.booth-foot { display:flex; justify-content:space-between; font-size:10px; color:var(--dim); }
+.booth-foot .winner-tag { font-weight:700; padding:1px 6px; border-radius:3px; font-size:9px; }
+.booth-foot .vol { font-family:'JetBrains Mono',monospace; }
+
+/* Charts row */
+.charts-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:24px; }
+.chart-panel { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:18px; }
+.chart-panel .title { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--dim); margin-bottom:12px; }
+.chart-box { position:relative; height:220px; }
+
+.footer { font-size:9px; color:#333; text-align:center; margin-top:20px; letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Kochi <span class="num">#80</span> — Updated Booth-Wise Winning Map</h1>
+  <div class="meta">Sentiment-adjusted projections &nbsp;|&nbsp; 240 booth parts &nbsp;|&nbsp; GreyCell Sentinel</div>
+</div>
+
+<div class="summary-strip" id="summaryStrip"></div>
+<div class="zones-row" id="zonesRow"></div>
+<div class="charts-row" id="chartsRow"></div>
+<div class="filter-bar" id="filterBar"></div>
+<div class="booth-grid" id="boothGrid"></div>
+<div class="footer">GREYCELL SENTINEL v4.2.1 | 240 parts × 157 booths | Sentiment-weighted Monte Carlo | CONFIDENTIAL</div>
+
+<script>
+const COLORS = { UDF:'#1e88e5', LDF:'#e53935', NDA:'#f9a825' };
+const BGS = { UDF:'rgba(30,136,229,0.15)', LDF:'rgba(229,57,53,0.15)', NDA:'rgba(249,168,37,0.15)' };
+let ALL_BOOTHS = [];
+
+async function init() {
+  const resp = await fetch('/api/predictions');
+  const pred = await resp.json();
+  const kochi = (pred.predictions || []).find(p => p.Constituency_No === 80);
+
+  // Load booth data
+  const boothResp = await fetch('/data/kochi_booths_live.json');
+  ALL_BOOTHS = await boothResp.json();
+
+  renderSummary(kochi);
+  renderZones();
+  renderCharts();
+  renderFilterBar();
+  renderBooths(ALL_BOOTHS);
+}
+
+function renderSummary(kochi) {
+  const udfWins = ALL_BOOTHS.filter(b => b.winner === 'UDF').length;
+  const ldfWins = ALL_BOOTHS.filter(b => b.winner === 'LDF').length;
+  const ndaWins = ALL_BOOTHS.filter(b => b.winner === 'NDA').length;
+  const totalUDF = ALL_BOOTHS.reduce((s, b) => s + b.udf, 0);
+  const totalLDF = ALL_BOOTHS.reduce((s, b) => s + b.ldf, 0);
+  const totalNDA = ALL_BOOTHS.reduce((s, b) => s + b.nda, 0);
+
+  document.getElementById('summaryStrip').innerHTML = `
+    <div class="sum-card"><div class="num" style="color:var(--udf)">${udfWins}</div><div class="label">UDF Winning Parts</div></div>
+    <div class="sum-card"><div class="num" style="color:var(--ldf)">${ldfWins}</div><div class="label">LDF Winning Parts</div></div>
+    <div class="sum-card"><div class="num" style="color:var(--nda)">${ndaWins}</div><div class="label">NDA Winning Parts</div></div>
+    <div class="sum-card"><div class="num" style="color:var(--udf)">${totalUDF.toLocaleString()}</div><div class="label">UDF Total Votes</div></div>
+    <div class="sum-card"><div class="num" style="color:var(--ldf)">${totalLDF.toLocaleString()}</div><div class="label">LDF Total Votes</div></div>
+    <div class="sum-card"><div class="num" style="color:var(--nda)">${totalNDA.toLocaleString()}</div><div class="label">NDA Total Votes</div></div>
+  `;
+}
+
+function renderZones() {
+  const zones = {};
+  for (const b of ALL_BOOTHS) {
+    const z = b.zone || 'Unknown';
+    if (!zones[z]) zones[z] = { udf: 0, ldf: 0, nda: 0, udfV: 0, ldfV: 0, ndaV: 0, total: 0 };
+    zones[z][b.winner.toLowerCase()]++;
+    zones[z].udfV += b.udf;
+    zones[z].ldfV += b.ldf;
+    zones[z].ndaV += b.nda;
+    zones[z].total++;
+  }
+
+  let html = '';
+  for (const [name, z] of Object.entries(zones).sort((a, b) => b[1].total - a[1].total)) {
+    const totalV = z.udfV + z.ldfV + z.ndaV;
+    const uPct = totalV ? (z.udfV / totalV * 100) : 0;
+    const lPct = totalV ? (z.ldfV / totalV * 100) : 0;
+    const nPct = totalV ? (z.ndaV / totalV * 100) : 0;
+    html += `
+      <div class="zone-card">
+        <div class="zone-name">${name}</div>
+        <div class="zone-bar">
+          <div class="seg" style="width:${uPct}%;background:var(--udf)">U${Math.round(uPct)}</div>
+          <div class="seg" style="width:${lPct}%;background:var(--ldf)">L${Math.round(lPct)}</div>
+          ${nPct > 3 ? `<div class="seg" style="width:${nPct}%;background:var(--nda)">N${Math.round(nPct)}</div>` : ''}
+        </div>
+        <div class="zone-stats">
+          Parts: <strong>${z.total}</strong> &nbsp; UDF: <strong style="color:var(--udf)">${z.udf}</strong> LDF: <strong style="color:var(--ldf)">${z.ldf}</strong> NDA: <strong style="color:var(--nda)">${z.nda}</strong><br>
+          Votes: UDF <strong>${z.udfV.toLocaleString()}</strong> | LDF <strong>${z.ldfV.toLocaleString()}</strong>
+        </div>
+      </div>`;
+  }
+  document.getElementById('zonesRow').innerHTML = html;
+}
+
+function renderCharts() {
+  // Zone-wise donut + margin distribution
+  const zones = {};
+  const margins = [];
+  for (const b of ALL_BOOTHS) {
+    const z = b.zone || 'Unknown';
+    if (!zones[z]) zones[z] = { udf: 0, ldf: 0, nda: 0 };
+    zones[z][b.winner.toLowerCase()]++;
+    if (b.winner === 'UDF') margins.push(b.margin);
+  }
+
+  document.getElementById('chartsRow').innerHTML = `
+    <div class="chart-panel">
+      <div class="title">Booth Winners by Zone</div>
+      <div class="chart-box"><canvas id="zoneChart"></canvas></div>
+    </div>
+    <div class="chart-panel">
+      <div class="title">UDF Winning Margin Distribution</div>
+      <div class="chart-box"><canvas id="marginChart"></canvas></div>
+    </div>
+  `;
+
+  requestAnimationFrame(() => {
+    // Zone stacked bar
+    const zoneNames = Object.keys(zones);
+    new Chart(document.getElementById('zoneChart'), {
+      type: 'bar',
+      data: {
+        labels: zoneNames,
+        datasets: [
+          { label: 'UDF', data: zoneNames.map(z => zones[z].udf), backgroundColor: '#1e88e5' },
+          { label: 'LDF', data: zoneNames.map(z => zones[z].ldf), backgroundColor: '#e53935' },
+          { label: 'NDA', data: zoneNames.map(z => zones[z].nda), backgroundColor: '#f9a825' },
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: '#7a8194', font: { size: 10 } } } },
+        scales: {
+          x: { stacked: true, ticks: { color: '#555', font: { size: 9 }, maxRotation: 45 }, grid: { display: false } },
+          y: { stacked: true, ticks: { color: '#555', font: { size: 10 } }, grid: { color: '#111' } }
+        }
+      }
+    });
+
+    // Margin histogram
+    const buckets = [0, 25, 50, 100, 150, 200, 300, 500, 1000];
+    const bucketLabels = buckets.map((b, i) => i < buckets.length - 1 ? `${b}-${buckets[i+1]}` : `${b}+`);
+    const bucketCounts = bucketLabels.map((_, i) => {
+      const lo = buckets[i];
+      const hi = i < buckets.length - 1 ? buckets[i + 1] : 99999;
+      return margins.filter(m => m >= lo && m < hi).length;
+    });
+
+    new Chart(document.getElementById('marginChart'), {
+      type: 'bar',
+      data: {
+        labels: bucketLabels,
+        datasets: [{
+          label: 'Booths',
+          data: bucketCounts,
+          backgroundColor: bucketCounts.map((_, i) => {
+            if (buckets[i] < 50) return 'rgba(255,82,82,0.7)';
+            if (buckets[i] < 150) return 'rgba(249,168,37,0.7)';
+            return 'rgba(30,136,229,0.7)';
+          }),
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#555', font: { size: 9 } }, grid: { display: false } },
+          y: { ticks: { color: '#555', font: { size: 10 } }, grid: { color: '#111' } }
+        }
+      }
+    });
+  });
+}
+
+function renderFilterBar() {
+  const zones = [...new Set(ALL_BOOTHS.map(b => b.zone))].sort();
+  const types = [...new Set(ALL_BOOTHS.map(b => b.type).filter(Boolean))].sort();
+
+  document.getElementById('filterBar').innerHTML = `
+    <select id="fZone"><option value="">All Zones</option>${zones.map(z => `<option>${z}</option>`).join('')}</select>
+    <select id="fWinner"><option value="">All Winners</option><option>UDF</option><option>LDF</option><option>NDA</option></select>
+    <select id="fType"><option value="">All Types</option>${types.map(t => `<option>${t}</option>`).join('')}</select>
+    <input type="text" id="fSearch" placeholder="Search location...">
+    <div class="count" id="fCount">${ALL_BOOTHS.length} parts</div>
+  `;
+
+  document.getElementById('fZone').onchange = applyFilters;
+  document.getElementById('fWinner').onchange = applyFilters;
+  document.getElementById('fType').onchange = applyFilters;
+  document.getElementById('fSearch').oninput = applyFilters;
+}
+
+function applyFilters() {
+  const zone = document.getElementById('fZone').value;
+  const winner = document.getElementById('fWinner').value;
+  const type = document.getElementById('fType').value;
+  const search = document.getElementById('fSearch').value.toLowerCase();
+
+  const filtered = ALL_BOOTHS.filter(b => {
+    if (zone && b.zone !== zone) return false;
+    if (winner && b.winner !== winner) return false;
+    if (type && b.type !== type) return false;
+    if (search && !b.location.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  document.getElementById('fCount').textContent = `${filtered.length} parts`;
+  renderBooths(filtered);
+}
+
+function renderBooths(booths) {
+  const grid = document.getElementById('boothGrid');
+  let html = '';
+  for (const b of booths) {
+    const total = b.udf + b.ldf + b.nda;
+    const uPct = total ? (b.udf / total * 100) : 0;
+    const lPct = total ? (b.ldf / total * 100) : 0;
+    const nPct = total ? (b.nda / total * 100) : 0;
+
+    const wCls = b.winner.toLowerCase() + '-win';
+    const wColor = COLORS[b.winner] || '#888';
+    const wBg = BGS[b.winner] || 'var(--surface)';
+
+    const volColor = b.volatility === 'EXTREME' ? 'var(--red)' : b.volatility === 'HIGH' ? 'var(--nda)' : 'var(--dim)';
+
+    html += `
+      <div class="booth-item ${wCls}">
+        <div class="booth-head">
+          <span class="bno">#${b.part}</span>
+          <span class="bloc" title="${b.location}">${b.location}</span>
+          <span class="bzone">${b.zone}</span>
+        </div>
+        <div class="booth-bar">
+          <div class="seg" style="width:${uPct}%;background:var(--udf)">${b.udf}</div>
+          <div class="seg" style="width:${lPct}%;background:var(--ldf)">${b.ldf}</div>
+          ${nPct > 3 ? `<div class="seg" style="width:${nPct}%;background:var(--nda)">${b.nda}</div>` : ''}
+        </div>
+        <div class="booth-foot">
+          <span class="winner-tag" style="background:${wBg};color:${wColor}">▶ ${b.winner} +${b.margin}</span>
+          <span>${b.type || ''}</span>
+          <span class="vol" style="color:${volColor}">${b.volatility || ''}</span>
+        </div>
+      </div>`;
+  }
+  grid.innerHTML = html;
+}
+
+init();
+</script>
+</body>
+</html>

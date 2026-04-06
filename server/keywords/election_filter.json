@@ -1,0 +1,38 @@
+{
+  "english": [
+    "election", "elections", "vote", "votes", "voting", "voter", "voters",
+    "ballot", "polling", "poll", "polls", "exit poll",
+    "constituency", "constituencies", "candidate", "candidates",
+    "MLA", "assembly", "manifesto", "campaign", "rally",
+    "Kerala election", "2026 election", "assembly election",
+    "seat prediction", "seat", "seats", "majority",
+    "LDF", "UDF", "NDA", "BJP", "Congress", "INC",
+    "CPM", "CPIM", "CPI", "CPI(M)", "IUML", "Muslim League",
+    "Kerala Congress", "RSP", "JD(S)", "NCP",
+    "Pinarayi", "Vijayan", "Satheesan", "Surendran",
+    "Chandy Oommen", "Rahul Gandhi",
+    "KPCC", "BDJS", "Twenty20", "T20", "SDPI",
+    "front", "alliance", "swing", "margin",
+    "win", "defeat", "victory", "lost", "won",
+    "anti-incumbency", "wave", "sweep",
+    "nomination", "scrutiny", "withdrawal",
+    "EVM", "VVPAT", "Election Commission",
+    "counting", "result", "results"
+  ],
+  "malayalam": [
+    "തിരഞ്ഞെടുപ്പ്", "തെരഞ്ഞെടുപ്പ്", "വോട്ട്", "വോട്ടിങ്",
+    "സ്ഥാനാര്‍ത്ഥി", "സ്ഥാനാർത്ഥി", "നിയമസഭ", "മണ്ഡലം",
+    "പ്രകടന പത്രിക", "പ്രചാരണം", "റാലി",
+    "എല്‍ഡിഎഫ്", "എൽഡിഎഫ്", "യുഡിഎഫ്", "ബിജെപി",
+    "എന്‍ഡിഎ", "എൻഡിഎ", "സിപിഎം", "സിപിഐ",
+    "കോണ്‍ഗ്രസ്", "കോൺഗ്രസ്", "മുസ്ലിം ലീഗ്",
+    "പിണറായി", "വിജയന്‍", "സതീശന്‍", "സുരേന്ദ്രന്‍",
+    "കെപിസിസി", "ഇരുപത്തിയൊന്ന്", "ട്വന്റി20",
+    "മുന്നണി", "സഖ്യം", "ഭൂരിപക്ഷം",
+    "വിജയം", "പരാജയം", "ജയം", "തോല്‍വി",
+    "ഇടതുമുന്നണി", "യുഡിഎഫ് മുന്നണി",
+    "സീറ്റ്", "സീറ്റുകള്‍",
+    "നാമനിര്‍ദേശം", "ഫലം", "എണ്ണല്‍",
+    "കേരള തിരഞ്ഞെടുപ്പ്"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "source": "dataset/*.csv (unverified external data)",
+  "constituency": "Kochi (#80)",
+  "warning": "THIS DATA IS UNVERIFIED. Do not merge into production predictions.",
+  "total_rows_analyzed": 309944,
+  "total_columns": 37,
+  "platforms_detected": 10,
+  "platform_summary": {
+    "Digital News": {
+      "sentiment_score": 16.0125,
+      "direction": "POSITIVE",
+      "trend": "↓ Falling",
+      "avg_trend_value": -0.643,
+      "num_metrics": 2
+    },
+    "Facebook": {
+      "sentiment_score": -0.526,
+      "direction": "NEGATIVE",
+      "trend": "→ Stable",
+      "avg_trend_value": -0.467,
+      "num_metrics": 3
+    },
+    "Local Social": {
+      "sentiment_score": -18.4608,
+      "direction": "NEGATIVE",
+      "trend": "↓ Falling",
+      "avg_trend_value": -10.986,
+      "num_metrics": 2
+    },
+    "Malayalam Media": {
+      "sentiment_score": -11.9941,
+      "direction": "NEGATIVE",
+      "trend": "↓ Falling",
+      "avg_trend_value": -1.011,
+      "num_metrics": 5
+    },
+    "News Aggregator": {
+      "sentiment_score": 0.7117,
+      "direction": "POSITIVE",
+      "trend": "↑ Rising",
+      "avg_trend_value": 2.892,
+      "num_metrics": 5
+    },
+    "Quora": {
+      "sentiment_score": 6.982,
+      "direction": "POSITIVE",
+      "trend": "↑ Rising",
+      "avg_trend_value": 3.419,
+      "num_metrics": 1
+    },
+    "ShareChat": {
+      "sentiment_score": 9.0718,
+      "direction": "POSITIVE",
+      "trend": "↓ Falling",
+      "avg_trend_value": -3.024,
+      "num_metrics": 5
+    },
+    "Telegram": {
+      "sentiment_score": -0.002,
+      "direction": "NEUTRAL",
+      "trend": "↑ Rising",
+      "avg_trend_value": 1.927,
+      "num_metrics": 4
+    },
+    "Twitter/X": {
+      "sentiment_score": 0.002,
+      "direction": "NEUTRAL",
+      "trend": "→ Stable",
+      "avg_trend_value": 0.406,
+      "num_metrics": 5
+    },
+    "YouTube/Google": {
+      "sentiment_score": 1.2686,
+      "direction": "POSITIVE",
+      "trend": "↑ Rising",
+      "avg_trend_value": 4.134,
+      "num_metrics": 5
+    }
+  },
+  "interpretation": {
+    "positive_platforms": [
+      "Digital News",
+      "News Aggregator",
+      "Quora",
+      "ShareChat",
+      "YouTube/Google"
+    ],
+    "negative_platforms": [
+      "Facebook",
+      "Local Social",
+      "Malayalam Media"
+    ],
+    "neutral_platforms": [
+      "Telegram",
+      "Twitter/X"
+    ],
+    "rising_platforms": [
+      "News Aggregator",
+      "Quora",
+      "Telegram",
+      "YouTube/Google"
+    ],
+    "falling_platforms": [
+      "Digital News",
+      "Local Social",
+      "Malayalam Media",
+      "ShareChat"
+    ]
+  }
+}

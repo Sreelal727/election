@@ -1,0 +1,158 @@
+Booth_No,Location,Zone,Type,UDF_2021,LDF_2021,T20_2021,NDA_BJP_2021,UDF_2024,LDF_2024,NDA_2024,Gap_2021,Swing_2024,Verdict_2026
+1,Our Lady of Hope School,Fort Kochi,A,179,131,30,0,307,28,0,48,,UDF safe
+2,Temporary Shed Ramanthuruthu,Fort Kochi,A,11,4,0,0,12,3,0,7,,UDF safe
+3,Women Dev Corp Training Centre,Fort Kochi,C,305,530,24,0,582,293,0,225,277,UDF recoverable
+4,Santa Cruz HS NE Block,Fort Kochi,A,182,145,78,0,342,53,0,37,,UDF safe
+5,Santa Cruz HS W Block,Fort Kochi,A,232,172,70,0,331,59,0,60,,UDF safe
+6,Santa Cruz LP School Fort Kochi,Fort Kochi,B,292,296,73,0,474,100,0,4,5,UDF flip
+7,Santa Cruz HS Middle Block,Fort Kochi,B,265,349,129,0,458,179,0,84,84,UDF recoverable
+8,St John DBritto AIBHS N,Fort Kochi,C,154,260,65,0,290,116,0,106,136,UDF recoverable
+9,St John DBritto AIBHS S,Fort Kochi,C,161,287,74,0,313,133,0,126,152,UDF recoverable
+10,Central Kalvathy LP School W,Fort Kochi,C,280,494,30,0,567,218,0,214,84,UDF recoverable
+11,Central Kalvathy LP School N,Fort Kochi,C,221,506,19,0,477,261,0,285,256,UDF recoverable
+12,Central Kalvathy LP School E,Fort Kochi,F,212,569,0,0,466,362,0,357,,LDF stronghold
+13,Central Kalvathy HS E,Fort Kochi,F,297,687,0,0,589,423,0,390,,LDF stronghold
+14,LG Pai Memorial Library W,Fort Kochi Mattancherry,E,137,250,0,280,186,0,353,0,,NDA territory
+15,Govt UPS Amaravathy N,Fort Kochi Mattancherry,E,144,230,0,383,192,0,444,0,,NDA territory
+16,GUPS Amaravathy Mid Block,Fort Kochi,C,235,429,99,0,364,176,0,194,129,UDF recoverable
+17,GUPS Amaravathy SW Room S Block,Fort Kochi,B,332,384,108,0,457,166,0,52,53,UDF flip
+18,GUPS Last Room E S Block,Fort Kochi,A,214,176,76,0,393,56,0,38,,UDF safe
+19,GUPS North Portion Main Block,Fort Kochi,B,245,339,133,0,424,158,0,94,95,UDF recoverable
+20,GUPS Southern Portion Main Block,Fort Kochi,C,201,340,121,0,345,168,0,139,144,UDF recoverable
+21,Pallathu Raman Memorial E Block,Fort Kochi,C,285,401,116,0,600,130,0,116,315,UDF recoverable
+22,Pallathu Raman Memorial S Block,Fort Kochi,C,326,496,132,0,576,201,0,170,250,UDF recoverable
+23,EMGHS Veli Fortkochi W HS,Fort Kochi,C,268,380,135,0,491,161,0,112,223,UDF recoverable
+24,Edward Memorial GLPS N,Fort Kochi,B,193,278,64,0,372,106,0,85,86,UDF flip
+25,Edward Memorial GLPS S,Fort Kochi,C,208,309,81,0,378,138,0,101,170,UDF recoverable
+26,EMGHS Veli Fortkochi UP School,Fort Kochi,C,240,350,111,0,434,124,0,110,194,UDF recoverable
+27,Anganvady No 41,Fort Kochi,C,247,456,10,0,523,186,0,209,276,UDF recoverable
+28,MASSLPS E South Block,Fort Kochi,F,225,665,14,0,468,420,0,440,,LDF stronghold
+29,MASSLPS Eastern Hall,Fort Kochi,F,233,594,16,0,523,286,0,361,,LDF stronghold
+30,MASSLPS Second Room N Block,Fort Kochi,C,235,526,16,0,525,280,0,291,290,UDF recoverable
+31,MASSLPS Sulaiman Master Hall,Fort Kochi,C,280,570,20,0,583,298,0,290,303,UDF recoverable
+32,Aasia Bai HSS Middle W,Fort Kochi,B,338,409,46,0,520,192,0,71,72,UDF flip
+33,Gujarati Vidhyalaya HSS NW,Fort Kochi,C,311,580,24,0,627,258,0,269,291,UDF recoverable
+34,Gujarati Vidhyalaya HSS SW,Fort Kochi Mattancherry,E,117,192,0,387,214,0,411,0,,NDA territory
+35,Kochi Gujarathi UPS N,Fort Kochi,C,346,572,26,0,627,258,0,226,281,UDF recoverable
+36,Haji Easa Moosa HS Mid,Fort Kochi,C,171,340,13,0,349,126,0,169,178,UDF recoverable
+37,Haji Easa Moosa HS N,Fort Kochi Mattancherry,E,149,125,0,227,178,0,277,0,,NDA territory
+38,Haji Easa Moosa HS E,Fort Kochi,F,238,622,0,0,488,331,0,384,,LDF stronghold
+39,TD Girls LPS S New Block,Fort Kochi Mattancherry,E,177,247,0,347,211,0,390,0,,NDA territory
+40,TD Girls LPS N New Block,Fort Kochi,C,252,473,57,0,525,232,0,221,273,UDF recoverable
+41,TD High School W End S,Fort Kochi Mattancherry,E,139,163,0,266,244,0,300,0,,NDA territory
+42,TD High School S Blk 4W,Fort Kochi Mattancherry,E,108,93,0,411,131,0,462,0,,NDA territory
+43,TD High School S Blk 4E,Fort Kochi Mattancherry,E,137,124,0,344,163,0,421,0,,NDA territory
+44,TD High School S Blk 5E,Fort Kochi Mattancherry,E,130,96,0,473,169,0,524,0,,NDA territory
+45,Govt Girls HS LP W South,Fort Kochi,C,288,525,25,0,498,263,0,237,210,UDF recoverable
+46,Govt Girls HS LP E South,Fort Kochi Mattancherry,E,175,272,0,487,210,0,523,0,,NDA territory
+47,Govt Girls LPS N West Block,Fort Kochi,C,210,495,20,0,470,249,0,285,260,UDF recoverable
+48,Govt Girls LPS S West Block,Fort Kochi,C,238,444,20,0,444,221,0,206,206,UDF recoverable
+49,TD Teacher Training S Hall,Fort Kochi Mattancherry,E,94,76,0,452,92,0,532,0,,NDA territory
+50,TD Teacher Training N Hall,Fort Kochi Mattancherry,E,140,173,0,389,188,0,446,0,,NDA territory
+51,TDLPS N Portion E Block,Chullickal,B,230,265,85,0,316,122,0,35,36,UDF flip
+52,TDLPS S Portion E Block,Chullickal,B,200,271,34,0,240,146,0,71,72,UDF recoverable
+53,Cochin College BioTech W,Chullickal,B,203,271,74,0,326,108,0,68,69,UDF flip
+54,Cochin College BioTech E,Chullickal,B,249,288,69,0,367,111,0,39,40,UDF flip
+55,Cochin College BioTech Mid,Chullickal,C,263,431,45,0,453,194,0,168,190,UDF recoverable
+56,MMOHS Panayappilly W,Chullickal,C,293,510,17,0,607,209,0,217,314,UDF recoverable
+57,MMOHS Panayappilly N W,Chullickal,C,305,587,14,0,639,301,0,282,334,UDF recoverable
+58,MMOHS E Portion S Block,Chullickal,C,243,353,39,0,397,128,0,110,154,UDF recoverable
+59,MMOHS W South Block,Chullickal,C,197,376,6,0,391,178,0,179,194,UDF recoverable
+60,MMOHS Mid W,Chullickal,C,342,544,15,0,624,216,0,202,282,UDF recoverable
+61,MMOHS N Portion W,Chullickal,C,224,402,9,0,454,166,0,178,230,UDF recoverable
+62,MMOHS S Portion W,Chullickal,C,233,471,8,0,439,231,0,238,206,UDF recoverable
+63,Corp Library Panayapilly,Chullickal,C,274,419,26,0,446,205,0,145,172,UDF recoverable
+64,GHS Panayappilly KG E,Chullickal,C,223,415,35,0,380,193,0,192,157,UDF recoverable
+65,GHS Panayappilly KG W,Chullickal,B,220,226,45,0,327,64,0,6,7,UDF flip
+66,St Joseph HS Chullickal SE E,Chullickal,B,263,298,71,0,441,109,0,35,36,UDF flip
+67,St Joseph HS Chullickal 3rd,Chullickal,B,304,307,116,0,496,100,0,3,4,UDF flip
+68,St Joseph HS Chullickal Mid SE,Chullickal,B,301,364,102,0,488,119,0,63,64,UDF flip
+69,St Joseph HS Chullickal 2W SE,Chullickal,C,286,393,94,0,460,157,0,107,174,UDF recoverable
+70,St Joseph HS Chullickal W SE,Chullickal,B,312,337,77,0,479,121,0,25,26,UDF flip
+71,St Joseph HS Chullickal E SW,Chullickal,B,284,329,58,0,414,145,0,45,46,UDF flip
+72,St Joseph HS Chullickal Mid SW,Chullickal,B,355,433,68,0,534,177,0,78,79,UDF flip
+73,OLCGHS Main Block 2nd Mid W,Chullickal,C,250,415,84,0,432,163,0,165,182,UDF recoverable
+74,OLCGHS Main Block E Portion,Chullickal,A,387,377,44,0,565,139,0,10,,UDF safe
+75,OLCGHS Main Block S End E,Chullickal,A,334,334,72,0,516,90,0,0,,UDF safe
+76,Our Lady GLPS W Block N,Chullickal,C,349,513,106,0,549,166,0,164,200,UDF recoverable
+77,St Jacob School Nazreth E,Chullickal,B,205,302,83,0,356,146,0,97,98,UDF recoverable
+78,St Jacob School Nazreth W,Chullickal,B,310,343,105,0,486,130,0,33,34,UDF flip
+79,Chaithanya Sunday School S,Chullickal,B,397,412,125,0,635,153,0,15,16,UDF flip
+80,Chaithanya Sunday School N,Chullickal,A,365,364,149,0,582,115,0,1,,UDF safe
+81,St Sebastian HSS W LP,Chullickal,C,284,394,71,0,454,178,0,110,170,UDF recoverable
+82,St Sebastian HSS E LP,Chullickal,B,270,344,74,0,399,159,0,74,75,UDF flip
+83,St Sebastian HSS W N Bldg,Chullickal,C,289,443,70,0,450,202,0,154,161,UDF recoverable
+84,St Sebastian HSS E N Bldg,Chullickal,B,280,356,102,0,419,147,0,76,77,UDF flip
+85,St Sebastian HSS LP 2nd W,Chullickal,B,276,298,116,0,469,73,0,22,23,UDF flip
+86,St Thomas LPS E N Bldg,Chullickal,B,246,289,82,0,327,154,0,43,44,UDF flip
+87,St Thomas LPS N Side Main,Chullickal,C,244,378,45,0,351,209,0,134,107,UDF recoverable
+88,St Thomas LPS Mid Main,Chullickal,C,239,376,69,0,424,162,0,137,185,UDF recoverable
+89,Loretto AILPS S Block W,Chullickal,A,358,341,142,0,525,153,0,17,,UDF safe
+90,Loretto AILPS S Block E,Chullickal,C,286,468,121,0,515,188,0,182,229,UDF recoverable
+91,Loretto AIHS New Block 2E,Chullickal,B,347,374,160,0,532,169,0,27,28,UDF flip
+92,Loretto AIHS New Block 1W,Chullickal,B,331,388,166,0,532,186,0,57,58,UDF flip
+93,St Anthony LPS E S Block,Chullickal,B,217,294,95,0,412,113,0,77,78,UDF flip
+94,St Anthony LPS N S Block,Chullickal,C,245,380,79,0,425,161,0,135,180,UDF recoverable
+95,St Anthony LPS Mid S Bldg,Chullickal,C,185,349,94,0,364,194,0,164,179,UDF recoverable
+96,SVDLPS S Portion Main,Chullickal,C,178,390,57,0,262,226,0,212,84,UDF recoverable
+97,SVDLPS N Portion Main,Chullickal,C,266,400,85,0,360,225,0,134,94,UDF recoverable
+98,SVDLPS E Portion N Bldg,Chullickal,C,252,447,104,0,448,223,0,195,196,UDF recoverable
+99,SVDLPS W Portion N Bldg,Chullickal,C,282,391,92,0,434,195,0,109,152,UDF recoverable
+100,SDPY LPS N Side Main,Chullickal,C,276,513,96,0,484,290,0,237,208,UDF recoverable
+101,SDPY HSS N Side Main,Chullickal,B,164,233,58,0,226,150,0,69,70,UDF flip
+102,SDPY HSS Mid Main,Chullickal,C,133,341,32,0,174,237,0,208,41,LDF holds
+103,St Louis LPS Mid Portion,Kumbalangi,A,326,306,253,0,621,128,0,20,,UDF safe
+104,St Louis HS NW New Bldg,Kumbalangi,C,205,408,119,0,480,144,0,203,275,UDF recoverable
+105,St Louis HS W New Bldg,Kumbalangi,B,308,355,168,0,517,175,0,47,48,UDF flip
+106,St Louis HS 2nd W,Kumbalangi,A,355,330,195,0,595,138,0,25,,UDF safe
+107,St Louis HS Mid Portion,Kumbalangi,B,330,383,184,0,530,175,0,53,54,UDF flip
+108,St Louis HS 2nd E Mundamveli,Kumbalangi,B,344,347,155,0,599,126,0,3,4,UDF flip
+109,St Louis HS E Portion,Kumbalangi,B,201,217,96,0,353,104,0,16,17,UDF flip
+110,St Louis HS NE Portion,Kumbalangi,B,230,278,69,0,361,118,0,48,49,UDF flip
+111,St Michael LPS N Bldg,Kumbalangi,A,272,195,231,0,460,138,0,77,,UDF safe
+112,St Michael LPS S Bldg,Kumbalangi,A,260,242,220,0,508,128,0,18,,UDF safe
+113,St Joseph Girls UPS NW Main,Kumbalangi,B,319,402,279,0,588,249,0,83,84,UDF flip
+114,St Joseph Girls UPS NE Main,Kumbalangi,C,307,547,165,0,554,349,0,240,247,UDF recoverable
+115,St Joseph LPS S End,Chellanam,D,228,216,444,0,524,27,315,0,,UDF holds
+116,St Joseph LPS Mid Cheriyakadavu,Chellanam,D,256,338,431,0,561,46,326,0,,UDF holds
+117,St Joseph LPS N Portion,Chellanam,D,230,406,498,0,557,12,335,0,,Tight 3-way
+118,Chinmaya Vidyalaya Kalathara,Chellanam,B,45,88,58,0,70,76,43,0,44,NDA risk
+119,St Anthony LPS W Main,Chellanam,D,167,154,282,0,359,53,236,0,,UDF holds
+120,St Anthony LPS E Main,Chellanam,D,234,173,358,0,459,38,270,0,,UDF holds
+121,St Mary HS Mid Main,Chellanam,D,251,250,496,0,615,29,351,0,,UDF holds
+122,St Mary HS E N Bldg,Chellanam,B,234,341,282,0,495,248,107,0,,UDF recoverable
+123,St Mary HS Mid SE Bldg,Chellanam,D,253,317,420,0,599,33,306,0,,UDF holds
+124,Govt HSS N Tsunami,Chellanam,D,169,161,547,0,468,70,425,0,,NDA likely
+125,Govt HSS S Tsunami Puthenthode,Chellanam,B,259,330,237,0,506,216,0,71,72,UDF recoverable
+126,Govt HSS Mid Central,Chellanam,D,172,151,484,0,492,39,353,0,,NDA risk tight
+127,Chellanam Panchayat Office,Chellanam,B,162,216,195,0,273,182,54,0,,UDF flip
+128,Exodus Public School W,Chellanam,D,140,138,680,0,542,43,485,0,,NDA wins
+129,Exodus Public School E,Chellanam,D,253,266,272,0,403,105,268,0,,NDA wins
+130,St Mary HS N Room E Bldg,Chellanam,B,253,266,272,0,403,218,105,0,,UDF holds
+131,St Mary HS E Portion Main,Chellanam,B,263,314,209,0,409,250,0,51,52,UDF flip
+132,St Mary LPS NW Bldg,Chellanam,D,207,229,236,0,418,28,169,0,,UDF holds
+133,Village Office Chellanam S,Chellanam,B,288,384,234,0,435,305,0,96,97,UDF recoverable
+134,Village Office Chellanam N,Chellanam,D,161,161,280,0,348,22,204,0,,UDF holds
+135,St George LPS S Chellanam,Chellanam,D,260,237,403,0,529,22,283,0,,UDF holds
+136,St George LPS W Mid Main,Chellanam,D,299,319,368,0,586,19,258,0,,UDF holds
+137,St George LPS W Main,Chellanam,B,208,232,198,0,374,163,0,24,25,UDF flip
+138,Leo English Medium School,Chellanam,B,170,244,112,0,267,219,0,74,75,UDF flip
+139,St Joseph LPS W Main,Kumbalangi,C,273,390,190,0,508,181,0,117,235,UDF recoverable
+140,St Joseph LPS Mid Main Kumbalangi,Kumbalangi,A,361,340,157,0,552,201,0,21,,UDF safe
+141,St Joseph LPS E Main Kumbalangi,Kumbalangi,B,291,359,135,0,437,245,0,68,69,UDF recoverable
+142,St Joseph LPS W Main Kumbalangi N,Kumbalangi,B,247,327,109,0,338,203,0,80,81,UDF flip
+143,Village Office Kumbalangi,Kumbalangi,B,328,395,149,0,512,219,0,67,68,UDF flip
+144,VPYLPS Mid Main Illickal,Kumbalangi,B,396,484,173,0,538,311,0,88,89,UDF flip
+145,St Peter HSS Mid Main Bldg,Kumbalangi,A,277,537,110,0,383,386,0,260,,LDF holds
+146,St Peter HSS SW Bldg,Kumbalangi,A,408,362,208,0,579,215,0,46,,UDF safe
+147,St Peter HSS NW Bldg,Kumbalangi,A,486,367,207,0,729,230,0,119,,UDF safe
+148,St Peter HSS Mid N Bldg,Kumbalangi,B,387,402,157,0,516,264,0,15,16,UDF flip
+149,OLFGHS E Main Bldg,Kumbalangi,A,439,327,153,0,591,232,0,112,,UDF safe
+150,Govt UPS Mid Main Bldg,Kumbalangi,A,311,224,131,0,422,130,0,87,,UDF safe
+151,Govt UPS Kumbalangi N,Kumbalangi,B,403,450,191,0,578,272,0,47,48,UDF flip
+152,Govt UPS Mid N Bldg,Kumbalangi,B,250,308,140,0,394,199,0,58,59,UDF flip
+153,St George LPS N Main Kumbalangi,Kumbalangi,A,338,343,178,0,462,223,0,5,,UDF safe
+154,St George LPS S Main Kumbalangi,Kumbalangi,C,288,392,142,0,408,198,0,104,120,UDF recoverable
+155,St George UPS NW Bldg,Kumbalangi,A,358,285,157,0,457,204,0,73,,UDF safe
+156,St George LPS Annex Mid,Kumbalangi,A,306,259,143,0,409,169,0,47,,UDF safe
+157,St George UPS SW Bldg,Kumbalangi,A,388,343,165,0,558,157,0,45,,UDF safe

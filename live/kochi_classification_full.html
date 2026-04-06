@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kochi #80 — Full Booth Classification (All 240 Parts)</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#07080c; --surface:#0f1118; --s2:#161a25; --border:#1e2230;
+  --text:#e8eaf0; --dim:#7a8194; --accent:#4ecdc4;
+  --ldf:#e53935; --udf:#1e88e5; --nda:#f9a825;
+  --green:#4caf50; --red:#ff5252; --orange:#ff9800;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;padding:28px 36px;min-height:100vh;}
+
+.hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px;padding-bottom:14px;border-bottom:1px solid var(--border);}
+.hdr h1{font-size:20px;font-weight:700;} .hdr .n{color:var(--accent);}
+.hdr .meta{font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace;}
+
+/* Summary cards */
+.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;}
+.sc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:center;position:relative;overflow:hidden;}
+.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.sc.safe::before{background:var(--udf);} .sc.loss::before{background:var(--red);} .sc.weak::before{background:var(--orange);} .sc.total::before{background:var(--accent);}
+.sc .num{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;}
+.sc .lbl{font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-top:4px;}
+.sc .sub{font-size:11px;color:var(--dim);margin-top:6px;}
+
+/* Charts */
+.charts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px;}
+.cpan{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px;}
+.cpan .t{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:12px;}
+.cbox{position:relative;height:220px;}
+
+/* Section headers */
+.sec{margin-bottom:20px;}
+.sec-hdr{display:flex;align-items:center;gap:14px;margin-bottom:12px;padding:12px 18px;border-radius:8px;}
+.sec-hdr.safe-h{background:rgba(30,136,229,0.08);border-left:4px solid var(--udf);}
+.sec-hdr.loss-h{background:rgba(229,57,53,0.08);border-left:4px solid var(--red);}
+.sec-hdr.weak-h{background:rgba(255,152,0,0.08);border-left:4px solid var(--orange);}
+.sec-hdr .icon{font-size:20px;}
+.sec-hdr .txt{flex:1;}
+.sec-hdr .txt h2{font-size:15px;font-weight:700;}
+.sec-hdr .txt p{font-size:11px;color:var(--dim);margin-top:2px;}
+.sec-hdr .cnt{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;}
+
+/* Table */
+.tbl-wrap{max-height:400px;overflow-y:auto;border:1px solid var(--border);border-radius:8px;margin-bottom:24px;}
+.tbl-wrap::-webkit-scrollbar{width:5px;} .tbl-wrap::-webkit-scrollbar-track{background:var(--bg);} .tbl-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+thead{position:sticky;top:0;z-index:2;}
+th{background:var(--s2);color:var(--dim);font-size:10px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);}
+td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+tr:hover{background:rgba(78,205,196,0.04);}
+.mono{font-family:'JetBrains Mono',monospace;}
+.r{text-align:right;}
+
+/* Margin bar inside table */
+.mbar{display:flex;align-items:center;gap:6px;}
+.mbar-track{width:80px;height:10px;background:var(--s2);border-radius:3px;overflow:hidden;flex-shrink:0;}
+.mbar-fill{height:100%;border-radius:3px;}
+.mbar-num{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;min-width:40px;}
+
+/* Vote mini bar */
+.vbar{display:flex;height:14px;border-radius:3px;overflow:hidden;background:var(--s2);min-width:100px;}
+.vbar .s{display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;min-width:16px;}
+
+/* Volatility badge */
+.vol{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;}
+.vol-ext{background:rgba(255,82,82,0.15);color:var(--red);}
+.vol-high{background:rgba(255,152,0,0.15);color:var(--orange);}
+.vol-mod{background:rgba(122,129,148,0.15);color:var(--dim);}
+.vol-low{background:rgba(76,175,80,0.15);color:var(--green);}
+
+/* Winner tag */
+.wtag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;}
+
+.footer{font-size:9px;color:#333;text-align:center;margin-top:20px;letter-spacing:0.5px;}
+
+/* Priority pulse for weakest */
+@keyframes pulse-row{0%,100%{background:transparent;}50%{background:rgba(255,152,0,0.06);}}
+.critical-row{animation:pulse-row 3s infinite;}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>Kochi <span class="n">#80</span> — Final Booth Classification</h1>
+  <div class="meta">3 Days to E-Day &nbsp;|&nbsp; 240 Parts &nbsp;|&nbsp; GreyCell Sentinel</div>
+</div>
+
+<div class="sum" id="summary"></div>
+<div class="charts" id="charts"></div>
+<div id="sections"></div>
+<div class="footer">GREYCELL SENTINEL v4.2.1 | Kochi #80 | Ernakulam | 240 booth parts classified | CONFIDENTIAL</div>
+
+<script>
+const C = {UDF:'#1e88e5',LDF:'#e53935',NDA:'#f9a825'};
+
+async function init(){
+  const r = await fetch('/data/kochi_booths_live.json');
+  const booths = await r.json();
+
+  const safe=[], loss=[], weak=[];
+  for(const b of booths){
+    if(b.winner==='UDF' && b.margin>100) safe.push(b);
+    else if(b.winner==='LDF'||b.winner==='NDA') loss.push(b);
+    else weak.push(b);
+  }
+  safe.sort((a,b)=>b.margin-a.margin);
+  loss.sort((a,b)=>b.margin-a.margin);
+  weak.sort((a,b)=>a.margin-b.margin);
+
+  renderSummary(safe,loss,weak,booths);
+  renderCharts(safe,loss,weak);
+  renderSections(safe,loss,weak);
+}
+
+function renderSummary(safe,loss,weak,all){
+  const weakMargin=weak.reduce((s,b)=>s+b.margin,0);
+  document.getElementById('summary').innerHTML=`
+    <div class="sc safe"><div class="num" style="color:var(--udf)">${safe.length}</div><div class="lbl">UDF Strong Parts</div><div class="sub">Margin > 100 — No action needed</div></div>
+    <div class="sc loss"><div class="num" style="color:var(--red)">${loss.length}</div><div class="lbl">LDF/NDA Holds</div><div class="sub">Accept these losses</div></div>
+    <div class="sc weak"><div class="num" style="color:var(--orange)">${weak.length}</div><div class="lbl">UDF Weak Parts</div><div class="sub">Margin < 100 — MAXIMUM FOCUS</div></div>
+    <div class="sc total"><div class="num" style="color:var(--accent)">${weakMargin.toLocaleString()}</div><div class="lbl">Total Votes at Risk</div><div class="sub">Avg ${Math.round(weakMargin/weak.length)} votes/part in weak zone</div></div>
+  `;
+}
+
+function renderCharts(safe,loss,weak){
+  document.getElementById('charts').innerHTML=`
+    <div class="cpan"><div class="t">Classification Split</div><div class="cbox"><canvas id="c1"></canvas></div></div>
+    <div class="cpan"><div class="t">Weak Parts by Zone</div><div class="cbox"><canvas id="c2"></canvas></div></div>
+    <div class="cpan"><div class="t">Weak Part Margin Distribution</div><div class="cbox"><canvas id="c3"></canvas></div></div>
+  `;
+  requestAnimationFrame(()=>{
+    // Donut
+    new Chart(document.getElementById('c1'),{type:'doughnut',data:{
+      labels:['UDF Strong ('+safe.length+')','LDF/NDA Hold ('+loss.length+')','UDF Weak ('+weak.length+')'],
+      datasets:[{data:[safe.length,loss.length,weak.length],backgroundColor:['#1e88e5','#e53935','#ff9800'],borderWidth:0}]
+    },options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:{position:'bottom',labels:{color:'#7a8194',font:{size:10},padding:10}}}}});
+
+    // Weak by zone
+    const zones={};
+    weak.forEach(b=>{const z=b.zone||'?'; zones[z]=(zones[z]||0)+1;});
+    const zn=Object.keys(zones).sort((a,b)=>zones[b]-zones[a]);
+    new Chart(document.getElementById('c2'),{type:'bar',data:{
+      labels:zn,datasets:[{data:zn.map(z=>zones[z]),backgroundColor:'#ff9800',borderRadius:4}]
+    },options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:'#555',font:{size:10}},grid:{color:'#111'}},y:{ticks:{color:'#999',font:{size:10}},grid:{display:false}}}
+    }});
+
+    // Margin histogram
+    const bkts=[0,20,40,60,80,100];
+    const bktL=bkts.map((b,i)=>i<bkts.length-1?`${b}-${bkts[i+1]}`:`${b}+`);
+    const bktC=bktL.map((_,i)=>{
+      const lo=bkts[i], hi=i<bkts.length-1?bkts[i+1]:9999;
+      return weak.filter(b=>b.margin>=lo&&b.margin<hi).length;
+    });
+    const bktCol=bkts.map(b=>b<20?'#ff5252':b<40?'#ff9800':b<60?'#f9a825':b<80?'#4ecdc4':'#1e88e5');
+    new Chart(document.getElementById('c3'),{type:'bar',data:{
+      labels:bktL,datasets:[{data:bktC,backgroundColor:bktCol,borderRadius:4}]
+    },options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:'#999',font:{size:10}},grid:{display:false}},y:{ticks:{color:'#555',font:{size:10}},grid:{color:'#111'}}}
+    }});
+  });
+}
+
+function volBadge(v){
+  if(v==='EXTREME') return '<span class="vol vol-ext">EXTREME</span>';
+  if(v==='HIGH') return '<span class="vol vol-high">HIGH</span>';
+  if(v==='MODERATE') return '<span class="vol vol-mod">MODERATE</span>';
+  if(v==='LOW') return '<span class="vol vol-low">LOW</span>';
+  return '<span class="vol vol-mod">—</span>';
+}
+
+function winTag(w,m){
+  const c=C[w]||'#888';
+  return `<span class="wtag" style="background:${c}22;color:${c}">${w} +${m}</span>`;
+}
+
+function voteBar(u,l,n){
+  const t=u+l+n||1;
+  return `<div class="vbar">
+    <div class="s" style="width:${u/t*100}%;background:var(--udf)">${u}</div>
+    <div class="s" style="width:${l/t*100}%;background:var(--ldf)">${l}</div>
+    ${n>0?`<div class="s" style="width:${n/t*100}%;background:var(--nda)">${n}</div>`:''}
+  </div>`;
+}
+
+function marginBar(m,max,color){
+  const pct=Math.min(100,(m/max)*100);
+  return `<div class="mbar">
+    <div class="mbar-track"><div class="mbar-fill" style="width:${pct}%;background:${color}"></div></div>
+    <div class="mbar-num" style="color:${color}">+${m}</div>
+  </div>`;
+}
+
+function buildTable(rows,maxMargin,color,isWeak){
+  let h=`<div class="tbl-wrap"><table><thead><tr>
+    <th>Part</th><th>Booth</th><th>Location</th><th>Zone</th><th>Type</th>
+    <th>Votes (UDF/LDF/NDA)</th><th>Winner</th><th>Margin</th><th>Vol.</th>
+  </tr></thead><tbody>`;
+  for(let i=0;i<rows.length;i++){
+    const b=rows[i];
+    const cls=(isWeak && b.margin<25)?'critical-row':'';
+    h+=`<tr class="${cls}">
+      <td class="mono r">${b.part}</td>
+      <td class="mono r">${b.booth}</td>
+      <td>${b.location}</td>
+      <td>${b.zone}</td>
+      <td class="mono">${b.type}</td>
+      <td>${voteBar(b.udf,b.ldf,b.nda)}</td>
+      <td>${winTag(b.winner,b.margin)}</td>
+      <td>${marginBar(b.margin,maxMargin,color)}</td>
+      <td>${volBadge(b.volatility)}</td>
+    </tr>`;
+  }
+  h+=`</tbody></table></div>`;
+  return h;
+}
+
+function renderSections(safe,loss,weak){
+  let html='';
+
+  // WEAK — ALL
+  html+=`<div class="sec">
+    <div class="sec-hdr weak-h">
+      <div class="icon">&#9888;</div>
+      <div class="txt"><h2>UDF Weak / Razor-Thin — ALL ${weak.length} Parts</h2><p>Every part with margin under 100. Sorted thinnest first.</p></div>
+      <div class="cnt" style="color:var(--orange)">${weak.length}</div>
+    </div>
+    ${buildTable(weak,100,'#ff9800',true)}
+  </div>`;
+
+  // Split LDF and NDA, LDF first
+  const ldfHolds = loss.filter(b => b.winner === 'LDF');
+  const ndaHolds = loss.filter(b => b.winner === 'NDA');
+
+  html+=`<div class="sec">
+    <div class="sec-hdr loss-h" style="border-left-color:var(--ldf);">
+      <div class="icon">&#10060;</div>
+      <div class="txt"><h2>LDF Strongholds — ALL ${ldfHolds.length} Parts</h2><p>Full list. Sorted by margin descending.</p></div>
+      <div class="cnt" style="color:var(--ldf)">${ldfHolds.length}</div>
+    </div>
+    ${buildTable(ldfHolds,120,'#e53935',false)}
+  </div>`;
+
+  html+=`<div class="sec">
+    <div class="sec-hdr loss-h" style="border-left-color:var(--nda);">
+      <div class="icon">&#10060;</div>
+      <div class="txt"><h2>NDA Strongholds — ALL ${ndaHolds.length} Parts</h2><p>Full list. Mattancherry is their turf.</p></div>
+      <div class="cnt" style="color:var(--nda)">${ndaHolds.length}</div>
+    </div>
+    ${buildTable(ndaHolds,500,'#f9a825',false)}
+  </div>`;
+
+  // UDF STRONG — ALL
+  html+=`<div class="sec">
+    <div class="sec-hdr safe-h">
+      <div class="icon">&#9989;</div>
+      <div class="txt"><h2>UDF Strong Zones — ALL ${safe.length} Parts</h2><p>Full list. These are locked in.</p></div>
+      <div class="cnt" style="color:var(--udf)">${safe.length}</div>
+    </div>
+    ${buildTable(safe,350,'#1e88e5',false)}
+  </div>`;
+
+  document.getElementById('sections').innerHTML=html;
+}
+
+init();
+</script>
+</body>
+</html>

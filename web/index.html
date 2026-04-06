@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala 2026 Election Prediction</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ldf: #e53935;
+      --ldf-glow: rgba(229,57,53,0.4);
+      --udf: #1e88e5;
+      --udf-glow: rgba(30,136,229,0.4);
+      --nda: #f9a825;
+      --nda-glow: rgba(249,168,37,0.4);
+      --bg: #07080c;
+      --surface: #11131a;
+      --surface2: #1a1e2a;
+      --surface3: #232838;
+      --text: #eaedf3;
+      --text2: #6b7280;
+      --border: #1f2433;
+      --accent: #4ecdc4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ===== NAV BAR ===== */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(7,8,12,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .topbar .logo {
+      font-weight: 800; font-size: 1rem;
+      background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .topbar .nav-btns { display: flex; gap: 6px; }
+    .topbar .nav-btn {
+      padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border);
+      background: transparent; color: var(--text2); font-size: 0.8rem;
+      cursor: pointer; transition: all 0.2s; font-family: inherit;
+    }
+    .topbar .nav-btn.active { background: var(--surface2); color: var(--text); border-color: var(--accent); }
+    .topbar .nav-btn:hover { border-color: var(--accent); color: var(--text); }
+
+    /* ===== PAGES ===== */
+    .page { display: none; padding-top: 60px; min-height: 100vh; }
+    .page.active { display: block; }
+
+    /* ===== OVERVIEW PAGE ===== */
+    .overview-container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+
+    .summary-strip {
+      display: flex; gap: 12px; margin: 16px 0 24px;
+      justify-content: center; flex-wrap: wrap;
+    }
+    .summary-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 28px;
+      text-align: center;
+      min-width: 160px;
+    }
+    .summary-chip .front-name {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.5px; margin-bottom: 2px;
+    }
+    .summary-chip .seat-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.4rem; font-weight: 700; line-height: 1.1;
+    }
+    .summary-chip .seat-range { font-size: 0.75rem; color: var(--text2); }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px; margin-top: 16px;
+    }
+    .ov-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .ov-card::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 4px; border-radius: 10px 0 0 10px;
+    }
+    .ov-card.front-ldf::before { background: var(--ldf); }
+    .ov-card.front-udf::before { background: var(--udf); }
+    .ov-card.front-nda::before { background: var(--nda); }
+    .ov-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .ov-card .ov-top { display: flex; justify-content: space-between; align-items: center; }
+    .ov-card .ov-no { color: var(--text2); font-size: 0.75rem; }
+    .ov-card .ov-name { font-weight: 700; font-size: 0.95rem; }
+    .ov-card .ov-district { font-size: 0.75rem; color: var(--text2); }
+    .ov-badge {
+      font-size: 0.65rem; font-weight: 700; padding: 3px 8px;
+      border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .ov-badge-ldf { background: rgba(229,57,53,0.15); color: #ef5350; }
+    .ov-badge-udf { background: rgba(30,136,229,0.15); color: #42a5f5; }
+    .ov-badge-nda { background: rgba(249,168,37,0.15); color: #fdd835; }
+    .ov-bar { display: flex; height: 4px; border-radius: 2px; overflow: hidden; margin-top: 10px; gap: 1px; }
+    .ov-bar div { border-radius: 2px; }
+
+    .filters-bar {
+      display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 8px;
+    }
+    .filters-bar select, .filters-bar input {
+      background: var(--surface); color: var(--text); border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; font-family: inherit;
+    }
+    .filters-bar input { width: 180px; }
+    .result-count { font-size: 0.8rem; color: var(--text2); margin-left: auto; }
+
+    /* ===== REVEAL PAGE ===== */
+    .reveal-page {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; min-height: 100vh; padding: 80px 20px 40px;
+    }
+
+    .reveal-nav {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
+    }
+    .reveal-nav select {
+      background: var(--surface); color: var(--text); border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px 16px; font-size: 1rem; font-family: inherit;
+      min-width: 240px;
+    }
+    .reveal-nav .arrow-btn {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--surface2); border: 1px solid var(--border);
+      color: var(--text); font-size: 1.2rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .reveal-nav .arrow-btn:hover { border-color: var(--accent); background: var(--surface3); }
+
+    .reveal-card {
+      width: 100%; max-width: 520px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .reveal-header {
+      padding: 32px 32px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--surface2) 0%, var(--surface) 100%);
+    }
+    .reveal-const-no {
+      font-size: 0.8rem; color: var(--text2); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 2px;
+    }
+    .reveal-const-name {
+      font-size: 2rem; font-weight: 900; margin: 4px 0;
+      line-height: 1.2;
+    }
+    .reveal-district { font-size: 0.9rem; color: var(--text2); }
+    .reveal-2021 {
+      margin-top: 12px; font-size: 0.8rem; color: var(--text2);
+      padding: 6px 14px; background: var(--surface3);
+      border-radius: 20px; display: inline-block;
+    }
+
+    .reveal-body { padding: 24px 32px 32px; }
+
+    /* Candidate slots */
+    .candidate-slot {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      background: var(--surface2);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .candidate-slot.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .candidate-slot .slot-front {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.5px; margin-bottom: 6px;
+    }
+    .candidate-slot .slot-name {
+      font-size: 1.15rem; font-weight: 700;
+    }
+    .candidate-slot .slot-party {
+      font-size: 0.8rem; color: var(--text2); margin-top: 2px;
+    }
+    .candidate-slot .slot-prob-bar {
+      margin-top: 10px; height: 6px; background: var(--surface3);
+      border-radius: 3px; overflow: hidden;
+    }
+    .candidate-slot .slot-prob-fill {
+      height: 100%; border-radius: 3px;
+      width: 0%;
+      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+    }
+    .candidate-slot .slot-prob-text {
+      margin-top: 6px; font-size: 0.85rem; font-weight: 700;
+      opacity: 0;
+      transition: opacity 0.5s 1s;
+    }
+    .candidate-slot.revealed .slot-prob-fill { width: var(--prob); }
+    .candidate-slot.revealed .slot-prob-text { opacity: 1; }
+
+    .slot-ldf .slot-front { color: var(--ldf); }
+    .slot-ldf .slot-prob-fill { background: var(--ldf); }
+    .slot-ldf .slot-prob-text { color: var(--ldf); }
+    .slot-udf .slot-front { color: var(--udf); }
+    .slot-udf .slot-prob-fill { background: var(--udf); }
+    .slot-udf .slot-prob-text { color: var(--udf); }
+    .slot-nda .slot-front { color: var(--nda); }
+    .slot-nda .slot-prob-fill { background: var(--nda); }
+    .slot-nda .slot-prob-text { color: var(--nda); }
+
+    /* Winner reveal */
+    .winner-banner {
+      margin-top: 8px;
+      padding: 20px;
+      border-radius: 14px;
+      text-align: center;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .winner-banner.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .winner-banner .winner-label {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 3px; margin-bottom: 4px;
+    }
+    .winner-banner .winner-name {
+      font-size: 1.6rem; font-weight: 900;
+    }
+    .winner-banner .winner-detail {
+      font-size: 0.85rem; margin-top: 4px; opacity: 0.8;
+    }
+    .winner-banner.ldf-winner {
+      background: linear-gradient(135deg, rgba(229,57,53,0.15), rgba(229,57,53,0.05));
+      border: 1px solid rgba(229,57,53,0.3);
+      color: #ef5350;
+      box-shadow: 0 0 40px var(--ldf-glow);
+    }
+    .winner-banner.udf-winner {
+      background: linear-gradient(135deg, rgba(30,136,229,0.15), rgba(30,136,229,0.05));
+      border: 1px solid rgba(30,136,229,0.3);
+      color: #64b5f6;
+      box-shadow: 0 0 40px var(--udf-glow);
+    }
+    .winner-banner.nda-winner {
+      background: linear-gradient(135deg, rgba(249,168,37,0.15), rgba(249,168,37,0.05));
+      border: 1px solid rgba(249,168,37,0.3);
+      color: #fdd835;
+      box-shadow: 0 0 40px var(--nda-glow);
+    }
+
+    /* Reveal button */
+    .reveal-btn-wrap { text-align: center; margin-top: 16px; }
+    .reveal-btn {
+      padding: 12px 36px;
+      border: 1px solid var(--accent);
+      background: rgba(78,205,196,0.08);
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.3s;
+      letter-spacing: 0.5px;
+    }
+    .reveal-btn:hover {
+      background: rgba(78,205,196,0.18);
+      box-shadow: 0 0 20px rgba(78,205,196,0.2);
+    }
+    .reveal-btn:disabled {
+      opacity: 0.3; cursor: default;
+      box-shadow: none;
+    }
+    .reveal-btn .btn-hint {
+      display: block; font-size: 0.7rem; color: var(--text2);
+      font-weight: 400; margin-top: 2px;
+    }
+
+    /* Confetti canvas */
+    #confetti {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none; z-index: 200;
+    }
+
+    /* Pulse glow on winner slot */
+    .candidate-slot.is-winner {
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0px transparent; }
+      50% { box-shadow: 0 0 20px var(--glow-color); }
+    }
+    .slot-ldf.is-winner { --glow-color: var(--ldf-glow); border-color: var(--ldf); }
+    .slot-udf.is-winner { --glow-color: var(--udf-glow); border-color: var(--udf); }
+    .slot-nda.is-winner { --glow-color: var(--nda-glow); border-color: var(--nda); }
+
+    /* Donut in reveal */
+    .reveal-donut-wrap {
+      margin: 16px auto 0;
+      width: 180px; height: 180px;
+      opacity: 0; transform: scale(0.8);
+      transition: all 0.8s cubic-bezier(0.16,1,0.3,1) 0.3s;
+    }
+    .reveal-donut-wrap.visible { opacity: 1; transform: scale(1); }
+
+    /* Methodology note */
+    .method-note {
+      text-align: center; margin-top: 20px;
+      font-size: 0.7rem; color: var(--text2);
+      max-width: 400px;
+    }
+
+    @media (max-width: 600px) {
+      .reveal-const-name { font-size: 1.5rem; }
+      .reveal-header { padding: 24px 20px 16px; }
+      .reveal-body { padding: 20px; }
+      .summary-strip { gap: 8px; }
+      .summary-chip { padding: 12px 20px; min-width: 120px; }
+      .summary-chip .seat-num { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+
+<!-- Top bar -->
+<div class="topbar">
+  <span class="logo">Kerala 2026 Prediction</span>
+  <div class="nav-btns">
+    <button class="nav-btn active" onclick="showPage('overview')">Overview</button>
+    <button class="nav-btn" onclick="showPage('reveal')">Reveal Mode</button>
+    <a href="deep.html" class="nav-btn" style="text-decoration:none">Deep Analysis</a>
+    <a href="booths.html" class="nav-btn" style="text-decoration:none">Booth Estimates</a>
+    <a href="swing.html" class="nav-btn" style="text-decoration:none">Swing Analysis</a>
+  </div>
+</div>
+
+<!-- ===== OVERVIEW PAGE ===== -->
+<div class="page active" id="page-overview">
+  <div class="overview-container">
+    <div class="summary-strip" id="summaryStrip"></div>
+
+    <div class="filters-bar">
+      <select id="districtFilter"><option value="">All Districts</option></select>
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Safe">Safe</option>
+        <option value="Likely">Likely</option>
+        <option value="Lean">Lean</option>
+        <option value="Toss-up">Toss-ups</option>
+      </select>
+      <select id="frontFilter">
+        <option value="">All Fronts</option>
+        <option value="LDF">LDF</option>
+        <option value="UDF">UDF</option>
+        <option value="NDA">NDA</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search...">
+      <span class="result-count" id="resultCount">140 seats</span>
+    </div>
+
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+</div>
+
+<!-- ===== REVEAL PAGE ===== -->
+<div class="page" id="page-reveal">
+  <div class="reveal-page">
+    <div class="reveal-nav">
+      <button class="arrow-btn" onclick="prevConstituency()" title="Previous">&larr;</button>
+      <select id="revealSelect"></select>
+      <button class="arrow-btn" onclick="nextConstituency()" title="Next">&rarr;</button>
+    </div>
+
+    <div class="reveal-card" id="revealCard"></div>
+
+    <div class="reveal-btn-wrap">
+      <button class="reveal-btn" id="revealBtn" onclick="revealNext()">
+        Tap to Reveal
+        <span class="btn-hint">Press Space or click</span>
+      </button>
+    </div>
+
+    <div class="method-note">
+      Monte Carlo simulation (1M runs) | 2021 base + LSG 2025 swing (45% dampened) | Higher uncertainty for close seats
+    </div>
+  </div>
+</div>
+
+<script>
+let predictions = [];
+let summary = {};
+let revealStep = 0; // 0=init, 1=NDA shown, 2=runner-up shown, 3=winner shown, 4=chart shown
+let currentCno = 1;
+let detailChart = null;
+
+async function loadData() {
+  const [predRes, sumRes] = await Promise.all([
+    fetch('predictions_2026.json'),
+    fetch('summary_2026.json')
+  ]);
+  predictions = await predRes.json();
+  summary = await sumRes.json();
+  init();
+}
+
+function init() {
+  renderSummary();
+  populateFilters();
+  renderOverview(predictions);
+  populateRevealSelect();
+  loadConstituency(1);
+}
+
+// ===== PAGE SWITCHING =====
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  if (page === 'reveal') loadConstituency(currentCno);
+}
+
+// ===== OVERVIEW =====
+function renderSummary() {
+  const sp = summary.seat_projections;
+  document.getElementById('summaryStrip').innerHTML = ['LDF', 'UDF', 'NDA'].map(f => {
+    const s = sp[f];
+    return `<div class="summary-chip">
+      <div class="front-name" style="color:var(--${f.toLowerCase()})">${f}</div>
+      <div class="seat-num" style="color:var(--${f.toLowerCase()})">${s.median}</div>
+      <div class="seat-range">${s.p5} - ${s.p95} seats</div>
+    </div>`;
+  }).join('');
+}
+
+function populateFilters() {
+  const districts = [...new Set(predictions.map(p => p.District))].sort();
+  const sel = document.getElementById('districtFilter');
+  districts.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = d; sel.appendChild(o); });
+  ['districtFilter','categoryFilter','frontFilter'].forEach(id =>
+    document.getElementById(id).addEventListener('change', applyFilters));
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+}
+
+function applyFilters() {
+  let f = predictions;
+  const dist = document.getElementById('districtFilter').value;
+  const cat = document.getElementById('categoryFilter').value;
+  const front = document.getElementById('frontFilter').value;
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  if (dist) f = f.filter(p => p.District === dist);
+  if (cat) f = f.filter(p => p.Category.startsWith(cat));
+  if (front) f = f.filter(p => p.Category.includes(front));
+  if (search) f = f.filter(p => p.Constituency.toLowerCase().includes(search) ||
+    p.LDF_Candidate.toLowerCase().includes(search) ||
+    p.UDF_Candidate.toLowerCase().includes(search) ||
+    p.NDA_Candidate.toLowerCase().includes(search));
+  document.getElementById('resultCount').textContent = f.length + ' seats';
+  renderOverview(f);
+}
+
+function renderOverview(data) {
+  document.getElementById('overviewGrid').innerHTML = data.map(p => {
+    const ldf = +p.LDF_Win_Prob, udf = +p.UDF_Win_Prob, nda = +p.NDA_Win_Prob;
+    const winner = ldf >= udf && ldf >= nda ? 'ldf' : (udf >= nda ? 'udf' : 'nda');
+    const badgeCls = 'ov-badge-' + winner;
+    return `<div class="ov-card front-${winner}" onclick="goToReveal(${p.Constituency_No})">
+      <div class="ov-top">
+        <div>
+          <span class="ov-no">#${p.Constituency_No}</span>
+          <span class="ov-name">${p.Constituency}</span>
+          <div class="ov-district">${p.District}</div>
+        </div>
+        <span class="ov-badge ${badgeCls}">${p.Category}</span>
+      </div>
+      <div class="ov-bar">
+        <div style="width:${ldf}%;background:var(--ldf)"></div>
+        <div style="width:${udf}%;background:var(--udf)"></div>
+        <div style="width:${nda}%;background:var(--nda)"></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function goToReveal(cno) {
+  currentCno = cno;
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-reveal').classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.nav-btn')[1].classList.add('active');
+  document.getElementById('revealSelect').value = cno;
+  loadConstituency(cno);
+}
+
+// ===== REVEAL MODE =====
+function populateRevealSelect() {
+  const sel = document.getElementById('revealSelect');
+  predictions.forEach(p => {
+    const o = document.createElement('option');
+    o.value = p.Constituency_No;
+    o.textContent = `#${p.Constituency_No} ${p.Constituency}`;
+    sel.appendChild(o);
+  });
+  sel.addEventListener('change', () => { currentCno = +sel.value; loadConstituency(currentCno); });
+}
+
+function prevConstituency() {
+  currentCno = currentCno > 1 ? currentCno - 1 : 140;
+  document.getElementById('revealSelect').value = currentCno;
+  loadConstituency(currentCno);
+}
+function nextConstituency() {
+  currentCno = currentCno < 140 ? currentCno + 1 : 1;
+  document.getElementById('revealSelect').value = currentCno;
+  loadConstituency(currentCno);
+}
+
+function loadConstituency(cno) {
+  const p = predictions.find(x => x.Constituency_No === cno);
+  if (!p) return;
+  revealStep = 0;
+  if (detailChart) { detailChart.destroy(); detailChart = null; }
+  clearConfetti();
+
+  const ldf = +p.LDF_Win_Prob, udf = +p.UDF_Win_Prob, nda = +p.NDA_Win_Prob;
+
+  // Sort candidates: show lowest prob first, winner last (most dramatic)
+  const candidates = [
+    { front: 'LDF', name: p.LDF_Candidate, party: p.LDF_Party, prob: ldf },
+    { front: 'UDF', name: p.UDF_Candidate, party: p.UDF_Party, prob: udf },
+    { front: 'NDA', name: p.NDA_Candidate, party: p.NDA_Party, prob: nda },
+  ].sort((a, b) => a.prob - b.prob);
+
+  const card = document.getElementById('revealCard');
+  card.innerHTML = `
+    <div class="reveal-header">
+      <div class="reveal-const-no">Constituency #${p.Constituency_No}</div>
+      <div class="reveal-const-name">${p.Constituency}</div>
+      <div class="reveal-district">${p.District} District</div>
+      <div class="reveal-2021">2021: ${p.Winner_2021} won by ${parseInt(p.Margin_2021).toLocaleString()} votes</div>
+    </div>
+    <div class="reveal-body">
+      ${candidates.map((c, i) => `
+        <div class="candidate-slot slot-${c.front.toLowerCase()}" id="slot-${i}" data-front="${c.front}" data-prob="${c.prob}">
+          <div class="slot-front">${c.front}</div>
+          <div class="slot-name">${c.name}</div>
+          <div class="slot-party">${c.party}</div>
+          <div class="slot-prob-bar"><div class="slot-prob-fill" style="--prob:${c.prob}%"></div></div>
+          <div class="slot-prob-text">${c.prob.toFixed(1)}% win probability</div>
+        </div>
+      `).join('')}
+      <div class="winner-banner" id="winnerBanner"></div>
+      <div class="reveal-donut-wrap" id="revealDonut"><canvas id="donutCanvas" width="180" height="180"></canvas></div>
+    </div>
+  `;
+
+  const btn = document.getElementById('revealBtn');
+  btn.disabled = false;
+  btn.innerHTML = 'Tap to Reveal<span class="btn-hint">Press Space or click</span>';
+}
+
+function revealNext() {
+  const p = predictions.find(x => x.Constituency_No === currentCno);
+  if (!p) return;
+  const btn = document.getElementById('revealBtn');
+
+  if (revealStep === 0) {
+    // Show 3rd place (lowest probability)
+    const slot = document.getElementById('slot-0');
+    slot.classList.add('visible');
+    setTimeout(() => slot.classList.add('revealed'), 300);
+    btn.innerHTML = 'Reveal Runner-up<span class="btn-hint">Press Space or click</span>';
+    revealStep = 1;
+  }
+  else if (revealStep === 1) {
+    // Show 2nd place
+    const slot = document.getElementById('slot-1');
+    slot.classList.add('visible');
+    setTimeout(() => slot.classList.add('revealed'), 300);
+    btn.innerHTML = 'Reveal Predicted Winner<span class="btn-hint">Press Space or click</span>';
+    revealStep = 2;
+  }
+  else if (revealStep === 2) {
+    // Show winner with dramatic effect
+    const slot = document.getElementById('slot-2');
+    slot.classList.add('visible');
+    setTimeout(() => {
+      slot.classList.add('revealed');
+      slot.classList.add('is-winner');
+    }, 300);
+
+    // Determine winner front
+    const ldf = +p.LDF_Win_Prob, udf = +p.UDF_Win_Prob, nda = +p.NDA_Win_Prob;
+    const candidates = [
+      { front: 'LDF', name: p.LDF_Candidate, party: p.LDF_Party, prob: ldf },
+      { front: 'UDF', name: p.UDF_Candidate, party: p.UDF_Party, prob: udf },
+      { front: 'NDA', name: p.NDA_Candidate, party: p.NDA_Party, prob: nda },
+    ].sort((a, b) => a.prob - b.prob);
+    const winner = candidates[2];
+
+    // Show winner banner
+    setTimeout(() => {
+      const banner = document.getElementById('winnerBanner');
+      banner.className = `winner-banner ${winner.front.toLowerCase()}-winner visible`;
+      banner.innerHTML = `
+        <div class="winner-label">Predicted Winner</div>
+        <div class="winner-name">${winner.name}</div>
+        <div class="winner-detail">${winner.front} | ${winner.party} | ${winner.prob.toFixed(1)}% probability</div>
+      `;
+      launchConfetti(winner.front);
+    }, 800);
+
+    // Show donut chart
+    setTimeout(() => {
+      const wrap = document.getElementById('revealDonut');
+      wrap.classList.add('visible');
+      detailChart = new Chart(document.getElementById('donutCanvas'), {
+        type: 'doughnut',
+        data: {
+          labels: ['LDF', 'UDF', 'NDA'],
+          datasets: [{ data: [ldf, udf, nda], backgroundColor: ['#e53935','#1e88e5','#f9a825'], borderWidth: 0 }]
+        },
+        options: {
+          cutout: '62%',
+          plugins: { legend: { position: 'bottom', labels: { color: '#8b8fa3', padding: 12 } } },
+          animation: { animateScale: true, duration: 1200 }
+        }
+      });
+    }, 1400);
+
+    btn.innerHTML = 'Next Constituency &rarr;<span class="btn-hint">Press Space or click</span>';
+    revealStep = 3;
+  }
+  else if (revealStep === 3) {
+    nextConstituency();
+  }
+}
+
+// Keyboard shortcut
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' && document.getElementById('page-reveal').classList.contains('active')) {
+    e.preventDefault();
+    revealNext();
+  }
+  if (e.code === 'ArrowRight') nextConstituency();
+  if (e.code === 'ArrowLeft') prevConstituency();
+});
+
+// ===== CONFETTI =====
+const confettiCanvas = document.getElementById('confetti');
+const ctx = confettiCanvas.getContext('2d');
+let particles = [];
+let confettiAnim = null;
+
+function resizeConfetti() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeConfetti);
+resizeConfetti();
+
+function launchConfetti(front) {
+  const colors = {
+    LDF: ['#e53935','#ef5350','#ff8a80','#ffcdd2','#fff'],
+    UDF: ['#1e88e5','#42a5f5','#82b1ff','#bbdefb','#fff'],
+    NDA: ['#f9a825','#fdd835','#ffee58','#fff9c4','#fff'],
+  }[front] || ['#fff','#4ecdc4','#ff6b6b'];
+
+  particles = [];
+  for (let i = 0; i < 150; i++) {
+    particles.push({
+      x: Math.random() * confettiCanvas.width,
+      y: -20 - Math.random() * 200,
+      w: 6 + Math.random() * 6,
+      h: 4 + Math.random() * 4,
+      vx: (Math.random() - 0.5) * 4,
+      vy: 2 + Math.random() * 4,
+      rot: Math.random() * 360,
+      rotV: (Math.random() - 0.5) * 10,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      life: 1,
+    });
+  }
+  if (confettiAnim) cancelAnimationFrame(confettiAnim);
+  animateConfetti();
+}
+
+function animateConfetti() {
+  ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  let alive = false;
+  particles.forEach(p => {
+    if (p.life <= 0) return;
+    alive = true;
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.1;
+    p.rot += p.rotV;
+    p.life -= 0.003;
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.rot * Math.PI / 180);
+    ctx.globalAlpha = Math.max(0, p.life);
+    ctx.fillStyle = p.color;
+    ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+    ctx.restore();
+  });
+  if (alive) confettiAnim = requestAnimationFrame(animateConfetti);
+}
+
+function clearConfetti() {
+  if (confettiAnim) cancelAnimationFrame(confettiAnim);
+  ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  particles = [];
+}
+
+loadData();
+</script>
+</body>
+</html>
