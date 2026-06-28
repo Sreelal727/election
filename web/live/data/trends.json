@@ -538,6 +538,4549 @@
           "category": "Lean LDF"
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-02T23:19:17.120848+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.2,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 51,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 92.9,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 98,
+          "min": 80,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.64,
+        "UDF": 0.427,
+        "NDA": 0.285
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.9%",
+          "delta": 1.8599999999999994,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +1.8%",
+          "delta": 1.7800000000000011,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF +1.7%",
+          "delta": 1.6700000000000017,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "LDF +1.6%",
+          "delta": 1.6100000000000065,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "LDF +1.6%",
+          "delta": 1.5800000000000054,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T00:19:33.527738+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 40,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.6,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -0.3%",
+          "delta": 0.3100000000000023,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 50,
+          "name": "Pattambi",
+          "change": "UDF +0.3%",
+          "delta": 0.30000000000001137,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 65,
+          "name": "Wadakkanchery",
+          "change": "LDF -0.3%",
+          "delta": 0.30000000000000426,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 23,
+          "name": "Quilandy",
+          "change": "UDF -0.3%",
+          "delta": 0.29000000000000625,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF +0.3%",
+          "delta": 0.28000000000000114,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T01:19:49.787110+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 40,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 10,
+          "name": "Azhikode",
+          "change": "LDF +0.6%",
+          "delta": 0.5600000000000023,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -0.4%",
+          "delta": 0.35999999999999943,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 14,
+          "name": "Kuthuparamba",
+          "change": "LDF -0.3%",
+          "delta": 0.29999999999999716,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 51,
+          "name": "Shornur",
+          "change": "LDF -0.3%",
+          "delta": 0.29999999999999716,
+          "category": "Safe LDF"
+        },
+        {
+          "no": 53,
+          "name": "Kongad",
+          "change": "LDF -0.2%",
+          "delta": 0.25,
+          "category": "Likely LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T02:50:02.643619+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.4,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 48,
+          "p95": 51,
+          "min": 34,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 92.7,
+          "median": 93,
+          "p5": 87,
+          "p25": 91,
+          "p75": 95,
+          "p95": 98,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.285,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +2.0%",
+          "delta": 1.9699999999999989,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 25,
+          "name": "Balusseri",
+          "change": "LDF +1.8%",
+          "delta": 1.8299999999999983,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF +1.8%",
+          "delta": 1.7899999999999991,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 27,
+          "name": "Kozhikode North",
+          "change": "LDF +1.7%",
+          "delta": 1.7000000000000028,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +1.7%",
+          "delta": 1.6799999999999997,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T12:32:46.011235+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.4,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 2.0,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.285
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA +2.0%",
+          "delta": 2.020000000000003,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +1.8%",
+          "delta": 1.75,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +1.6%",
+          "delta": 1.6400000000000006,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +1.1%",
+          "delta": 1.0900000000000016,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +1.0%",
+          "delta": 1.0,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T13:33:02.385237+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.1,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 32,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 94.0,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.143,
+        "NDA": 0.143
+      },
+      "hot_constituencies": [
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -1.3%",
+          "delta": 1.2700000000000031,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 14,
+          "name": "Kuthuparamba",
+          "change": "LDF -1.2%",
+          "delta": 1.1999999999999957,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 132,
+          "name": "Kazhakkoottam",
+          "change": "LDF -1.2%",
+          "delta": 1.1500000000000057,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "LDF -1.1%",
+          "delta": 1.1299999999999955,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF -1.1%",
+          "delta": 1.0999999999999943,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T14:33:18.730111+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 99,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA +3.8%",
+          "delta": 3.759999999999998,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.6%",
+          "delta": 3.569999999999993,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +3.0%",
+          "delta": 3.0100000000000016,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.6%",
+          "delta": 2.570000000000002,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +2.1%",
+          "delta": 2.0600000000000005,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T15:33:37.344774+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.2,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 31,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 95.0,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 83,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.57,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +3.9%",
+          "delta": 3.8800000000000026,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +3.8%",
+          "delta": 3.75,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF -3.7%",
+          "delta": 3.710000000000001,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF -3.6%",
+          "delta": 3.6200000000000045,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +3.6%",
+          "delta": 3.5900000000000034,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-03T16:34:01.620230+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.3,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 94.9,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 82,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.522,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -3.6%",
+          "delta": 3.6199999999999974,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +3.5%",
+          "delta": 3.530000000000001,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 14,
+          "name": "Kuthuparamba",
+          "change": "LDF -3.5%",
+          "delta": 3.469999999999999,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +3.4%",
+          "delta": 3.4399999999999977,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +3.4%",
+          "delta": 3.4200000000000017,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T00:50:35.309069+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.3,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 51,
+          "min": 34,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 92.9,
+          "median": 93,
+          "p5": 87,
+          "p25": 91,
+          "p75": 95,
+          "p95": 98,
+          "min": 80,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.498,
+        "UDF": 0.285,
+        "NDA": 0.285
+      },
+      "hot_constituencies": [
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "LDF +1.7%",
+          "delta": 1.6899999999999977,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF +1.5%",
+          "delta": 1.5399999999999991,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +1.5%",
+          "delta": 1.470000000000006,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF +1.4%",
+          "delta": 1.3699999999999974,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 25,
+          "name": "Balusseri",
+          "change": "LDF +1.4%",
+          "delta": 1.3599999999999994,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T01:50:52.263848+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.6,
+          "median": 46,
+          "p5": 40,
+          "p25": 43,
+          "p75": 48,
+          "p95": 51,
+          "min": 32,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 92.5,
+          "median": 93,
+          "p5": 87,
+          "p25": 90,
+          "p75": 95,
+          "p95": 98,
+          "min": 81,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.498,
+        "UDF": 0.143,
+        "NDA": 0.285
+      },
+      "hot_constituencies": [
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF -2.5%",
+          "delta": 2.480000000000004,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +2.3%",
+          "delta": 2.3200000000000003,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 127,
+          "name": "Varkala",
+          "change": "LDF +2.3%",
+          "delta": 2.3199999999999967,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF +2.2%",
+          "delta": 2.1799999999999997,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +2.2%",
+          "delta": 2.1700000000000017,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T06:50:45.596589+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -3.9%",
+          "delta": 3.8800000000000026,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.3%",
+          "delta": 3.279999999999987,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +3.2%",
+          "delta": 3.2399999999999984,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.7%",
+          "delta": 2.700000000000001,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +2.0%",
+          "delta": 1.9700000000000006,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T13:32:26.695972+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 32,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -3.8%",
+          "delta": 3.8299999999999983,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.4%",
+          "delta": 3.4099999999999966,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +3.0%",
+          "delta": 3.0,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.8%",
+          "delta": 2.7500000000000018,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +1.8%",
+          "delta": 1.8100000000000005,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T16:13:23.551358+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 32,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 99,
+          "min": 82,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -3.9%",
+          "delta": 3.8999999999999986,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +3.0%",
+          "delta": 3.0,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.0%",
+          "delta": 3.0,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.7%",
+          "delta": 2.6899999999999995,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +1.8%",
+          "delta": 1.83,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T17:13:39.837857+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 32,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 78,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA +3.8%",
+          "delta": 3.789999999999999,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.2%",
+          "delta": 3.2099999999999937,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +3.1%",
+          "delta": 3.0500000000000007,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.4%",
+          "delta": 2.3500000000000014,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +2.1%",
+          "delta": 2.0600000000000005,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T18:13:56.136036+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.5,
+          "median": 44,
+          "p5": 40,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 99,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.57
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA +4.0%",
+          "delta": 4.030000000000001,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +3.5%",
+          "delta": 3.5,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +2.9%",
+          "delta": 2.8500000000000014,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA +2.6%",
+          "delta": 2.58,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +1.9%",
+          "delta": 1.9100000000000001,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T18:43:20.292543+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 46.1,
+          "median": 46,
+          "p5": 41,
+          "p25": 44,
+          "p75": 48,
+          "p95": 51,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 91.7,
+          "median": 92,
+          "p5": 86,
+          "p25": 90,
+          "p75": 94,
+          "p95": 97,
+          "min": 79,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 2.2,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.57,
+        "UDF": 0.0,
+        "NDA": 0.996
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -6.6%",
+          "delta": 6.609999999999999,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF -5.1%",
+          "delta": 5.059999999999988,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF -4.6%",
+          "delta": 4.600000000000001,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +4.1%",
+          "delta": 4.1499999999999915,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 67,
+          "name": "Thrissur",
+          "change": "UDF -3.8%",
+          "delta": 3.799999999999997,
+          "category": "Likely UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T19:43:37.384294+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 46.1,
+          "median": 46,
+          "p5": 41,
+          "p25": 44,
+          "p75": 48,
+          "p95": 51,
+          "min": 36,
+          "max": 59
+        },
+        "UDF": {
+          "mean": 91.8,
+          "median": 92,
+          "p5": 86,
+          "p25": 90,
+          "p75": 94,
+          "p95": 97,
+          "min": 79,
+          "max": 102
+        },
+        "NDA": {
+          "mean": 2.1,
+          "median": 2,
+          "p5": 1,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.57,
+        "UDF": 0.0,
+        "NDA": 0.783
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -5.5%",
+          "delta": 5.5,
+          "category": "Toss-up NDA"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF -4.2%",
+          "delta": 4.209999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF -4.0%",
+          "delta": 3.9899999999999984,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF -3.8%",
+          "delta": 3.780000000000001,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 95,
+          "name": "Vaikom",
+          "change": "LDF +3.8%",
+          "delta": 3.7699999999999996,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-04T21:22:55.295319+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.171,
+        "UDF": 0.171,
+        "NDA": 0.171
+      },
+      "hot_constituencies": [
+        {
+          "no": 3,
+          "name": "Udma",
+          "change": "UDF +0.5%",
+          "delta": 0.47000000000000064,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 62,
+          "name": "Kunnamkulam",
+          "change": "LDF -0.4%",
+          "delta": 0.4000000000000057,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -0.4%",
+          "delta": 0.36999999999999744,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 29,
+          "name": "Beypore",
+          "change": "UDF +0.3%",
+          "delta": 0.33999999999999986,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 23,
+          "name": "Quilandy",
+          "change": "UDF -0.3%",
+          "delta": 0.29000000000000625,
+          "category": "Likely UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T10:48:28.322024+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 39,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.6,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.57,
+        "UDF": 0.57,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -4.0%",
+          "delta": 4.010000000000005,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -3.9%",
+          "delta": 3.8599999999999994,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA -2.3%",
+          "delta": 2.3200000000000003,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA -2.0%",
+          "delta": 2.039999999999999,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA -1.5%",
+          "delta": 1.5299999999999994,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T12:04:03.567437+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 28,
+          "name": "Kozhikode South",
+          "change": "UDF -0.4%",
+          "delta": 0.38000000000000256,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 69,
+          "name": "Kaipamangalam",
+          "change": "UDF -0.3%",
+          "delta": 0.3000000000000007,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "UDF -0.2%",
+          "delta": 0.240000000000002,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 132,
+          "name": "Kazhakkoottam",
+          "change": "LDF -0.2%",
+          "delta": 0.23999999999999488,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 53,
+          "name": "Kongad",
+          "change": "LDF -0.2%",
+          "delta": 0.21000000000000796,
+          "category": "Likely LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T13:44:57.756561+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.4,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.285,
+        "UDF": 0.285,
+        "NDA": 0.285
+      },
+      "hot_constituencies": [
+        {
+          "no": 67,
+          "name": "Thrissur",
+          "change": "UDF -0.5%",
+          "delta": 0.4899999999999949,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 57,
+          "name": "Tarur",
+          "change": "LDF -0.5%",
+          "delta": 0.46999999999999886,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 53,
+          "name": "Kongad",
+          "change": "UDF +0.4%",
+          "delta": 0.4399999999999977,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 11,
+          "name": "Kannur",
+          "change": "LDF +0.4%",
+          "delta": 0.41000000000000014,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 32,
+          "name": "Thiruvambady",
+          "change": "LDF +0.4%",
+          "delta": 0.40000000000000036,
+          "category": "Likely UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T21:17:45.822912+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.2,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 32,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.9,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.148,
+        "NDA": 0.047
+      },
+      "hot_constituencies": [
+        {
+          "no": 95,
+          "name": "Vaikom",
+          "change": "UDF +1.2%",
+          "delta": 1.210000000000008,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 66,
+          "name": "Ollur",
+          "change": "UDF +1.2%",
+          "delta": 1.2100000000000009,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 53,
+          "name": "Kongad",
+          "change": "LDF -1.2%",
+          "delta": 1.2000000000000028,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -1.0%",
+          "delta": 1.0399999999999991,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 25,
+          "name": "Balusseri",
+          "change": "LDF -1.0%",
+          "delta": 1.0,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T22:10:18.409374+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 78,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.278,
+        "UDF": 0.261,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -1.8%",
+          "delta": 1.7999999999999972,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.8%",
+          "delta": 1.7700000000000102,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA -1.2%",
+          "delta": 1.17,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA -1.1%",
+          "delta": 1.1099999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA -0.9%",
+          "delta": 0.8999999999999986,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-05T23:10:35.427239+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 80,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.223,
+        "UDF": 0.208,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.5%",
+          "delta": 1.4500000000000028,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -1.3%",
+          "delta": 1.3299999999999983,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "NDA -1.0%",
+          "delta": 1.0,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA -1.0%",
+          "delta": 1.0,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 132,
+          "name": "Kazhakkoottam",
+          "change": "NDA -0.7%",
+          "delta": 0.6799999999999997,
+          "category": "Likely LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T00:37:39.801145+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 80,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 66,
+          "name": "Ollur",
+          "change": "LDF +0.4%",
+          "delta": 0.4000000000000057,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 27,
+          "name": "Kozhikode North",
+          "change": "UDF +0.3%",
+          "delta": 0.3100000000000023,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF -0.3%",
+          "delta": 0.2700000000000031,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 70,
+          "name": "Irinjalakkuda",
+          "change": "UDF -0.3%",
+          "delta": 0.2599999999999909,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 62,
+          "name": "Kunnamkulam",
+          "change": "LDF +0.2%",
+          "delta": 0.25,
+          "category": "Likely LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T11:51:41.886347+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 32,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.4,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.165
+      },
+      "hot_constituencies": [
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "NDA +1.0%",
+          "delta": 1.0299999999999994,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -1.0%",
+          "delta": 1.0200000000000031,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA +0.9%",
+          "delta": 0.8999999999999915,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "NDA +0.7%",
+          "delta": 0.7300000000000004,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 67,
+          "name": "Thrissur",
+          "change": "NDA +0.7%",
+          "delta": 0.6500000000000004,
+          "category": "Likely UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T12:52:01.917421+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.0,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 32,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 94.3,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 100,
+          "min": 81,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.323,
+        "UDF": 0.597,
+        "NDA": 0.055
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -3.5%",
+          "delta": 3.480000000000004,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -3.4%",
+          "delta": 3.3599999999999994,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +2.1%",
+          "delta": 2.0900000000000034,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +2.0%",
+          "delta": 2.039999999999999,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +2.0%",
+          "delta": 1.9699999999999989,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T13:52:42.257463+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.3,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.9,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 99,
+          "min": 83,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.136,
+        "UDF": 0.258,
+        "NDA": 0.072
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.2%",
+          "delta": 1.1800000000000068,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +1.1%",
+          "delta": 1.1499999999999986,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +1.1%",
+          "delta": 1.1300000000000026,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -0.9%",
+          "delta": 0.9099999999999966,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 89,
+          "name": "Udumbanchola",
+          "change": "LDF -0.9%",
+          "delta": 0.8799999999999955,
+          "category": "Likely LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T14:53:02.156132+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.3,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 33,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 93.8,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 99,
+          "min": 83,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.136,
+        "UDF": 0.258,
+        "NDA": 0.072
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.2%",
+          "delta": 1.1800000000000068,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 25,
+          "name": "Balusseri",
+          "change": "LDF -1.1%",
+          "delta": 1.1200000000000045,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -1.1%",
+          "delta": 1.0700000000000003,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +1.0%",
+          "delta": 1.0,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 57,
+          "name": "Tarur",
+          "change": "UDF +1.0%",
+          "delta": 0.9799999999999969,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T15:53:21.535828+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.3,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.8,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.136,
+        "UDF": 0.258,
+        "NDA": 0.072
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.3%",
+          "delta": 1.3300000000000125,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -1.1%",
+          "delta": 1.1299999999999955,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +0.9%",
+          "delta": 0.8800000000000026,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 89,
+          "name": "Udumbanchola",
+          "change": "LDF -0.9%",
+          "delta": 0.8599999999999994,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 95,
+          "name": "Vaikom",
+          "change": "LDF -0.8%",
+          "delta": 0.8399999999999999,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T21:16:33.050152+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.3,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 92.8,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 98,
+          "min": 79,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.276,
+        "UDF": 0.0,
+        "NDA": 0.041
+      },
+      "hot_constituencies": [
+        {
+          "no": 25,
+          "name": "Balusseri",
+          "change": "LDF +1.9%",
+          "delta": 1.8999999999999986,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +1.9%",
+          "delta": 1.8700000000000045,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "LDF +1.9%",
+          "delta": 1.8600000000000065,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 127,
+          "name": "Varkala",
+          "change": "UDF -1.8%",
+          "delta": 1.7800000000000011,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +1.6%",
+          "delta": 1.6400000000000006,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T22:20:08.355431+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.5,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 46,
+          "p95": 49,
+          "min": 30,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 94.9,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 82,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.6,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 5
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.553,
+        "UDF": 1.038,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -6.6%",
+          "delta": 6.649999999999999,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -6.2%",
+          "delta": 6.180000000000007,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +4.3%",
+          "delta": 4.340000000000003,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +3.7%",
+          "delta": 3.690000000000012,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "UDF +3.2%",
+          "delta": 3.240000000000002,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-06T23:20:28.730452+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 133,
+          "name": "Vattiyoorkavu",
+          "change": "LDF +0.5%",
+          "delta": 0.46999999999999886,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 28,
+          "name": "Kozhikode South",
+          "change": "UDF -0.3%",
+          "delta": 0.3100000000000023,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -0.3%",
+          "delta": 0.29999999999999716,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 29,
+          "name": "Beypore",
+          "change": "LDF -0.3%",
+          "delta": 0.28000000000000114,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +0.3%",
+          "delta": 0.28000000000000114,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T02:11:13.660351+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.4,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 48,
+          "p95": 51,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 92.8,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 98,
+          "min": 79,
+          "max": 103
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.285,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +2.1%",
+          "delta": 2.1400000000000006,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "LDF +2.0%",
+          "delta": 2.039999999999999,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF +2.0%",
+          "delta": 1.9799999999999969,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 27,
+          "name": "Kozhikode North",
+          "change": "LDF +2.0%",
+          "delta": 1.9600000000000009,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 95,
+          "name": "Vaikom",
+          "change": "LDF +1.9%",
+          "delta": 1.879999999999999,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T03:11:31.702312+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 46.2,
+          "median": 46,
+          "p5": 41,
+          "p25": 44,
+          "p75": 48,
+          "p95": 51,
+          "min": 35,
+          "max": 61
+        },
+        "UDF": {
+          "mean": 92.0,
+          "median": 92,
+          "p5": 87,
+          "p25": 90,
+          "p75": 94,
+          "p95": 97,
+          "min": 75,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.571,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 130,
+          "name": "Nedumangad",
+          "change": "LDF +3.9%",
+          "delta": 3.9399999999999977,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "LDF +3.8%",
+          "delta": 3.8000000000000043,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "LDF +3.8%",
+          "delta": 3.799999999999997,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 95,
+          "name": "Vaikom",
+          "change": "LDF +3.7%",
+          "delta": 3.7200000000000024,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF +3.5%",
+          "delta": 3.490000000000002,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T14:13:17.232797+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.6,
+          "median": 46,
+          "p5": 40,
+          "p25": 43,
+          "p75": 48,
+          "p95": 51,
+          "min": 35,
+          "max": 59
+        },
+        "UDF": {
+          "mean": 92.6,
+          "median": 93,
+          "p5": 87,
+          "p25": 90,
+          "p75": 95,
+          "p95": 98,
+          "min": 79,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.684,
+        "UDF": 0.346,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -3.6%",
+          "delta": 3.5600000000000023,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "LDF +3.1%",
+          "delta": 3.0900000000000034,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -2.4%",
+          "delta": 2.3900000000000006,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF +2.4%",
+          "delta": 2.3699999999999974,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 48,
+          "name": "Ponnani",
+          "change": "LDF +2.3%",
+          "delta": 2.3400000000000034,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T15:13:34.724938+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.7,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 32,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 10,
+          "name": "Azhikode",
+          "change": "LDF +0.4%",
+          "delta": 0.38000000000000256,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 69,
+          "name": "Kaipamangalam",
+          "change": "UDF -0.4%",
+          "delta": 0.370000000000001,
+          "category": "Likely LDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -0.3%",
+          "delta": 0.30000000000001137,
+          "category": "Likely NDA"
+        },
+        {
+          "no": 66,
+          "name": "Ollur",
+          "change": "LDF +0.3%",
+          "delta": 0.28000000000000114,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 57,
+          "name": "Tarur",
+          "change": "LDF -0.2%",
+          "delta": 0.25,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T15:48:10.551043+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +37.2%",
+          "delta": 37.16,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +30.6%",
+          "delta": 30.620000000000005,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.6%",
+          "delta": 8.560000000000002,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 2,
+          "name": "Kasaragod",
+          "change": "NDA +2.2%",
+          "delta": 2.2199999999999998,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA +0.4%",
+          "delta": 0.38000000000000256,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T07:00:05.029074+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.9,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 58
+        },
+        "UDF": {
+          "mean": 93.4,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.62,
+        "UDF": 0.521,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +36.8%",
+          "delta": 36.75,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +31.8%",
+          "delta": 31.849999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.4%",
+          "delta": 8.36,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -4.1%",
+          "delta": 4.090000000000003,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -3.5%",
+          "delta": 3.469999999999999,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T07:01:31.771363+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 45.0,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.62,
+        "UDF": 0.521,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +36.8%",
+          "delta": 36.83,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +31.8%",
+          "delta": 31.810000000000002,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.4%",
+          "delta": 8.36,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -4.0%",
+          "delta": 3.960000000000008,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -3.4%",
+          "delta": 3.3699999999999974,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T07:02:05.090072+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.9,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.3,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 95,
+          "p95": 99,
+          "min": 82,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.427,
+        "UDF": 0.343,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +36.8%",
+          "delta": 36.81,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +31.7%",
+          "delta": 31.67,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.4%",
+          "delta": 8.400000000000006,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -2.9%",
+          "delta": 2.9000000000000057,
+          "category": "Lean NDA"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -2.6%",
+          "delta": 2.5899999999999963,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T08:02:34.773388+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.8,
+          "median": 45,
+          "p5": 40,
+          "p25": 43,
+          "p75": 47,
+          "p95": 50,
+          "min": 34,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.4,
+          "median": 93,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 82,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.247,
+        "UDF": 0.213,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +37.1%",
+          "delta": 37.14,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +31.2%",
+          "delta": 31.159999999999997,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.5%",
+          "delta": 8.530000000000001,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 2,
+          "name": "Kasaragod",
+          "change": "NDA +1.8%",
+          "delta": 1.7699999999999996,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -1.5%",
+          "delta": 1.5100000000000051,
+          "category": "Likely NDA"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T09:02:50.837999+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.9,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 32,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 95.4,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 98,
+          "p95": 101,
+          "min": 83,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.141,
+        "UDF": 0.82,
+        "NDA": 0.065
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.9%",
+          "delta": 38.93000000000001,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +33.9%",
+          "delta": 33.900000000000006,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.9%",
+          "delta": 8.900000000000006,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +5.0%",
+          "delta": 5.0,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +4.7%",
+          "delta": 4.68,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T10:03:06.874643+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.1,
+          "median": 42,
+          "p5": 37,
+          "p25": 40,
+          "p75": 44,
+          "p95": 47,
+          "min": 30,
+          "max": 54
+        },
+        "UDF": {
+          "mean": 96.2,
+          "median": 96,
+          "p5": 91,
+          "p25": 94,
+          "p75": 98,
+          "p95": 101,
+          "min": 84,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 1.012,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +40.0%",
+          "delta": 39.95,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +34.9%",
+          "delta": 34.94,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.1%",
+          "delta": 9.11,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +7.0%",
+          "delta": 7.0,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +6.5%",
+          "delta": 6.530000000000001,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T11:03:29.845265+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.9,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 32,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 94.4,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 97,
+          "p95": 100,
+          "min": 83,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.36,
+        "UDF": 0.691,
+        "NDA": 0.045
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.1%",
+          "delta": 38.09,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +32.8%",
+          "delta": 32.769999999999996,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.6%",
+          "delta": 8.599999999999994,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -3.9%",
+          "delta": 3.9299999999999997,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -3.9%",
+          "delta": 3.8700000000000045,
+          "category": "Lean NDA"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T12:21:20.195975+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.9,
+          "median": 44,
+          "p5": 39,
+          "p25": 42,
+          "p75": 46,
+          "p95": 49,
+          "min": 34,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 94.4,
+          "median": 94,
+          "p5": 89,
+          "p25": 92,
+          "p75": 97,
+          "p95": 100,
+          "min": 82,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.259,
+        "UDF": 0.556,
+        "NDA": 0.086
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.0%",
+          "delta": 37.95,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +32.2%",
+          "delta": 32.17,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.6%",
+          "delta": 8.590000000000003,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +2.8%",
+          "delta": 2.8399999999999963,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 135,
+          "name": "Nemom",
+          "change": "NDA -2.6%",
+          "delta": 2.6400000000000006,
+          "category": "Lean NDA"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T13:21:36.779922+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.9,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 32,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 95.4,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 98,
+          "p95": 101,
+          "min": 84,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.14,
+        "UDF": 0.822,
+        "NDA": 0.024
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +39.0%",
+          "delta": 39.019999999999996,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +33.8%",
+          "delta": 33.849999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.9%",
+          "delta": 8.900000000000006,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +5.3%",
+          "delta": 5.32,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +4.8%",
+          "delta": 4.810000000000002,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T14:21:53.475978+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.2,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 31,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 95.1,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 81,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 5
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.09,
+        "UDF": 0.664,
+        "NDA": 0.04
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.8%",
+          "delta": 38.75,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +33.4%",
+          "delta": 33.370000000000005,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.9%",
+          "delta": 8.879999999999995,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -4.2%",
+          "delta": 4.199999999999996,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 66,
+          "name": "Ollur",
+          "change": "LDF -3.7%",
+          "delta": 3.6700000000000017,
+          "category": "Lean LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T15:22:15.271572+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.6,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 45,
+          "p95": 48,
+          "min": 32,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 95.7,
+          "median": 96,
+          "p5": 90,
+          "p25": 94,
+          "p75": 98,
+          "p95": 101,
+          "min": 83,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.793,
+        "NDA": 0.078
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +39.3%",
+          "delta": 39.260000000000005,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +33.8%",
+          "delta": 33.760000000000005,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.0%",
+          "delta": 8.959999999999994,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 138,
+          "name": "Kattakkada",
+          "change": "UDF +5.3%",
+          "delta": 5.299999999999997,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -5.2%",
+          "delta": 5.219999999999999,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T16:22:32.347278+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.2,
+          "median": 42,
+          "p5": 37,
+          "p25": 40,
+          "p75": 44,
+          "p95": 47,
+          "min": 31,
+          "max": 53
+        },
+        "UDF": {
+          "mean": 96.1,
+          "median": 96,
+          "p5": 91,
+          "p25": 94,
+          "p75": 98,
+          "p95": 101,
+          "min": 86,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 5
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.979,
+        "NDA": 0.071
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +39.8%",
+          "delta": 39.81,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +34.8%",
+          "delta": 34.760000000000005,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.0%",
+          "delta": 9.030000000000001,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 14,
+          "name": "Kuthuparamba",
+          "change": "LDF -6.2%",
+          "delta": 6.189999999999998,
+          "category": "Toss-up UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +6.2%",
+          "delta": 6.18,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T17:22:48.578184+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.4,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 46,
+          "p95": 49,
+          "min": 31,
+          "max": 54
+        },
+        "UDF": {
+          "mean": 94.8,
+          "median": 95,
+          "p5": 89,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 83,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.8,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 7
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.443,
+        "NDA": 0.131
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.4%",
+          "delta": 38.41,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +32.3%",
+          "delta": 32.269999999999996,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.8%",
+          "delta": 8.769999999999996,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 57,
+          "name": "Tarur",
+          "change": "UDF +3.0%",
+          "delta": 3.039999999999999,
+          "category": "Lean LDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -3.0%",
+          "delta": 2.969999999999999,
+          "category": "Toss-up LDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-04T23:13:36.914991+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 42.1,
+          "median": 42,
+          "p5": 37,
+          "p25": 40,
+          "p75": 44,
+          "p95": 47,
+          "min": 31,
+          "max": 54
+        },
+        "UDF": {
+          "mean": 96.3,
+          "median": 96,
+          "p5": 91,
+          "p25": 94,
+          "p75": 98,
+          "p95": 101,
+          "min": 84,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 1.026,
+        "NDA": 0.079
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +40.0%",
+          "delta": 39.95,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +34.8%",
+          "delta": 34.83,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.1%",
+          "delta": 9.11,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +6.7%",
+          "delta": 6.700000000000003,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 109,
+          "name": "Mavelikara",
+          "change": "LDF -6.5%",
+          "delta": 6.549999999999997,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-05T00:14:21.803215+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 43.5,
+          "median": 43,
+          "p5": 38,
+          "p25": 41,
+          "p75": 46,
+          "p95": 49,
+          "min": 31,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 94.8,
+          "median": 95,
+          "p5": 90,
+          "p25": 93,
+          "p75": 97,
+          "p95": 100,
+          "min": 82,
+          "max": 107
+        },
+        "NDA": {
+          "mean": 1.7,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.127,
+        "UDF": 0.582,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +38.3%",
+          "delta": 38.349999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +33.0%",
+          "delta": 32.959999999999994,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.7%",
+          "delta": 8.689999999999998,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "NDA -4.0%",
+          "delta": 3.969999999999999,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF -3.1%",
+          "delta": 3.1400000000000006,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-05T01:14:39.517933+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 41.7,
+          "median": 42,
+          "p5": 37,
+          "p25": 40,
+          "p75": 44,
+          "p95": 47,
+          "min": 30,
+          "max": 54
+        },
+        "UDF": {
+          "mean": 96.7,
+          "median": 97,
+          "p5": 91,
+          "p25": 95,
+          "p75": 99,
+          "p95": 102,
+          "min": 85,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.6,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 1.162,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +40.2%",
+          "delta": 40.150000000000006,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +35.6%",
+          "delta": 35.59,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.1%",
+          "delta": 9.129999999999995,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +7.5%",
+          "delta": 7.490000000000002,
+          "category": "Lean UDF"
+        },
+        {
+          "no": 137,
+          "name": "Parassala",
+          "change": "LDF -7.4%",
+          "delta": 7.43,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-05T15:32:44.757049+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 41.7,
+          "median": 42,
+          "p5": 37,
+          "p25": 40,
+          "p75": 44,
+          "p95": 47,
+          "min": 31,
+          "max": 55
+        },
+        "UDF": {
+          "mean": 96.7,
+          "median": 97,
+          "p5": 91,
+          "p25": 95,
+          "p75": 99,
+          "p95": 102,
+          "min": 85,
+          "max": 108
+        },
+        "NDA": {
+          "mean": 1.6,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 3,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 1.162,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +40.4%",
+          "delta": 40.42,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +35.7%",
+          "delta": 35.68000000000001,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +9.2%",
+          "delta": 9.230000000000004,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 126,
+          "name": "Chathannur",
+          "change": "UDF +7.6%",
+          "delta": 7.590000000000003,
+          "category": "Toss-up LDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF +7.5%",
+          "delta": 7.539999999999999,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-05T17:17:47.099000+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 40,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 80,
+          "max": 106
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 3,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.053
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +37.3%",
+          "delta": 37.28,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +30.3%",
+          "delta": 30.299999999999997,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.5%",
+          "delta": 8.519999999999996,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 2,
+          "name": "Kasaragod",
+          "change": "UDF -2.2%",
+          "delta": 2.1500000000000057,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 1,
+          "name": "Manjeshwar",
+          "change": "UDF -0.5%",
+          "delta": 0.5300000000000011,
+          "category": "Toss-up UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-05T20:15:41.544034+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 40,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 56
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 81,
+          "max": 104
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +37.5%",
+          "delta": 37.489999999999995,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +30.8%",
+          "delta": 30.83,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.5%",
+          "delta": 8.480000000000004,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 2,
+          "name": "Kasaragod",
+          "change": "UDF -2.1%",
+          "delta": 2.1200000000000045,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 10,
+          "name": "Azhikode",
+          "change": "LDF +0.4%",
+          "delta": 0.3999999999999986,
+          "category": "Lean UDF"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-06-09T21:48:07.303489+05:30",
+      "seat_projections": {
+        "LDF": {
+          "mean": 44.6,
+          "median": 45,
+          "p5": 39,
+          "p25": 42,
+          "p75": 47,
+          "p95": 50,
+          "min": 33,
+          "max": 57
+        },
+        "UDF": {
+          "mean": 93.5,
+          "median": 94,
+          "p5": 88,
+          "p25": 91,
+          "p75": 96,
+          "p95": 99,
+          "min": 79,
+          "max": 105
+        },
+        "NDA": {
+          "mean": 1.9,
+          "median": 2,
+          "p5": 0,
+          "p25": 1,
+          "p75": 2,
+          "p95": 4,
+          "min": 0,
+          "max": 6
+        }
+      },
+      "sentiment_applied": {
+        "LDF": 0.0,
+        "UDF": 0.0,
+        "NDA": 0.0
+      },
+      "hot_constituencies": [
+        {
+          "no": 77,
+          "name": "Kalamassery",
+          "change": "UDF +37.3%",
+          "delta": 37.34,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 101,
+          "name": "Poonjar",
+          "change": "UDF +30.7%",
+          "delta": 30.680000000000007,
+          "category": "Likely UDF"
+        },
+        {
+          "no": 100,
+          "name": "Kanjirappally",
+          "change": "UDF +8.5%",
+          "delta": 8.530000000000001,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 2,
+          "name": "Kasaragod",
+          "change": "UDF -2.2%",
+          "delta": 2.180000000000007,
+          "category": "Safe UDF"
+        },
+        {
+          "no": 64,
+          "name": "Manalur",
+          "change": "LDF -0.3%",
+          "delta": 0.30000000000001137,
+          "category": "Likely LDF"
+        }
+      ]
     }
   ]
 }

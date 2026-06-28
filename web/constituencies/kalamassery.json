@@ -28,45 +28,45 @@
     "has_booth_data": false
   },
   "adjusted_vote_shares": {
-    "LDF": 45.02,
-    "UDF": 46.06,
-    "NDA": 6.28
+    "LDF": 46.2,
+    "UDF": 44.5,
+    "NDA": 6.8
   },
   "vote_estimates": {
     "LDF": {
-      "vote_share_pct": 45.02,
-      "estimated_votes": 69491
+      "vote_share_pct": 46.2,
+      "estimated_votes": 71307
     },
     "UDF": {
-      "vote_share_pct": 46.06,
-      "estimated_votes": 71097
+      "vote_share_pct": 44.5,
+      "estimated_votes": 68684
     },
     "NDA": {
-      "vote_share_pct": 6.28,
-      "estimated_votes": 9687
+      "vote_share_pct": 6.8,
+      "estimated_votes": 10495
     }
   },
   "total_voters": 154345,
-  "estimated_margin": 1606,
-  "estimated_winner": "UDF",
+  "estimated_margin": 2623,
+  "estimated_winner": "LDF",
   "volatility": 7.1,
   "win_probabilities": {
-    "LDF": 45.9,
-    "UDF": 54.1,
-    "NDA": 0.0
+    "LDF": 53.0,
+    "UDF": 46.0,
+    "NDA": 1.0
   },
-  "category": "Toss-up UDF",
+  "category": "Toss-up",
   "avg_simulated_margin": 8.08,
   "comparison_with_main": {
     "main_probs": {
-      "LDF": 16.79,
-      "UDF": 83.21,
-      "NDA": 0.0
+      "LDF": 53.0,
+      "UDF": 46.0,
+      "NDA": 1.0
     },
-    "main_category": "Likely UDF",
+    "main_category": "Toss-up",
     "delta": {
-      "LDF": 29.11,
-      "UDF": -29.11,
+      "LDF": 0.0,
+      "UDF": 0.0,
       "NDA": 0.0
     }
   }

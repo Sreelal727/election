@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-06T21:16:33.040290+05:30",
+  "last_updated": "2026-06-11T14:37:17.446073+05:30",
   "predictions": [
     {
       "Constituency_No": 1,
@@ -14,20 +14,20 @@
       "Base_LDF": 23.62,
       "Base_UDF": 38.22,
       "Base_NDA": 37.79,
-      "Adjusted_LDF": 23.82,
-      "Adjusted_UDF": 38.1,
-      "Adjusted_NDA": 37.71,
-      "LDF_Win_Prob": 0.25,
-      "UDF_Win_Prob": 52.38,
-      "NDA_Win_Prob": 47.37,
+      "Adjusted_LDF": 23.62,
+      "Adjusted_UDF": 38.22,
+      "Adjusted_NDA": 37.79,
+      "LDF_Win_Prob": 0.24,
+      "UDF_Win_Prob": 52.71,
+      "NDA_Win_Prob": 47.05,
       "Category": "Toss-up UDF",
       "Margin_2021": 745,
       "Winner_2021": "UDF",
       "Volatility": 4.89,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -43,20 +43,20 @@
       "Base_LDF": 19.69,
       "Base_UDF": 44.0,
       "Base_NDA": 35.03,
-      "Adjusted_LDF": 19.9,
-      "Adjusted_UDF": 43.86,
-      "Adjusted_NDA": 34.96,
-      "LDF_Win_Prob": 0.01,
-      "UDF_Win_Prob": 94.32,
-      "NDA_Win_Prob": 5.67,
+      "Adjusted_LDF": 19.69,
+      "Adjusted_UDF": 44.0,
+      "Adjusted_NDA": 35.03,
+      "LDF_Win_Prob": 0.0,
+      "UDF_Win_Prob": 94.39,
+      "NDA_Win_Prob": 5.61,
       "Category": "Safe UDF",
       "Margin_2021": 12901,
       "Winner_2021": "UDF",
       "Volatility": 4.63,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -72,20 +72,20 @@
       "Base_LDF": 47.7,
       "Base_UDF": 39.62,
       "Base_NDA": 12.35,
-      "Adjusted_LDF": 47.82,
-      "Adjusted_UDF": 39.49,
+      "Adjusted_LDF": 47.7,
+      "Adjusted_UDF": 39.62,
       "Adjusted_NDA": 12.35,
-      "LDF_Win_Prob": 89.49,
-      "UDF_Win_Prob": 10.51,
+      "LDF_Win_Prob": 89.26,
+      "UDF_Win_Prob": 10.74,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 13322,
       "Winner_2021": "LDF",
       "Volatility": 4.66,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -101,20 +101,20 @@
       "Base_LDF": 50.91,
       "Base_UDF": 34.64,
       "Base_NDA": 12.98,
-      "Adjusted_LDF": 51.02,
-      "Adjusted_UDF": 34.53,
+      "Adjusted_LDF": 50.91,
+      "Adjusted_UDF": 34.64,
       "Adjusted_NDA": 12.98,
-      "LDF_Win_Prob": 99.59,
-      "UDF_Win_Prob": 0.41,
+      "LDF_Win_Prob": 99.55,
+      "UDF_Win_Prob": 0.45,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
       "Margin_2021": 27139,
       "Winner_2021": "LDF",
       "Volatility": 4.41,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -130,20 +130,20 @@
       "Base_LDF": 53.89,
       "Base_UDF": 37.54,
       "Base_NDA": 6.86,
-      "Adjusted_LDF": 53.99,
-      "Adjusted_UDF": 37.42,
-      "Adjusted_NDA": 6.88,
-      "LDF_Win_Prob": 99.61,
-      "UDF_Win_Prob": 0.39,
+      "Adjusted_LDF": 53.89,
+      "Adjusted_UDF": 37.54,
+      "Adjusted_NDA": 6.86,
+      "LDF_Win_Prob": 99.54,
+      "UDF_Win_Prob": 0.46,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
       "Margin_2021": 26137,
       "Winner_2021": "LDF",
       "Volatility": 4.41,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -159,9 +159,9 @@
       "Base_LDF": 62.77,
       "Base_UDF": 29.42,
       "Base_NDA": 7.58,
-      "Adjusted_LDF": 59.95,
-      "Adjusted_UDF": 32.16,
-      "Adjusted_NDA": 7.66,
+      "Adjusted_LDF": 59.87,
+      "Adjusted_UDF": 32.26,
+      "Adjusted_NDA": 7.64,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -170,9 +170,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.0,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -188,9 +188,9 @@
       "Base_LDF": 60.9,
       "Base_UDF": 30.26,
       "Base_NDA": 7.84,
-      "Adjusted_LDF": 58.09,
-      "Adjusted_UDF": 33.0,
-      "Adjusted_NDA": 7.92,
+      "Adjusted_LDF": 58.0,
+      "Adjusted_UDF": 33.1,
+      "Adjusted_NDA": 7.9,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -199,9 +199,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.0,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -217,20 +217,20 @@
       "Base_LDF": 52.37,
       "Base_UDF": 39.58,
       "Base_NDA": 7.36,
-      "Adjusted_LDF": 49.6,
-      "Adjusted_UDF": 42.27,
-      "Adjusted_NDA": 7.44,
-      "LDF_Win_Prob": 87.46,
-      "UDF_Win_Prob": 12.54,
+      "Adjusted_LDF": 49.48,
+      "Adjusted_UDF": 42.4,
+      "Adjusted_NDA": 7.42,
+      "LDF_Win_Prob": 86.8,
+      "UDF_Win_Prob": 13.2,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 22689,
       "Winner_2021": "LDF",
       "Volatility": 4.52,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -246,20 +246,20 @@
       "Base_LDF": 43.9,
       "Base_UDF": 50.48,
       "Base_NDA": 5.15,
-      "Adjusted_LDF": 41.17,
-      "Adjusted_UDF": 53.12,
-      "Adjusted_NDA": 5.24,
-      "LDF_Win_Prob": 3.65,
-      "UDF_Win_Prob": 96.35,
+      "Adjusted_LDF": 41.03,
+      "Adjusted_UDF": 53.29,
+      "Adjusted_NDA": 5.22,
+      "LDF_Win_Prob": 3.27,
+      "UDF_Win_Prob": 96.73,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 10010,
       "Winner_2021": "UDF",
       "Volatility": 4.7,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -275,20 +275,20 @@
       "Base_LDF": 45.57,
       "Base_UDF": 41.32,
       "Base_NDA": 10.9,
-      "Adjusted_LDF": 42.83,
-      "Adjusted_UDF": 44.0,
+      "Adjusted_LDF": 42.69,
+      "Adjusted_UDF": 44.14,
       "Adjusted_NDA": 10.96,
-      "LDF_Win_Prob": 44.35,
-      "UDF_Win_Prob": 55.65,
+      "LDF_Win_Prob": 42.71,
+      "UDF_Win_Prob": 57.29,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean UDF",
       "Margin_2021": 6141,
       "Winner_2021": "LDF",
       "Volatility": 5.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -304,20 +304,20 @@
       "Base_LDF": 45.15,
       "Base_UDF": 43.84,
       "Base_NDA": 8.67,
-      "Adjusted_LDF": 42.41,
-      "Adjusted_UDF": 46.51,
-      "Adjusted_NDA": 8.75,
-      "LDF_Win_Prob": 27.57,
-      "UDF_Win_Prob": 72.43,
+      "Adjusted_LDF": 42.27,
+      "Adjusted_UDF": 46.66,
+      "Adjusted_NDA": 8.73,
+      "LDF_Win_Prob": 25.96,
+      "UDF_Win_Prob": 74.04,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 1745,
       "Winner_2021": "LDF",
       "Volatility": 4.86,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -333,9 +333,9 @@
       "Base_LDF": 59.76,
       "Base_UDF": 28.4,
       "Base_NDA": 9.15,
-      "Adjusted_LDF": 56.96,
-      "Adjusted_UDF": 31.14,
-      "Adjusted_NDA": 9.22,
+      "Adjusted_LDF": 56.86,
+      "Adjusted_UDF": 31.24,
+      "Adjusted_NDA": 9.21,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -344,9 +344,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.0,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -362,10 +362,10 @@
       "Base_LDF": 62.61,
       "Base_UDF": 34.44,
       "Base_NDA": 0.0,
-      "Adjusted_LDF": 58.69,
-      "Adjusted_UDF": 36.47,
-      "Adjusted_NDA": 1.95,
-      "LDF_Win_Prob": 100.0,
+      "Adjusted_LDF": 58.58,
+      "Adjusted_UDF": 36.57,
+      "Adjusted_NDA": 1.96,
+      "LDF_Win_Prob": 99.99,
       "UDF_Win_Prob": 0.01,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
@@ -373,9 +373,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.06,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -391,20 +391,20 @@
       "Base_LDF": 45.5,
       "Base_UDF": 39.36,
       "Base_NDA": 13.67,
-      "Adjusted_LDF": 42.76,
-      "Adjusted_UDF": 42.05,
+      "Adjusted_LDF": 42.62,
+      "Adjusted_UDF": 42.19,
       "Adjusted_NDA": 13.72,
-      "LDF_Win_Prob": 54.22,
-      "UDF_Win_Prob": 45.78,
+      "LDF_Win_Prob": 52.59,
+      "UDF_Win_Prob": 47.41,
       "NDA_Win_Prob": 0.0,
       "Category": "Toss-up LDF",
       "Margin_2021": 9541,
       "Winner_2021": "LDF",
       "Volatility": 4.72,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -420,8 +420,8 @@
       "Base_LDF": 85.07,
       "Base_UDF": 0.0,
       "Base_NDA": 11.81,
-      "Adjusted_LDF": 82.14,
-      "Adjusted_UDF": 2.88,
+      "Adjusted_LDF": 82.13,
+      "Adjusted_UDF": 2.89,
       "Adjusted_NDA": 11.87,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
@@ -431,9 +431,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.0,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -449,20 +449,20 @@
       "Base_LDF": 44.83,
       "Base_UDF": 47.06,
       "Base_NDA": 6.46,
-      "Adjusted_LDF": 42.1,
-      "Adjusted_UDF": 49.72,
-      "Adjusted_NDA": 6.55,
-      "LDF_Win_Prob": 13.18,
-      "UDF_Win_Prob": 86.82,
+      "Adjusted_LDF": 41.95,
+      "Adjusted_UDF": 49.87,
+      "Adjusted_NDA": 6.53,
+      "LDF_Win_Prob": 12.42,
+      "UDF_Win_Prob": 87.58,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 3172,
       "Winner_2021": "UDF",
       "Volatility": 4.83,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -478,20 +478,20 @@
       "Base_LDF": 47.79,
       "Base_UDF": 41.67,
       "Base_NDA": 8.66,
-      "Adjusted_LDF": 36.33,
-      "Adjusted_UDF": 52.95,
-      "Adjusted_NDA": 8.85,
-      "LDF_Win_Prob": 0.65,
-      "UDF_Win_Prob": 99.35,
+      "Adjusted_LDF": 36.17,
+      "Adjusted_UDF": 53.12,
+      "Adjusted_NDA": 8.84,
+      "LDF_Win_Prob": 0.58,
+      "UDF_Win_Prob": 99.42,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 9282,
       "Winner_2021": "LDF",
       "Volatility": 4.72,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -507,9 +507,9 @@
       "Base_LDF": 41.65,
       "Base_UDF": 48.76,
       "Base_NDA": 9.14,
-      "Adjusted_LDF": 30.23,
-      "Adjusted_UDF": 59.99,
-      "Adjusted_NDA": 9.33,
+      "Adjusted_LDF": 30.05,
+      "Adjusted_UDF": 60.18,
+      "Adjusted_NDA": 9.31,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -518,9 +518,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.69,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -536,20 +536,20 @@
       "Base_LDF": 42.79,
       "Base_UDF": 46.41,
       "Base_NDA": 9.32,
-      "Adjusted_LDF": 31.37,
-      "Adjusted_UDF": 57.66,
-      "Adjusted_NDA": 9.5,
-      "LDF_Win_Prob": 0.07,
-      "UDF_Win_Prob": 99.93,
+      "Adjusted_LDF": 31.19,
+      "Adjusted_UDF": 57.84,
+      "Adjusted_NDA": 9.49,
+      "LDF_Win_Prob": 0.06,
+      "UDF_Win_Prob": 99.94,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 5470,
       "Winner_2021": "UDF",
       "Volatility": 5.79,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -565,20 +565,20 @@
       "Base_LDF": 42.25,
       "Base_UDF": 47.75,
       "Base_NDA": 7.5,
-      "Adjusted_LDF": 36.47,
-      "Adjusted_UDF": 53.4,
-      "Adjusted_NDA": 7.66,
-      "LDF_Win_Prob": 1.78,
-      "UDF_Win_Prob": 98.22,
+      "Adjusted_LDF": 36.31,
+      "Adjusted_UDF": 53.57,
+      "Adjusted_NDA": 7.64,
+      "LDF_Win_Prob": 1.7,
+      "UDF_Win_Prob": 98.3,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 7491,
       "Winner_2021": "UDF",
       "Volatility": 5.74,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -594,20 +594,20 @@
       "Base_LDF": 47.29,
       "Base_UDF": 47.09,
       "Base_NDA": 5.39,
-      "Adjusted_LDF": 41.45,
-      "Adjusted_UDF": 52.75,
-      "Adjusted_NDA": 5.57,
-      "LDF_Win_Prob": 8.71,
-      "UDF_Win_Prob": 91.3,
+      "Adjusted_LDF": 41.3,
+      "Adjusted_UDF": 52.92,
+      "Adjusted_NDA": 5.55,
+      "LDF_Win_Prob": 8.17,
+      "UDF_Win_Prob": 91.83,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 333,
       "Winner_2021": "LDF",
       "Volatility": 5.89,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -623,20 +623,20 @@
       "Base_LDF": 47.55,
       "Base_UDF": 45.24,
       "Base_NDA": 6.01,
-      "Adjusted_LDF": 41.71,
-      "Adjusted_UDF": 50.92,
-      "Adjusted_NDA": 6.19,
-      "LDF_Win_Prob": 8.95,
-      "UDF_Win_Prob": 91.05,
+      "Adjusted_LDF": 41.56,
+      "Adjusted_UDF": 51.08,
+      "Adjusted_NDA": 6.17,
+      "LDF_Win_Prob": 8.2,
+      "UDF_Win_Prob": 91.8,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 4035,
       "Winner_2021": "LDF",
       "Volatility": 4.83,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -652,20 +652,20 @@
       "Base_LDF": 46.8,
       "Base_UDF": 41.56,
       "Base_NDA": 10.86,
-      "Adjusted_LDF": 40.96,
-      "Adjusted_UDF": 47.28,
+      "Adjusted_LDF": 40.82,
+      "Adjusted_UDF": 47.43,
       "Adjusted_NDA": 10.98,
-      "LDF_Win_Prob": 17.21,
-      "UDF_Win_Prob": 82.79,
+      "LDF_Win_Prob": 16.18,
+      "UDF_Win_Prob": 83.82,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 8472,
       "Winner_2021": "LDF",
       "Volatility": 4.74,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -681,9 +681,9 @@
       "Base_LDF": 52.68,
       "Base_UDF": 0.0,
       "Base_NDA": 6.84,
-      "Adjusted_LDF": 46.78,
-      "Adjusted_UDF": 6.19,
-      "Adjusted_NDA": 7.01,
+      "Adjusted_LDF": 46.65,
+      "Adjusted_UDF": 6.21,
+      "Adjusted_NDA": 6.99,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -692,9 +692,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.48,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -710,20 +710,20 @@
       "Base_LDF": 50.59,
       "Base_UDF": 39.37,
       "Base_NDA": 9.08,
-      "Adjusted_LDF": 44.71,
-      "Adjusted_UDF": 45.12,
-      "Adjusted_NDA": 9.22,
-      "LDF_Win_Prob": 47.78,
-      "UDF_Win_Prob": 52.22,
+      "Adjusted_LDF": 44.58,
+      "Adjusted_UDF": 45.26,
+      "Adjusted_NDA": 9.21,
+      "LDF_Win_Prob": 45.66,
+      "UDF_Win_Prob": 54.34,
       "NDA_Win_Prob": 0.0,
       "Category": "Toss-up UDF",
       "Margin_2021": 20372,
       "Winner_2021": "LDF",
       "Volatility": 4.56,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -739,9 +739,9 @@
       "Base_LDF": 51.2,
       "Base_UDF": 0.0,
       "Base_NDA": 19.59,
-      "Adjusted_LDF": 45.31,
-      "Adjusted_UDF": 6.19,
-      "Adjusted_NDA": 19.61,
+      "Adjusted_LDF": 45.18,
+      "Adjusted_UDF": 6.21,
+      "Adjusted_NDA": 19.63,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -750,9 +750,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.19,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -768,20 +768,20 @@
       "Base_LDF": 43.14,
       "Base_UDF": 33.71,
       "Base_NDA": 22.59,
-      "Adjusted_LDF": 37.35,
-      "Adjusted_UDF": 39.52,
-      "Adjusted_NDA": 22.58,
-      "LDF_Win_Prob": 36.86,
-      "UDF_Win_Prob": 63.13,
+      "Adjusted_LDF": 37.19,
+      "Adjusted_UDF": 39.65,
+      "Adjusted_NDA": 22.61,
+      "LDF_Win_Prob": 35.43,
+      "UDF_Win_Prob": 64.56,
       "NDA_Win_Prob": 0.01,
       "Category": "Lean UDF",
       "Margin_2021": 12928,
       "Winner_2021": "LDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -797,20 +797,20 @@
       "Base_LDF": 44.37,
       "Base_UDF": 33.85,
       "Base_NDA": 21.0,
-      "Adjusted_LDF": 38.56,
-      "Adjusted_UDF": 39.66,
-      "Adjusted_NDA": 21.01,
-      "LDF_Win_Prob": 44.68,
-      "UDF_Win_Prob": 55.31,
+      "Adjusted_LDF": 38.41,
+      "Adjusted_UDF": 39.78,
+      "Adjusted_NDA": 21.03,
+      "LDF_Win_Prob": 43.0,
+      "UDF_Win_Prob": 56.98,
       "NDA_Win_Prob": 0.02,
       "Category": "Lean UDF",
       "Margin_2021": 12459,
       "Winner_2021": "LDF",
       "Volatility": 5.58,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -826,20 +826,20 @@
       "Base_LDF": 49.92,
       "Base_UDF": 32.46,
       "Base_NDA": 15.96,
-      "Adjusted_LDF": 44.05,
-      "Adjusted_UDF": 38.29,
-      "Adjusted_NDA": 16.02,
-      "LDF_Win_Prob": 82.3,
-      "UDF_Win_Prob": 17.7,
+      "Adjusted_LDF": 43.91,
+      "Adjusted_UDF": 38.41,
+      "Adjusted_NDA": 16.03,
+      "LDF_Win_Prob": 81.34,
+      "UDF_Win_Prob": 18.66,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 28747,
       "Winner_2021": "LDF",
       "Volatility": 4.38,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -855,9 +855,9 @@
       "Base_LDF": 84.44,
       "Base_UDF": 0.0,
       "Base_NDA": 14.34,
-      "Adjusted_LDF": 78.18,
-      "Adjusted_UDF": 6.19,
-      "Adjusted_NDA": 14.42,
+      "Adjusted_LDF": 78.15,
+      "Adjusted_UDF": 6.21,
+      "Adjusted_NDA": 14.43,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -866,9 +866,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.74,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -884,20 +884,20 @@
       "Base_LDF": 44.54,
       "Base_UDF": 47.94,
       "Base_NDA": 6.29,
-      "Adjusted_LDF": 38.73,
-      "Adjusted_UDF": 53.59,
-      "Adjusted_NDA": 6.46,
-      "LDF_Win_Prob": 1.39,
-      "UDF_Win_Prob": 98.61,
+      "Adjusted_LDF": 38.58,
+      "Adjusted_UDF": 53.76,
+      "Adjusted_NDA": 6.44,
+      "LDF_Win_Prob": 1.25,
+      "UDF_Win_Prob": 98.75,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6344,
       "Winner_2021": "UDF",
       "Volatility": 4.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -913,20 +913,20 @@
       "Base_LDF": 47.6,
       "Base_UDF": 44.34,
       "Base_NDA": 5.47,
-      "Adjusted_LDF": 41.75,
-      "Adjusted_UDF": 50.03,
-      "Adjusted_NDA": 5.65,
-      "LDF_Win_Prob": 11.17,
-      "UDF_Win_Prob": 88.83,
+      "Adjusted_LDF": 41.61,
+      "Adjusted_UDF": 50.19,
+      "Adjusted_NDA": 5.63,
+      "LDF_Win_Prob": 10.41,
+      "UDF_Win_Prob": 89.59,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 4643,
       "Winner_2021": "LDF",
       "Volatility": 4.8,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -943,8 +943,8 @@
       "Base_UDF": 50.59,
       "Base_NDA": 6.79,
       "Adjusted_LDF": 1.85,
-      "Adjusted_UDF": 52.45,
-      "Adjusted_NDA": 6.29,
+      "Adjusted_UDF": 52.47,
+      "Adjusted_NDA": 6.26,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -953,9 +953,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.58,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -972,8 +972,8 @@
       "Base_UDF": 54.74,
       "Base_NDA": 4.69,
       "Adjusted_LDF": 1.85,
-      "Adjusted_UDF": 56.29,
-      "Adjusted_NDA": 4.35,
+      "Adjusted_UDF": 56.31,
+      "Adjusted_NDA": 4.31,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -982,9 +982,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.43,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1000,20 +1000,20 @@
       "Base_LDF": 47.36,
       "Base_UDF": 45.47,
       "Base_NDA": 4.98,
-      "Adjusted_LDF": 41.87,
-      "Adjusted_UDF": 51.02,
-      "Adjusted_NDA": 4.94,
-      "LDF_Win_Prob": 9.17,
-      "UDF_Win_Prob": 90.83,
+      "Adjusted_LDF": 41.73,
+      "Adjusted_UDF": 51.18,
+      "Adjusted_NDA": 4.91,
+      "LDF_Win_Prob": 8.28,
+      "UDF_Win_Prob": 91.72,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 2700,
       "Winner_2021": "LDF",
       "Volatility": 4.85,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1029,20 +1029,20 @@
       "Base_LDF": 42.45,
       "Base_UDF": 51.64,
       "Base_NDA": 4.17,
-      "Adjusted_LDF": 37.02,
-      "Adjusted_UDF": 57.12,
-      "Adjusted_NDA": 4.14,
-      "LDF_Win_Prob": 0.1,
-      "UDF_Win_Prob": 99.9,
+      "Adjusted_LDF": 36.86,
+      "Adjusted_UDF": 57.3,
+      "Adjusted_NDA": 4.11,
+      "LDF_Win_Prob": 0.08,
+      "UDF_Win_Prob": 99.92,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 15563,
       "Winner_2021": "UDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1058,20 +1058,20 @@
       "Base_LDF": 41.25,
       "Base_UDF": 50.6,
       "Base_NDA": 7.29,
-      "Adjusted_LDF": 35.83,
-      "Adjusted_UDF": 56.09,
-      "Adjusted_NDA": 7.22,
-      "LDF_Win_Prob": 0.09,
-      "UDF_Win_Prob": 99.91,
+      "Adjusted_LDF": 35.67,
+      "Adjusted_UDF": 56.27,
+      "Adjusted_NDA": 7.2,
+      "LDF_Win_Prob": 0.1,
+      "UDF_Win_Prob": 99.9,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 14573,
       "Winner_2021": "UDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1088,8 +1088,8 @@
       "Base_UDF": 46.45,
       "Base_NDA": 4.87,
       "Adjusted_LDF": 1.85,
-      "Adjusted_UDF": 48.62,
-      "Adjusted_NDA": 4.52,
+      "Adjusted_UDF": 48.64,
+      "Adjusted_NDA": 4.48,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -1098,9 +1098,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.9,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1116,20 +1116,20 @@
       "Base_LDF": 45.91,
       "Base_UDF": 49.64,
       "Base_NDA": 3.96,
-      "Adjusted_LDF": 40.44,
-      "Adjusted_UDF": 55.15,
-      "Adjusted_NDA": 3.93,
-      "LDF_Win_Prob": 1.47,
-      "UDF_Win_Prob": 98.52,
+      "Adjusted_LDF": 40.29,
+      "Adjusted_UDF": 55.32,
+      "Adjusted_NDA": 3.9,
+      "LDF_Win_Prob": 1.34,
+      "UDF_Win_Prob": 98.66,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6246,
       "Winner_2021": "UDF",
       "Volatility": 4.79,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1145,9 +1145,9 @@
       "Base_LDF": 36.04,
       "Base_UDF": 57.93,
       "Base_NDA": 3.66,
-      "Adjusted_LDF": 30.68,
-      "Adjusted_UDF": 63.34,
-      "Adjusted_NDA": 3.63,
+      "Adjusted_LDF": 30.5,
+      "Adjusted_UDF": 63.54,
+      "Adjusted_NDA": 3.6,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -1156,9 +1156,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.24,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1174,9 +1174,9 @@
       "Base_LDF": 30.43,
       "Base_UDF": 53.82,
       "Base_NDA": 4.56,
-      "Adjusted_LDF": 25.13,
-      "Adjusted_UDF": 59.28,
-      "Adjusted_NDA": 4.52,
+      "Adjusted_LDF": 24.94,
+      "Adjusted_UDF": 59.46,
+      "Adjusted_NDA": 4.5,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -1185,9 +1185,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.2,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1203,20 +1203,20 @@
       "Base_LDF": 38.4,
       "Base_UDF": 47.8,
       "Base_NDA": 13.21,
-      "Adjusted_LDF": 33.01,
-      "Adjusted_UDF": 53.33,
+      "Adjusted_LDF": 32.84,
+      "Adjusted_UDF": 53.49,
       "Adjusted_NDA": 13.08,
-      "LDF_Win_Prob": 0.11,
-      "UDF_Win_Prob": 99.89,
+      "LDF_Win_Prob": 0.09,
+      "UDF_Win_Prob": 99.91,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 14116,
       "Winner_2021": "UDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1233,8 +1233,8 @@
       "Base_UDF": 49.98,
       "Base_NDA": 5.65,
       "Adjusted_LDF": 1.85,
-      "Adjusted_UDF": 51.88,
-      "Adjusted_NDA": 5.24,
+      "Adjusted_UDF": 51.9,
+      "Adjusted_NDA": 5.2,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -1243,9 +1243,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.7,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1261,20 +1261,20 @@
       "Base_LDF": 46.44,
       "Base_UDF": 45.8,
       "Base_NDA": 6.96,
-      "Adjusted_LDF": 40.96,
-      "Adjusted_UDF": 51.35,
-      "Adjusted_NDA": 6.9,
-      "LDF_Win_Prob": 6.66,
-      "UDF_Win_Prob": 93.34,
+      "Adjusted_LDF": 40.82,
+      "Adjusted_UDF": 51.51,
+      "Adjusted_NDA": 6.88,
+      "LDF_Win_Prob": 6.19,
+      "UDF_Win_Prob": 93.81,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 985,
       "Winner_2021": "LDF",
       "Volatility": 4.88,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1290,20 +1290,20 @@
       "Base_LDF": 44.09,
       "Base_UDF": 48.33,
       "Base_NDA": 5.34,
-      "Adjusted_LDF": 38.64,
-      "Adjusted_UDF": 53.85,
-      "Adjusted_NDA": 5.29,
-      "LDF_Win_Prob": 1.28,
-      "UDF_Win_Prob": 98.72,
+      "Adjusted_LDF": 38.49,
+      "Adjusted_UDF": 54.02,
+      "Adjusted_NDA": 5.27,
+      "LDF_Win_Prob": 1.02,
+      "UDF_Win_Prob": 98.98,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 7214,
       "Winner_2021": "UDF",
       "Volatility": 4.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1319,20 +1319,20 @@
       "Base_LDF": 40.88,
       "Base_UDF": 51.3,
       "Base_NDA": 6.78,
-      "Adjusted_LDF": 35.47,
-      "Adjusted_UDF": 56.79,
-      "Adjusted_NDA": 6.72,
-      "LDF_Win_Prob": 0.05,
-      "UDF_Win_Prob": 99.95,
+      "Adjusted_LDF": 35.3,
+      "Adjusted_UDF": 56.97,
+      "Adjusted_NDA": 6.7,
+      "LDF_Win_Prob": 0.04,
+      "UDF_Win_Prob": 99.96,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 16588,
       "Winner_2021": "UDF",
       "Volatility": 4.59,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1348,20 +1348,20 @@
       "Base_LDF": 47.36,
       "Base_UDF": 44.91,
       "Base_NDA": 6.57,
-      "Adjusted_LDF": 41.87,
-      "Adjusted_UDF": 50.47,
-      "Adjusted_NDA": 6.51,
-      "LDF_Win_Prob": 10.5,
-      "UDF_Win_Prob": 89.5,
+      "Adjusted_LDF": 41.73,
+      "Adjusted_UDF": 50.63,
+      "Adjusted_NDA": 6.49,
+      "LDF_Win_Prob": 9.73,
+      "UDF_Win_Prob": 90.27,
       "NDA_Win_Prob": 0.0,
-      "Category": "Likely UDF",
+      "Category": "Safe UDF",
       "Margin_2021": 2564,
       "Winner_2021": "LDF",
       "Volatility": 4.85,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1377,20 +1377,20 @@
       "Base_LDF": 51.51,
       "Base_UDF": 39.75,
       "Base_NDA": 5.12,
-      "Adjusted_LDF": 45.98,
-      "Adjusted_UDF": 45.37,
-      "Adjusted_NDA": 5.08,
-      "LDF_Win_Prob": 53.99,
-      "UDF_Win_Prob": 46.01,
+      "Adjusted_LDF": 45.85,
+      "Adjusted_UDF": 45.51,
+      "Adjusted_NDA": 5.05,
+      "LDF_Win_Prob": 52.06,
+      "UDF_Win_Prob": 47.94,
       "NDA_Win_Prob": 0.0,
       "Category": "Toss-up LDF",
       "Margin_2021": 17043,
       "Winner_2021": "LDF",
       "Volatility": 4.55,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1406,20 +1406,20 @@
       "Base_LDF": 45.97,
       "Base_UDF": 43.98,
       "Base_NDA": 8.46,
-      "Adjusted_LDF": 38.13,
-      "Adjusted_UDF": 51.69,
-      "Adjusted_NDA": 8.6,
-      "LDF_Win_Prob": 4.98,
-      "UDF_Win_Prob": 95.02,
+      "Adjusted_LDF": 37.98,
+      "Adjusted_UDF": 51.86,
+      "Adjusted_NDA": 8.59,
+      "LDF_Win_Prob": 4.69,
+      "UDF_Win_Prob": 95.31,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 3016,
       "Winner_2021": "LDF",
       "Volatility": 5.84,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1435,20 +1435,20 @@
       "Base_LDF": 49.7,
       "Base_UDF": 37.84,
       "Base_NDA": 9.62,
-      "Adjusted_LDF": 41.83,
-      "Adjusted_UDF": 45.61,
-      "Adjusted_NDA": 9.75,
-      "LDF_Win_Prob": 27.65,
-      "UDF_Win_Prob": 72.35,
+      "Adjusted_LDF": 41.69,
+      "Adjusted_UDF": 45.75,
+      "Adjusted_NDA": 9.74,
+      "LDF_Win_Prob": 26.48,
+      "UDF_Win_Prob": 73.52,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 17974,
       "Winner_2021": "LDF",
       "Volatility": 4.54,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1464,20 +1464,20 @@
       "Base_LDF": 49.2,
       "Base_UDF": 24.95,
       "Base_NDA": 24.45,
-      "Adjusted_LDF": 41.33,
-      "Adjusted_UDF": 32.83,
-      "Adjusted_NDA": 24.45,
-      "LDF_Win_Prob": 92.47,
-      "UDF_Win_Prob": 7.52,
-      "NDA_Win_Prob": 0.01,
+      "Adjusted_LDF": 41.19,
+      "Adjusted_UDF": 32.93,
+      "Adjusted_NDA": 24.49,
+      "LDF_Win_Prob": 91.97,
+      "UDF_Win_Prob": 8.02,
+      "NDA_Win_Prob": 0.02,
       "Category": "Safe LDF",
       "Margin_2021": 36674,
       "Winner_2021": "LDF",
       "Volatility": 4.17,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1493,20 +1493,20 @@
       "Base_LDF": 46.7,
       "Base_UDF": 37.25,
       "Base_NDA": 15.63,
-      "Adjusted_LDF": 38.85,
-      "Adjusted_UDF": 45.02,
-      "Adjusted_NDA": 15.71,
-      "LDF_Win_Prob": 17.38,
-      "UDF_Win_Prob": 82.62,
+      "Adjusted_LDF": 38.7,
+      "Adjusted_UDF": 45.16,
+      "Adjusted_NDA": 15.72,
+      "LDF_Win_Prob": 16.24,
+      "UDF_Win_Prob": 83.76,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 15152,
       "Winner_2021": "LDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1522,20 +1522,20 @@
       "Base_LDF": 49.35,
       "Base_UDF": 29.56,
       "Base_NDA": 20.11,
-      "Adjusted_LDF": 41.48,
-      "Adjusted_UDF": 37.4,
-      "Adjusted_NDA": 20.15,
-      "LDF_Win_Prob": 74.64,
-      "UDF_Win_Prob": 25.36,
+      "Adjusted_LDF": 41.34,
+      "Adjusted_UDF": 37.52,
+      "Adjusted_NDA": 20.17,
+      "LDF_Win_Prob": 73.41,
+      "UDF_Win_Prob": 26.59,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 27219,
       "Winner_2021": "LDF",
       "Volatility": 4.31,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1551,20 +1551,20 @@
       "Base_LDF": 43.47,
       "Base_UDF": 47.35,
       "Base_NDA": 0.0,
-      "Adjusted_LDF": 35.03,
-      "Adjusted_UDF": 54.08,
+      "Adjusted_LDF": 34.86,
+      "Adjusted_UDF": 54.22,
       "Adjusted_NDA": 1.95,
-      "LDF_Win_Prob": 0.24,
-      "UDF_Win_Prob": 99.76,
+      "LDF_Win_Prob": 0.2,
+      "UDF_Win_Prob": 99.8,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 5870,
       "Winner_2021": "UDF",
       "Volatility": 4.78,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1580,20 +1580,20 @@
       "Base_LDF": 46.71,
       "Base_UDF": 21.8,
       "Base_NDA": 30.88,
-      "Adjusted_LDF": 38.86,
-      "Adjusted_UDF": 29.71,
-      "Adjusted_NDA": 30.83,
-      "LDF_Win_Prob": 88.3,
-      "UDF_Win_Prob": 6.12,
-      "NDA_Win_Prob": 5.58,
+      "Adjusted_LDF": 38.71,
+      "Adjusted_UDF": 29.8,
+      "Adjusted_NDA": 30.88,
+      "LDF_Win_Prob": 87.4,
+      "UDF_Win_Prob": 6.67,
+      "NDA_Win_Prob": 5.92,
       "Category": "Likely LDF",
       "Margin_2021": 25734,
       "Winner_2021": "LDF",
       "Volatility": 4.43,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1609,20 +1609,20 @@
       "Base_LDF": 25.73,
       "Base_UDF": 38.2,
       "Base_NDA": 35.47,
-      "Adjusted_LDF": 18.07,
-      "Adjusted_UDF": 45.96,
-      "Adjusted_NDA": 35.38,
+      "Adjusted_LDF": 17.85,
+      "Adjusted_UDF": 46.11,
+      "Adjusted_NDA": 35.45,
       "LDF_Win_Prob": 0.0,
-      "UDF_Win_Prob": 96.34,
-      "NDA_Win_Prob": 3.66,
+      "UDF_Win_Prob": 96.58,
+      "NDA_Win_Prob": 3.42,
       "Category": "Safe UDF",
       "Margin_2021": 3859,
       "Winner_2021": "UDF",
       "Volatility": 4.82,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1638,20 +1638,20 @@
       "Base_LDF": 51.95,
       "Base_UDF": 33.14,
       "Base_NDA": 14.16,
-      "Adjusted_LDF": 44.06,
-      "Adjusted_UDF": 40.95,
-      "Adjusted_NDA": 14.25,
-      "LDF_Win_Prob": 69.2,
-      "UDF_Win_Prob": 30.8,
+      "Adjusted_LDF": 43.92,
+      "Adjusted_UDF": 41.08,
+      "Adjusted_NDA": 14.26,
+      "LDF_Win_Prob": 67.86,
+      "UDF_Win_Prob": 32.14,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean LDF",
       "Margin_2021": 24531,
       "Winner_2021": "LDF",
       "Volatility": 4.34,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1667,20 +1667,20 @@
       "Base_LDF": 55.84,
       "Base_UDF": 33.5,
       "Base_NDA": 9.54,
-      "Adjusted_LDF": 47.91,
-      "Adjusted_UDF": 41.3,
-      "Adjusted_NDA": 9.67,
-      "LDF_Win_Prob": 86.52,
-      "UDF_Win_Prob": 13.48,
+      "Adjusted_LDF": 47.79,
+      "Adjusted_UDF": 41.43,
+      "Adjusted_NDA": 9.66,
+      "LDF_Win_Prob": 85.5,
+      "UDF_Win_Prob": 14.5,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 33878,
       "Winner_2021": "LDF",
       "Volatility": 4.23,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1696,9 +1696,9 @@
       "Base_LDF": 87.45,
       "Base_UDF": 0.0,
       "Base_NDA": 11.08,
-      "Adjusted_LDF": 79.25,
-      "Adjusted_UDF": 8.1,
-      "Adjusted_NDA": 11.2,
+      "Adjusted_LDF": 79.22,
+      "Adjusted_UDF": 8.12,
+      "Adjusted_NDA": 11.19,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -1707,9 +1707,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.33,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1725,20 +1725,20 @@
       "Base_LDF": 55.47,
       "Base_UDF": 30.12,
       "Base_NDA": 13.63,
-      "Adjusted_LDF": 47.55,
-      "Adjusted_UDF": 37.95,
+      "Adjusted_LDF": 47.42,
+      "Adjusted_UDF": 38.07,
       "Adjusted_NDA": 13.73,
-      "LDF_Win_Prob": 94.99,
-      "UDF_Win_Prob": 5.01,
+      "LDF_Win_Prob": 94.49,
+      "UDF_Win_Prob": 5.51,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
       "Margin_2021": 34118,
       "Winner_2021": "LDF",
       "Volatility": 4.14,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1754,20 +1754,20 @@
       "Base_LDF": 54.66,
       "Base_UDF": 28.84,
       "Base_NDA": 15.76,
-      "Adjusted_LDF": 49.06,
-      "Adjusted_UDF": 34.36,
-      "Adjusted_NDA": 15.85,
-      "LDF_Win_Prob": 99.43,
-      "UDF_Win_Prob": 0.57,
+      "Adjusted_LDF": 48.94,
+      "Adjusted_UDF": 34.46,
+      "Adjusted_NDA": 15.86,
+      "LDF_Win_Prob": 99.37,
+      "UDF_Win_Prob": 0.63,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
       "Margin_2021": 39400,
       "Winner_2021": "LDF",
       "Volatility": 4.13,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1783,20 +1783,20 @@
       "Base_LDF": 48.96,
       "Base_UDF": 31.7,
       "Base_NDA": 18.04,
-      "Adjusted_LDF": 43.42,
-      "Adjusted_UDF": 37.19,
-      "Adjusted_NDA": 18.11,
-      "LDF_Win_Prob": 84.3,
-      "UDF_Win_Prob": 15.7,
+      "Adjusted_LDF": 43.28,
+      "Adjusted_UDF": 37.3,
+      "Adjusted_NDA": 18.13,
+      "LDF_Win_Prob": 83.38,
+      "UDF_Win_Prob": 16.62,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 26631,
       "Winner_2021": "LDF",
       "Volatility": 4.38,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1812,20 +1812,20 @@
       "Base_LDF": 52.88,
       "Base_UDF": 40.35,
       "Base_NDA": 0.0,
-      "Adjusted_LDF": 46.5,
-      "Adjusted_UDF": 44.97,
+      "Adjusted_LDF": 46.35,
+      "Adjusted_UDF": 45.09,
       "Adjusted_NDA": 1.95,
-      "LDF_Win_Prob": 59.24,
-      "UDF_Win_Prob": 40.76,
+      "LDF_Win_Prob": 57.54,
+      "UDF_Win_Prob": 42.46,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean LDF",
       "Margin_2021": 18268,
       "Winner_2021": "LDF",
       "Volatility": 4.52,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1841,20 +1841,20 @@
       "Base_LDF": 46.97,
       "Base_UDF": 29.06,
       "Base_NDA": 21.92,
-      "Adjusted_LDF": 41.45,
-      "Adjusted_UDF": 34.57,
-      "Adjusted_NDA": 21.95,
-      "LDF_Win_Prob": 86.75,
-      "UDF_Win_Prob": 13.25,
+      "Adjusted_LDF": 41.31,
+      "Adjusted_UDF": 34.68,
+      "Adjusted_NDA": 21.98,
+      "LDF_Win_Prob": 85.83,
+      "UDF_Win_Prob": 14.17,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 29876,
       "Winner_2021": "LDF",
       "Volatility": 4.36,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1870,20 +1870,20 @@
       "Base_LDF": 47.94,
       "Base_UDF": 38.96,
       "Base_NDA": 12.87,
-      "Adjusted_LDF": 42.41,
-      "Adjusted_UDF": 44.37,
+      "Adjusted_LDF": 42.27,
+      "Adjusted_UDF": 44.51,
       "Adjusted_NDA": 12.99,
-      "LDF_Win_Prob": 40.16,
-      "UDF_Win_Prob": 59.84,
+      "LDF_Win_Prob": 38.75,
+      "UDF_Win_Prob": 61.25,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean UDF",
       "Margin_2021": 15168,
       "Winner_2021": "LDF",
       "Volatility": 5.63,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1899,20 +1899,20 @@
       "Base_LDF": 49.35,
       "Base_UDF": 35.5,
       "Base_NDA": 14.35,
-      "Adjusted_LDF": 43.8,
-      "Adjusted_UDF": 40.95,
+      "Adjusted_LDF": 43.67,
+      "Adjusted_UDF": 41.07,
       "Adjusted_NDA": 14.46,
-      "LDF_Win_Prob": 67.46,
-      "UDF_Win_Prob": 32.54,
+      "LDF_Win_Prob": 65.55,
+      "UDF_Win_Prob": 34.45,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean LDF",
       "Margin_2021": 21506,
       "Winner_2021": "LDF",
       "Volatility": 4.48,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1928,20 +1928,20 @@
       "Base_LDF": 34.44,
       "Base_UDF": 33.71,
       "Base_NDA": 31.48,
-      "Adjusted_LDF": 29.05,
-      "Adjusted_UDF": 39.17,
-      "Adjusted_NDA": 31.41,
-      "LDF_Win_Prob": 5.61,
-      "UDF_Win_Prob": 86.09,
-      "NDA_Win_Prob": 8.3,
+      "Adjusted_LDF": 28.87,
+      "Adjusted_UDF": 39.3,
+      "Adjusted_NDA": 31.47,
+      "LDF_Win_Prob": 5.13,
+      "UDF_Win_Prob": 86.73,
+      "NDA_Win_Prob": 8.13,
       "Category": "Likely UDF",
       "Margin_2021": 946,
       "Winner_2021": "LDF",
       "Volatility": 4.88,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1957,20 +1957,20 @@
       "Base_LDF": 47.75,
       "Base_UDF": 29.14,
       "Base_NDA": 22.08,
-      "Adjusted_LDF": 42.22,
-      "Adjusted_UDF": 34.65,
-      "Adjusted_NDA": 22.11,
-      "LDF_Win_Prob": 89.1,
-      "UDF_Win_Prob": 10.9,
+      "Adjusted_LDF": 42.08,
+      "Adjusted_UDF": 34.76,
+      "Adjusted_NDA": 22.14,
+      "LDF_Win_Prob": 88.5,
+      "UDF_Win_Prob": 11.5,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 28431,
       "Winner_2021": "LDF",
       "Volatility": 4.34,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -1986,20 +1986,20 @@
       "Base_LDF": 53.95,
       "Base_UDF": 37.21,
       "Base_NDA": 6.69,
-      "Adjusted_LDF": 48.36,
-      "Adjusted_UDF": 42.64,
-      "Adjusted_NDA": 6.88,
-      "LDF_Win_Prob": 82.11,
-      "UDF_Win_Prob": 17.89,
+      "Adjusted_LDF": 48.23,
+      "Adjusted_UDF": 42.77,
+      "Adjusted_NDA": 6.86,
+      "LDF_Win_Prob": 80.94,
+      "UDF_Win_Prob": 19.06,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 22698,
       "Winner_2021": "LDF",
       "Volatility": 4.4,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2015,20 +2015,20 @@
       "Base_LDF": 40.43,
       "Base_UDF": 36.58,
       "Base_NDA": 22.21,
-      "Adjusted_LDF": 34.98,
-      "Adjusted_UDF": 42.01,
-      "Adjusted_NDA": 22.23,
-      "LDF_Win_Prob": 15.1,
-      "UDF_Win_Prob": 84.9,
+      "Adjusted_LDF": 34.81,
+      "Adjusted_UDF": 42.15,
+      "Adjusted_NDA": 22.26,
+      "LDF_Win_Prob": 14.01,
+      "UDF_Win_Prob": 85.98,
       "NDA_Win_Prob": 0.01,
       "Category": "Likely UDF",
       "Margin_2021": 5949,
       "Winner_2021": "LDF",
       "Volatility": 4.78,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2044,20 +2044,20 @@
       "Base_LDF": 47.27,
       "Base_UDF": 29.64,
       "Base_NDA": 22.48,
-      "Adjusted_LDF": 41.75,
-      "Adjusted_UDF": 35.15,
-      "Adjusted_NDA": 22.5,
-      "LDF_Win_Prob": 85.83,
-      "UDF_Win_Prob": 14.17,
+      "Adjusted_LDF": 41.6,
+      "Adjusted_UDF": 35.26,
+      "Adjusted_NDA": 22.53,
+      "LDF_Win_Prob": 84.96,
+      "UDF_Win_Prob": 15.04,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 27353,
       "Winner_2021": "LDF",
       "Volatility": 4.37,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2073,20 +2073,20 @@
       "Base_LDF": 42.79,
       "Base_UDF": 43.54,
       "Base_NDA": 12.17,
-      "Adjusted_LDF": 37.31,
-      "Adjusted_UDF": 48.9,
+      "Adjusted_LDF": 37.16,
+      "Adjusted_UDF": 49.06,
       "Adjusted_NDA": 12.3,
-      "LDF_Win_Prob": 8.08,
-      "UDF_Win_Prob": 91.92,
+      "LDF_Win_Prob": 7.69,
+      "UDF_Win_Prob": 92.31,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 1057,
       "Winner_2021": "UDF",
       "Volatility": 5.88,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2102,20 +2102,20 @@
       "Base_LDF": 48.27,
       "Base_UDF": 32.13,
       "Base_NDA": 19.05,
-      "Adjusted_LDF": 42.74,
-      "Adjusted_UDF": 37.61,
-      "Adjusted_NDA": 19.11,
-      "LDF_Win_Prob": 79.56,
-      "UDF_Win_Prob": 20.44,
+      "Adjusted_LDF": 42.6,
+      "Adjusted_UDF": 37.73,
+      "Adjusted_NDA": 19.13,
+      "LDF_Win_Prob": 78.36,
+      "UDF_Win_Prob": 21.64,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 23893,
       "Winner_2021": "LDF",
       "Volatility": 4.42,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2131,20 +2131,20 @@
       "Base_LDF": 35.26,
       "Base_UDF": 37.28,
       "Base_NDA": 10.55,
-      "Adjusted_LDF": 27.32,
-      "Adjusted_UDF": 46.18,
-      "Adjusted_NDA": 10.24,
-      "LDF_Win_Prob": 0.29,
-      "UDF_Win_Prob": 99.71,
+      "Adjusted_LDF": 27.14,
+      "Adjusted_UDF": 46.32,
+      "Adjusted_NDA": 10.23,
+      "LDF_Win_Prob": 0.25,
+      "UDF_Win_Prob": 99.75,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 2899,
       "Winner_2021": "UDF",
       "Volatility": 4.84,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2160,9 +2160,9 @@
       "Base_LDF": 40.51,
       "Base_UDF": 52.11,
       "Base_NDA": 6.32,
-      "Adjusted_LDF": 32.37,
-      "Adjusted_UDF": 60.44,
-      "Adjusted_NDA": 6.17,
+      "Adjusted_LDF": 32.2,
+      "Adjusted_UDF": 60.62,
+      "Adjusted_NDA": 6.15,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2171,9 +2171,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.55,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2190,8 +2190,8 @@
       "Base_UDF": 49.3,
       "Base_NDA": 10.63,
       "Adjusted_LDF": 1.77,
-      "Adjusted_UDF": 53.21,
-      "Adjusted_NDA": 9.51,
+      "Adjusted_UDF": 53.23,
+      "Adjusted_NDA": 9.47,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2200,9 +2200,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.52,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2218,20 +2218,20 @@
       "Base_LDF": 49.98,
       "Base_UDF": 40.04,
       "Base_NDA": 7.24,
-      "Adjusted_LDF": 41.48,
-      "Adjusted_UDF": 48.83,
-      "Adjusted_NDA": 7.06,
-      "LDF_Win_Prob": 17.67,
-      "UDF_Win_Prob": 82.33,
+      "Adjusted_LDF": 41.34,
+      "Adjusted_UDF": 48.98,
+      "Adjusted_NDA": 7.04,
+      "LDF_Win_Prob": 16.52,
+      "UDF_Win_Prob": 83.48,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 15336,
       "Winner_2021": "LDF",
       "Volatility": 5.6,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2247,9 +2247,9 @@
       "Base_LDF": 38.71,
       "Base_UDF": 52.24,
       "Base_NDA": 8.23,
-      "Adjusted_LDF": 30.64,
-      "Adjusted_UDF": 60.56,
-      "Adjusted_NDA": 8.01,
+      "Adjusted_LDF": 30.47,
+      "Adjusted_UDF": 60.75,
+      "Adjusted_NDA": 7.99,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2258,9 +2258,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.49,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2276,20 +2276,20 @@
       "Base_LDF": 41.41,
       "Base_UDF": 35.1,
       "Base_NDA": 10.41,
-      "Adjusted_LDF": 33.24,
-      "Adjusted_UDF": 44.08,
+      "Adjusted_LDF": 33.07,
+      "Adjusted_UDF": 44.22,
       "Adjusted_NDA": 10.1,
-      "LDF_Win_Prob": 5.13,
-      "UDF_Win_Prob": 94.87,
+      "LDF_Win_Prob": 4.64,
+      "UDF_Win_Prob": 95.36,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 8201,
       "Winner_2021": "LDF",
       "Volatility": 4.71,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2305,20 +2305,20 @@
       "Base_LDF": 42.61,
       "Base_UDF": 31.63,
       "Base_NDA": 8.57,
-      "Adjusted_LDF": 34.39,
-      "Adjusted_UDF": 40.75,
-      "Adjusted_NDA": 8.33,
-      "LDF_Win_Prob": 16.33,
-      "UDF_Win_Prob": 83.67,
-      "NDA_Win_Prob": 0.0,
+      "Adjusted_LDF": 40.49,
+      "Adjusted_UDF": 46.45,
+      "Adjusted_NDA": 9.01,
+      "LDF_Win_Prob": 8.41,
+      "UDF_Win_Prob": 91.08,
+      "NDA_Win_Prob": 0.51,
       "Category": "Likely UDF",
       "Margin_2021": 14079,
       "Winner_2021": "LDF",
-      "Volatility": 4.57,
+      "Volatility": 6.42,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2334,20 +2334,20 @@
       "Base_LDF": 41.8,
       "Base_UDF": 42.44,
       "Base_NDA": 15.31,
-      "Adjusted_LDF": 33.61,
-      "Adjusted_UDF": 51.14,
-      "Adjusted_NDA": 14.81,
-      "LDF_Win_Prob": 1.79,
-      "UDF_Win_Prob": 98.21,
+      "Adjusted_LDF": 33.45,
+      "Adjusted_UDF": 51.3,
+      "Adjusted_NDA": 14.82,
+      "LDF_Win_Prob": 1.58,
+      "UDF_Win_Prob": 98.42,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 992,
       "Winner_2021": "UDF",
       "Volatility": 5.88,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2364,8 +2364,8 @@
       "Base_UDF": 41.99,
       "Base_NDA": 14.67,
       "Adjusted_LDF": 1.77,
-      "Adjusted_UDF": 46.74,
-      "Adjusted_NDA": 13.09,
+      "Adjusted_UDF": 46.75,
+      "Adjusted_NDA": 13.06,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2374,9 +2374,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.6,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2393,8 +2393,8 @@
       "Base_UDF": 44.04,
       "Base_NDA": 11.4,
       "Adjusted_LDF": 1.77,
-      "Adjusted_UDF": 48.55,
-      "Adjusted_NDA": 10.19,
+      "Adjusted_UDF": 48.57,
+      "Adjusted_NDA": 10.16,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2403,9 +2403,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.58,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2421,20 +2421,20 @@
       "Base_LDF": 33.92,
       "Base_UDF": 32.16,
       "Base_NDA": 4.68,
-      "Adjusted_LDF": 26.04,
-      "Adjusted_UDF": 41.26,
-      "Adjusted_NDA": 4.59,
-      "LDF_Win_Prob": 3.38,
-      "UDF_Win_Prob": 96.62,
+      "Adjusted_LDF": 25.85,
+      "Adjusted_UDF": 41.38,
+      "Adjusted_NDA": 4.57,
+      "LDF_Win_Prob": 3.01,
+      "UDF_Win_Prob": 96.99,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 2715,
       "Winner_2021": "LDF",
       "Volatility": 5.85,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2450,9 +2450,9 @@
       "Base_LDF": 38.02,
       "Base_UDF": 54.18,
       "Base_NDA": 7.02,
-      "Adjusted_LDF": 29.98,
-      "Adjusted_UDF": 62.43,
-      "Adjusted_NDA": 6.84,
+      "Adjusted_LDF": 29.8,
+      "Adjusted_UDF": 62.62,
+      "Adjusted_NDA": 6.83,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2461,9 +2461,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.42,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2479,20 +2479,20 @@
       "Base_LDF": 40.48,
       "Base_UDF": 44.76,
       "Base_NDA": 5.23,
-      "Adjusted_LDF": 32.34,
-      "Adjusted_UDF": 53.37,
-      "Adjusted_NDA": 5.12,
-      "LDF_Win_Prob": 0.49,
-      "UDF_Win_Prob": 99.51,
+      "Adjusted_LDF": 32.18,
+      "Adjusted_UDF": 53.53,
+      "Adjusted_NDA": 5.1,
+      "LDF_Win_Prob": 0.44,
+      "UDF_Win_Prob": 99.56,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6161,
       "Winner_2021": "UDF",
       "Volatility": 5.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2508,20 +2508,20 @@
       "Base_LDF": 47.13,
       "Base_UDF": 42.29,
       "Base_NDA": 3.4,
-      "Adjusted_LDF": 38.74,
-      "Adjusted_UDF": 51.0,
-      "Adjusted_NDA": 3.36,
-      "LDF_Win_Prob": 3.53,
-      "UDF_Win_Prob": 96.47,
+      "Adjusted_LDF": 38.59,
+      "Adjusted_UDF": 51.15,
+      "Adjusted_NDA": 3.34,
+      "LDF_Win_Prob": 3.15,
+      "UDF_Win_Prob": 96.86,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6605,
       "Winner_2021": "LDF",
       "Volatility": 4.75,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2537,20 +2537,20 @@
       "Base_LDF": 51.36,
       "Base_UDF": 44.54,
       "Base_NDA": 0.0,
-      "Adjusted_LDF": 37.55,
-      "Adjusted_UDF": 56.59,
-      "Adjusted_NDA": 1.92,
-      "LDF_Win_Prob": 0.23,
-      "UDF_Win_Prob": 99.77,
+      "Adjusted_LDF": 37.39,
+      "Adjusted_UDF": 56.74,
+      "Adjusted_NDA": 1.93,
+      "LDF_Win_Prob": 0.18,
+      "UDF_Win_Prob": 99.82,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 7848,
       "Winner_2021": "LDF",
       "Volatility": 4.7,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2566,20 +2566,20 @@
       "Base_LDF": 62.14,
       "Base_UDF": 31.38,
       "Base_NDA": 5.79,
-      "Adjusted_LDF": 48.79,
-      "Adjusted_UDF": 44.76,
-      "Adjusted_NDA": 5.77,
-      "LDF_Win_Prob": 76.19,
-      "UDF_Win_Prob": 23.81,
+      "Adjusted_LDF": 48.67,
+      "Adjusted_UDF": 44.9,
+      "Adjusted_NDA": 5.75,
+      "LDF_Win_Prob": 74.92,
+      "UDF_Win_Prob": 25.08,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely LDF",
       "Margin_2021": 38305,
       "Winner_2021": "LDF",
       "Volatility": 4.0,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2595,8 +2595,8 @@
       "Base_LDF": 34.2,
       "Base_UDF": 48.86,
       "Base_NDA": 15.39,
-      "Adjusted_LDF": 21.46,
-      "Adjusted_UDF": 61.86,
+      "Adjusted_LDF": 21.26,
+      "Adjusted_UDF": 62.05,
       "Adjusted_NDA": 15.17,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
@@ -2606,9 +2606,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.46,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2624,20 +2624,20 @@
       "Base_LDF": 47.73,
       "Base_UDF": 43.46,
       "Base_NDA": 7.11,
-      "Adjusted_LDF": 34.7,
-      "Adjusted_UDF": 56.57,
-      "Adjusted_NDA": 7.07,
-      "LDF_Win_Prob": 0.37,
-      "UDF_Win_Prob": 99.63,
+      "Adjusted_LDF": 34.53,
+      "Adjusted_UDF": 56.75,
+      "Adjusted_NDA": 7.05,
+      "LDF_Win_Prob": 0.29,
+      "UDF_Win_Prob": 99.71,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 5573,
       "Winner_2021": "LDF",
       "Volatility": 5.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2653,20 +2653,20 @@
       "Base_LDF": 47.4,
       "Base_UDF": 45.95,
       "Base_NDA": 5.62,
-      "Adjusted_LDF": 34.37,
-      "Adjusted_UDF": 59.01,
-      "Adjusted_NDA": 5.61,
-      "LDF_Win_Prob": 0.02,
-      "UDF_Win_Prob": 99.98,
+      "Adjusted_LDF": 34.21,
+      "Adjusted_UDF": 59.19,
+      "Adjusted_NDA": 5.59,
+      "LDF_Win_Prob": 0.01,
+      "UDF_Win_Prob": 99.99,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 1835,
       "Winner_2021": "LDF",
       "Volatility": 4.86,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2682,9 +2682,9 @@
       "Base_LDF": 91.85,
       "Base_UDF": 0.0,
       "Base_NDA": 7.89,
-      "Adjusted_LDF": 78.3,
-      "Adjusted_UDF": 13.17,
-      "Adjusted_NDA": 8.27,
+      "Adjusted_LDF": 78.27,
+      "Adjusted_UDF": 13.22,
+      "Adjusted_NDA": 8.26,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -2693,9 +2693,9 @@
       "Winner_2021": "LDF",
       "Volatility": 5.57,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2711,9 +2711,9 @@
       "Base_LDF": 42.4,
       "Base_UDF": 45.66,
       "Base_NDA": 8.93,
-      "Adjusted_LDF": 29.74,
-      "Adjusted_UDF": 58.02,
-      "Adjusted_NDA": 9.29,
+      "Adjusted_LDF": 29.56,
+      "Adjusted_UDF": 58.2,
+      "Adjusted_NDA": 9.28,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2722,9 +2722,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.8,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2740,20 +2740,20 @@
       "Base_LDF": 56.25,
       "Base_UDF": 33.3,
       "Base_NDA": 9.42,
-      "Adjusted_LDF": 43.34,
-      "Adjusted_UDF": 45.88,
-      "Adjusted_NDA": 9.77,
-      "LDF_Win_Prob": 33.39,
-      "UDF_Win_Prob": 66.61,
+      "Adjusted_LDF": 43.2,
+      "Adjusted_UDF": 46.02,
+      "Adjusted_NDA": 9.76,
+      "LDF_Win_Prob": 31.67,
+      "UDF_Win_Prob": 68.33,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean UDF",
       "Margin_2021": 29122,
       "Winner_2021": "LDF",
       "Volatility": 4.21,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2769,20 +2769,20 @@
       "Base_LDF": 46.49,
       "Base_UDF": 35.08,
       "Base_NDA": 10.96,
-      "Adjusted_LDF": 33.75,
-      "Adjusted_UDF": 47.63,
-      "Adjusted_NDA": 11.29,
-      "LDF_Win_Prob": 1.59,
-      "UDF_Win_Prob": 98.41,
+      "Adjusted_LDF": 33.59,
+      "Adjusted_UDF": 47.77,
+      "Adjusted_NDA": 11.28,
+      "LDF_Win_Prob": 1.44,
+      "UDF_Win_Prob": 98.56,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 14303,
       "Winner_2021": "LDF",
       "Volatility": 4.56,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2798,9 +2798,9 @@
       "Base_LDF": 38.48,
       "Base_UDF": 53.93,
       "Base_NDA": 7.1,
-      "Adjusted_LDF": 25.89,
-      "Adjusted_UDF": 66.14,
-      "Adjusted_NDA": 7.49,
+      "Adjusted_LDF": 25.7,
+      "Adjusted_UDF": 66.34,
+      "Adjusted_NDA": 7.48,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2809,9 +2809,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.44,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2827,9 +2827,9 @@
       "Base_LDF": 41.38,
       "Base_UDF": 48.27,
       "Base_NDA": 8.91,
-      "Adjusted_LDF": 28.73,
-      "Adjusted_UDF": 60.58,
-      "Adjusted_NDA": 9.27,
+      "Adjusted_LDF": 28.55,
+      "Adjusted_UDF": 60.77,
+      "Adjusted_NDA": 9.26,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -2838,9 +2838,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.69,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2856,20 +2856,20 @@
       "Base_LDF": 45.01,
       "Base_UDF": 40.09,
       "Base_NDA": 11.77,
-      "Adjusted_LDF": 32.3,
-      "Adjusted_UDF": 52.55,
+      "Adjusted_LDF": 32.13,
+      "Adjusted_UDF": 52.71,
       "Adjusted_NDA": 12.08,
-      "LDF_Win_Prob": 0.67,
-      "UDF_Win_Prob": 99.33,
+      "LDF_Win_Prob": 0.56,
+      "UDF_Win_Prob": 99.44,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6059,
       "Winner_2021": "LDF",
       "Volatility": 5.75,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2885,20 +2885,20 @@
       "Base_LDF": 43.99,
       "Base_UDF": 33.99,
       "Base_NDA": 21.27,
-      "Adjusted_LDF": 31.3,
-      "Adjusted_UDF": 46.56,
-      "Adjusted_NDA": 21.41,
-      "LDF_Win_Prob": 2.74,
-      "UDF_Win_Prob": 97.26,
+      "Adjusted_LDF": 31.12,
+      "Adjusted_UDF": 46.7,
+      "Adjusted_NDA": 21.44,
+      "LDF_Win_Prob": 2.39,
+      "UDF_Win_Prob": 97.61,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 13703,
       "Winner_2021": "LDF",
       "Volatility": 5.6,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2914,20 +2914,20 @@
       "Base_LDF": 42.04,
       "Base_UDF": 24.82,
       "Base_NDA": 32.11,
-      "Adjusted_LDF": 29.38,
-      "Adjusted_UDF": 37.55,
-      "Adjusted_NDA": 32.06,
-      "LDF_Win_Prob": 7.38,
-      "UDF_Win_Prob": 78.84,
-      "NDA_Win_Prob": 13.78,
+      "Adjusted_LDF": 29.2,
+      "Adjusted_UDF": 37.67,
+      "Adjusted_NDA": 32.12,
+      "LDF_Win_Prob": 6.87,
+      "UDF_Win_Prob": 79.65,
+      "NDA_Win_Prob": 13.48,
       "Category": "Likely UDF",
       "Margin_2021": 16817,
       "Winner_2021": "LDF",
       "Volatility": 4.54,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2943,20 +2943,20 @@
       "Base_LDF": 46.21,
       "Base_UDF": 41.92,
       "Base_NDA": 10.68,
-      "Adjusted_LDF": 38.08,
-      "Adjusted_UDF": 49.41,
-      "Adjusted_NDA": 11.33,
-      "LDF_Win_Prob": 4.66,
-      "UDF_Win_Prob": 95.34,
+      "Adjusted_LDF": 37.93,
+      "Adjusted_UDF": 49.56,
+      "Adjusted_NDA": 11.32,
+      "LDF_Win_Prob": 4.07,
+      "UDF_Win_Prob": 95.93,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 7013,
       "Winner_2021": "LDF",
       "Volatility": 4.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -2972,20 +2972,20 @@
       "Base_LDF": 47.16,
       "Base_UDF": 43.69,
       "Base_NDA": 8.2,
-      "Adjusted_LDF": 39.03,
-      "Adjusted_UDF": 51.17,
-      "Adjusted_NDA": 8.86,
-      "LDF_Win_Prob": 3.65,
-      "UDF_Win_Prob": 96.36,
+      "Adjusted_LDF": 38.88,
+      "Adjusted_UDF": 51.33,
+      "Adjusted_NDA": 8.85,
+      "LDF_Win_Prob": 3.28,
+      "UDF_Win_Prob": 96.72,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6148,
       "Winner_2021": "LDF",
       "Volatility": 4.8,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3001,20 +3001,20 @@
       "Base_LDF": 46.65,
       "Base_UDF": 39.25,
       "Base_NDA": 13.76,
-      "Adjusted_LDF": 38.52,
-      "Adjusted_UDF": 46.75,
+      "Adjusted_LDF": 38.37,
+      "Adjusted_UDF": 46.9,
       "Adjusted_NDA": 14.39,
-      "LDF_Win_Prob": 10.66,
-      "UDF_Win_Prob": 89.34,
+      "LDF_Win_Prob": 9.78,
+      "UDF_Win_Prob": 90.22,
       "NDA_Win_Prob": 0.0,
-      "Category": "Likely UDF",
+      "Category": "Safe UDF",
       "Margin_2021": 11644,
       "Winner_2021": "LDF",
       "Volatility": 4.68,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3030,20 +3030,20 @@
       "Base_LDF": 44.98,
       "Base_UDF": 36.82,
       "Base_NDA": 16.41,
-      "Adjusted_LDF": 36.86,
-      "Adjusted_UDF": 44.34,
-      "Adjusted_NDA": 17.02,
-      "LDF_Win_Prob": 12.88,
-      "UDF_Win_Prob": 87.12,
+      "Adjusted_LDF": 36.7,
+      "Adjusted_UDF": 44.48,
+      "Adjusted_NDA": 17.04,
+      "LDF_Win_Prob": 11.69,
+      "UDF_Win_Prob": 88.31,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 11125,
       "Winner_2021": "LDF",
       "Volatility": 4.66,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3059,20 +3059,20 @@
       "Base_LDF": 45.86,
       "Base_UDF": 41.45,
       "Base_NDA": 11.95,
-      "Adjusted_LDF": 37.74,
-      "Adjusted_UDF": 48.94,
+      "Adjusted_LDF": 37.58,
+      "Adjusted_UDF": 49.1,
       "Adjusted_NDA": 12.59,
-      "LDF_Win_Prob": 4.83,
-      "UDF_Win_Prob": 95.17,
+      "LDF_Win_Prob": 4.48,
+      "UDF_Win_Prob": 95.52,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 5516,
       "Winner_2021": "LDF",
       "Volatility": 4.77,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3088,8 +3088,8 @@
       "Base_LDF": 39.38,
       "Base_UDF": 48.48,
       "Base_NDA": 11.92,
-      "Adjusted_LDF": 31.29,
-      "Adjusted_UDF": 55.93,
+      "Adjusted_LDF": 31.12,
+      "Adjusted_UDF": 56.11,
       "Adjusted_NDA": 12.56,
       "LDF_Win_Prob": 0.01,
       "UDF_Win_Prob": 99.99,
@@ -3099,9 +3099,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.63,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3117,20 +3117,20 @@
       "Base_LDF": 48.09,
       "Base_UDF": 44.18,
       "Base_NDA": 7.1,
-      "Adjusted_LDF": 39.95,
-      "Adjusted_UDF": 51.66,
-      "Adjusted_NDA": 7.77,
-      "LDF_Win_Prob": 4.16,
-      "UDF_Win_Prob": 95.84,
+      "Adjusted_LDF": 39.8,
+      "Adjusted_UDF": 51.82,
+      "Adjusted_NDA": 7.75,
+      "LDF_Win_Prob": 3.81,
+      "UDF_Win_Prob": 96.19,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 6298,
       "Winner_2021": "LDF",
       "Volatility": 4.78,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3146,20 +3146,20 @@
       "Base_LDF": 47.77,
       "Base_UDF": 31.31,
       "Base_NDA": 20.61,
-      "Adjusted_LDF": 39.63,
-      "Adjusted_UDF": 38.86,
-      "Adjusted_NDA": 21.2,
-      "LDF_Win_Prob": 54.75,
-      "UDF_Win_Prob": 45.25,
+      "Adjusted_LDF": 39.48,
+      "Adjusted_UDF": 38.98,
+      "Adjusted_NDA": 21.22,
+      "LDF_Win_Prob": 53.46,
+      "UDF_Win_Prob": 46.54,
       "NDA_Win_Prob": 0.0,
       "Category": "Toss-up LDF",
       "Margin_2021": 24717,
       "Winner_2021": "LDF",
       "Volatility": 4.41,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3175,20 +3175,20 @@
       "Base_LDF": 48.75,
       "Base_UDF": 26.87,
       "Base_NDA": 23.6,
-      "Adjusted_LDF": 40.61,
-      "Adjusted_UDF": 34.45,
-      "Adjusted_NDA": 24.17,
-      "LDF_Win_Prob": 84.78,
-      "UDF_Win_Prob": 15.21,
+      "Adjusted_LDF": 40.46,
+      "Adjusted_UDF": 34.55,
+      "Adjusted_NDA": 24.21,
+      "LDF_Win_Prob": 83.6,
+      "UDF_Win_Prob": 16.39,
       "NDA_Win_Prob": 0.01,
       "Category": "Likely LDF",
       "Margin_2021": 32093,
       "Winner_2021": "LDF",
       "Volatility": 4.24,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3204,20 +3204,20 @@
       "Base_LDF": 44.75,
       "Base_UDF": 36.53,
       "Base_NDA": 16.32,
-      "Adjusted_LDF": 32.47,
-      "Adjusted_UDF": 48.33,
-      "Adjusted_NDA": 16.83,
-      "LDF_Win_Prob": 0.79,
-      "UDF_Win_Prob": 99.21,
+      "Adjusted_LDF": 32.3,
+      "Adjusted_UDF": 48.48,
+      "Adjusted_NDA": 16.84,
+      "LDF_Win_Prob": 0.7,
+      "UDF_Win_Prob": 99.3,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 11421,
       "Winner_2021": "LDF",
       "Volatility": 4.65,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3233,20 +3233,20 @@
       "Base_LDF": 41.63,
       "Base_UDF": 40.35,
       "Base_NDA": 15.38,
-      "Adjusted_LDF": 29.38,
-      "Adjusted_UDF": 52.1,
-      "Adjusted_NDA": 15.9,
-      "LDF_Win_Prob": 0.06,
-      "UDF_Win_Prob": 99.94,
+      "Adjusted_LDF": 29.2,
+      "Adjusted_UDF": 52.27,
+      "Adjusted_NDA": 15.91,
+      "LDF_Win_Prob": 0.04,
+      "UDF_Win_Prob": 99.96,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 1285,
       "Winner_2021": "LDF",
       "Volatility": 4.87,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3262,20 +3262,20 @@
       "Base_LDF": 46.47,
       "Base_UDF": 34.69,
       "Base_NDA": 18.04,
-      "Adjusted_LDF": 34.17,
-      "Adjusted_UDF": 46.51,
-      "Adjusted_NDA": 18.53,
-      "LDF_Win_Prob": 2.72,
-      "UDF_Win_Prob": 97.28,
+      "Adjusted_LDF": 34.0,
+      "Adjusted_UDF": 46.66,
+      "Adjusted_NDA": 18.55,
+      "LDF_Win_Prob": 2.47,
+      "UDF_Win_Prob": 97.53,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 19003,
       "Winner_2021": "LDF",
       "Volatility": 4.55,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3291,20 +3291,20 @@
       "Base_LDF": 41.73,
       "Base_UDF": 36.03,
       "Base_NDA": 21.97,
-      "Adjusted_LDF": 29.48,
-      "Adjusted_UDF": 47.84,
-      "Adjusted_NDA": 22.41,
-      "LDF_Win_Prob": 1.18,
-      "UDF_Win_Prob": 98.81,
+      "Adjusted_LDF": 29.3,
+      "Adjusted_UDF": 47.99,
+      "Adjusted_NDA": 22.44,
+      "LDF_Win_Prob": 1.03,
+      "UDF_Win_Prob": 98.95,
       "NDA_Win_Prob": 0.01,
       "Category": "Safe UDF",
       "Margin_2021": 8508,
       "Winner_2021": "LDF",
       "Volatility": 5.73,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3320,9 +3320,9 @@
       "Base_LDF": 43.0,
       "Base_UDF": 41.11,
       "Base_NDA": 15.49,
-      "Adjusted_LDF": 30.74,
-      "Adjusted_UDF": 52.86,
-      "Adjusted_NDA": 16.01,
+      "Adjusted_LDF": 30.56,
+      "Adjusted_UDF": 53.02,
+      "Adjusted_NDA": 16.02,
       "LDF_Win_Prob": 0.06,
       "UDF_Win_Prob": 99.94,
       "NDA_Win_Prob": 0.0,
@@ -3331,9 +3331,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.84,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3349,9 +3349,9 @@
       "Base_LDF": 37.62,
       "Base_UDF": 54.52,
       "Base_NDA": 7.03,
-      "Adjusted_LDF": 28.99,
-      "Adjusted_UDF": 62.53,
-      "Adjusted_NDA": 7.66,
+      "Adjusted_LDF": 28.8,
+      "Adjusted_UDF": 62.72,
+      "Adjusted_NDA": 7.64,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -3360,9 +3360,9 @@
       "Winner_2021": "UDF",
       "Volatility": 5.39,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3378,9 +3378,9 @@
       "Base_LDF": 90.0,
       "Base_UDF": 0.0,
       "Base_NDA": 10.0,
-      "Adjusted_LDF": 81.18,
-      "Adjusted_UDF": 8.2,
-      "Adjusted_NDA": 10.62,
+      "Adjusted_LDF": 81.16,
+      "Adjusted_UDF": 8.22,
+      "Adjusted_NDA": 10.61,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -3389,9 +3389,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.88,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3407,8 +3407,8 @@
       "Base_LDF": 85.61,
       "Base_UDF": 0.0,
       "Base_NDA": 13.59,
-      "Adjusted_LDF": 76.81,
-      "Adjusted_UDF": 8.2,
+      "Adjusted_LDF": 76.78,
+      "Adjusted_UDF": 8.22,
       "Adjusted_NDA": 14.2,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
@@ -3418,9 +3418,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.85,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3436,20 +3436,20 @@
       "Base_LDF": 46.16,
       "Base_UDF": 38.9,
       "Base_NDA": 14.25,
-      "Adjusted_LDF": 37.5,
-      "Adjusted_UDF": 46.96,
+      "Adjusted_LDF": 37.34,
+      "Adjusted_UDF": 47.11,
       "Adjusted_NDA": 14.86,
-      "LDF_Win_Prob": 7.78,
-      "UDF_Win_Prob": 92.22,
+      "LDF_Win_Prob": 6.96,
+      "UDF_Win_Prob": 93.04,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 10814,
       "Winner_2021": "LDF",
       "Volatility": 4.68,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3465,20 +3465,20 @@
       "Base_LDF": 49.26,
       "Base_UDF": 38.77,
       "Base_NDA": 9.08,
-      "Adjusted_LDF": 40.59,
-      "Adjusted_UDF": 46.83,
-      "Adjusted_NDA": 9.7,
-      "LDF_Win_Prob": 16.69,
-      "UDF_Win_Prob": 83.31,
+      "Adjusted_LDF": 40.44,
+      "Adjusted_UDF": 46.98,
+      "Adjusted_NDA": 9.69,
+      "LDF_Win_Prob": 15.81,
+      "UDF_Win_Prob": 84.19,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 14336,
       "Winner_2021": "LDF",
       "Volatility": 4.59,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3494,20 +3494,20 @@
       "Base_LDF": 55.25,
       "Base_UDF": 29.8,
       "Base_NDA": 13.79,
-      "Adjusted_LDF": 46.56,
-      "Adjusted_UDF": 37.89,
+      "Adjusted_LDF": 46.43,
+      "Adjusted_UDF": 38.01,
       "Adjusted_NDA": 14.4,
-      "LDF_Win_Prob": 93.18,
-      "UDF_Win_Prob": 6.82,
+      "LDF_Win_Prob": 92.52,
+      "UDF_Win_Prob": 7.48,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe LDF",
       "Margin_2021": 37057,
       "Winner_2021": "LDF",
       "Volatility": 4.14,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3523,20 +3523,20 @@
       "Base_LDF": 45.91,
       "Base_UDF": 36.57,
       "Base_NDA": 15.18,
-      "Adjusted_LDF": 37.25,
-      "Adjusted_UDF": 44.64,
-      "Adjusted_NDA": 15.78,
-      "LDF_Win_Prob": 12.97,
-      "UDF_Win_Prob": 87.02,
+      "Adjusted_LDF": 37.09,
+      "Adjusted_UDF": 44.78,
+      "Adjusted_NDA": 15.79,
+      "LDF_Win_Prob": 11.71,
+      "UDF_Win_Prob": 88.29,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 13678,
       "Winner_2021": "LDF",
       "Volatility": 4.62,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3552,20 +3552,20 @@
       "Base_LDF": 46.28,
       "Base_UDF": 49.07,
       "Base_NDA": 3.92,
-      "Adjusted_LDF": 37.62,
-      "Adjusted_UDF": 57.09,
-      "Adjusted_NDA": 4.56,
-      "LDF_Win_Prob": 0.87,
-      "UDF_Win_Prob": 99.13,
+      "Adjusted_LDF": 37.46,
+      "Adjusted_UDF": 57.28,
+      "Adjusted_NDA": 4.53,
+      "LDF_Win_Prob": 0.8,
+      "UDF_Win_Prob": 99.2,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 4523,
       "Winner_2021": "UDF",
       "Volatility": 5.81,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3581,20 +3581,20 @@
       "Base_LDF": 45.12,
       "Base_UDF": 43.52,
       "Base_NDA": 10.99,
-      "Adjusted_LDF": 36.46,
-      "Adjusted_UDF": 51.56,
-      "Adjusted_NDA": 11.61,
-      "LDF_Win_Prob": 1.38,
-      "UDF_Win_Prob": 98.62,
+      "Adjusted_LDF": 36.3,
+      "Adjusted_UDF": 51.73,
+      "Adjusted_NDA": 11.6,
+      "LDF_Win_Prob": 1.23,
+      "UDF_Win_Prob": 98.77,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 2072,
       "Winner_2021": "LDF",
       "Volatility": 4.85,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3610,9 +3610,9 @@
       "Base_LDF": 91.07,
       "Base_UDF": 0.0,
       "Base_NDA": 6.7,
-      "Adjusted_LDF": 82.25,
-      "Adjusted_UDF": 8.2,
-      "Adjusted_NDA": 7.33,
+      "Adjusted_LDF": 82.23,
+      "Adjusted_UDF": 8.22,
+      "Adjusted_NDA": 7.31,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -3621,9 +3621,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.23,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3639,20 +3639,20 @@
       "Base_LDF": 43.33,
       "Base_UDF": 25.05,
       "Base_NDA": 30.75,
-      "Adjusted_LDF": 34.68,
-      "Adjusted_UDF": 33.16,
-      "Adjusted_NDA": 31.3,
-      "LDF_Win_Prob": 51.52,
-      "UDF_Win_Prob": 34.28,
-      "NDA_Win_Prob": 14.2,
+      "Adjusted_LDF": 34.51,
+      "Adjusted_UDF": 33.26,
+      "Adjusted_NDA": 31.36,
+      "LDF_Win_Prob": 49.42,
+      "UDF_Win_Prob": 35.88,
+      "NDA_Win_Prob": 14.7,
       "Category": "Toss-up LDF",
       "Margin_2021": 17206,
       "Winner_2021": "LDF",
       "Volatility": 4.52,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3668,20 +3668,20 @@
       "Base_LDF": 51.2,
       "Base_UDF": 37.94,
       "Base_NDA": 8.34,
-      "Adjusted_LDF": 42.45,
-      "Adjusted_UDF": 45.24,
-      "Adjusted_NDA": 9.8,
-      "LDF_Win_Prob": 33.26,
-      "UDF_Win_Prob": 66.74,
+      "Adjusted_LDF": 42.31,
+      "Adjusted_UDF": 45.39,
+      "Adjusted_NDA": 9.79,
+      "LDF_Win_Prob": 31.71,
+      "UDF_Win_Prob": 68.29,
       "NDA_Win_Prob": 0.0,
       "Category": "Lean UDF",
       "Margin_2021": 17821,
       "Winner_2021": "LDF",
       "Volatility": 4.5,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3697,9 +3697,9 @@
       "Base_LDF": 72.9,
       "Base_UDF": 0.0,
       "Base_NDA": 26.11,
-      "Adjusted_LDF": 64.02,
-      "Adjusted_UDF": 7.54,
-      "Adjusted_NDA": 27.46,
+      "Adjusted_LDF": 63.95,
+      "Adjusted_UDF": 7.56,
+      "Adjusted_NDA": 27.5,
       "LDF_Win_Prob": 100.0,
       "UDF_Win_Prob": 0.0,
       "NDA_Win_Prob": 0.0,
@@ -3708,9 +3708,9 @@
       "Winner_2021": "LDF",
       "Volatility": 4.25,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3726,20 +3726,20 @@
       "Base_LDF": 43.4,
       "Base_UDF": 33.69,
       "Base_NDA": 21.47,
-      "Adjusted_LDF": 34.7,
-      "Adjusted_UDF": 41.02,
-      "Adjusted_NDA": 22.85,
-      "LDF_Win_Prob": 16.7,
-      "UDF_Win_Prob": 83.29,
+      "Adjusted_LDF": 34.54,
+      "Adjusted_UDF": 41.15,
+      "Adjusted_NDA": 22.88,
+      "LDF_Win_Prob": 15.58,
+      "UDF_Win_Prob": 84.41,
       "NDA_Win_Prob": 0.01,
       "Category": "Likely UDF",
       "Margin_2021": 14017,
       "Winner_2021": "LDF",
       "Volatility": 4.61,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3755,20 +3755,20 @@
       "Base_LDF": 47.83,
       "Base_UDF": 32.5,
       "Base_NDA": 17.66,
-      "Adjusted_LDF": 39.1,
-      "Adjusted_UDF": 39.84,
-      "Adjusted_NDA": 19.06,
-      "LDF_Win_Prob": 45.21,
-      "UDF_Win_Prob": 54.79,
+      "Adjusted_LDF": 38.95,
+      "Adjusted_UDF": 39.96,
+      "Adjusted_NDA": 19.08,
+      "LDF_Win_Prob": 43.73,
+      "UDF_Win_Prob": 56.27,
       "NDA_Win_Prob": 0.0,
-      "Category": "Toss-up UDF",
+      "Category": "Lean UDF",
       "Margin_2021": 23309,
       "Winner_2021": "LDF",
       "Volatility": 4.44,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3784,20 +3784,20 @@
       "Base_LDF": 50.16,
       "Base_UDF": 43.14,
       "Base_NDA": 3.84,
-      "Adjusted_LDF": 41.42,
-      "Adjusted_UDF": 50.41,
-      "Adjusted_NDA": 5.32,
-      "LDF_Win_Prob": 8.67,
-      "UDF_Win_Prob": 91.33,
+      "Adjusted_LDF": 41.28,
+      "Adjusted_UDF": 50.57,
+      "Adjusted_NDA": 5.3,
+      "LDF_Win_Prob": 7.98,
+      "UDF_Win_Prob": 92.02,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 10242,
       "Winner_2021": "LDF",
       "Volatility": 4.69,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3813,20 +3813,20 @@
       "Base_LDF": 46.27,
       "Base_UDF": 23.97,
       "Base_NDA": 29.2,
-      "Adjusted_LDF": 37.55,
-      "Adjusted_UDF": 31.36,
-      "Adjusted_NDA": 30.53,
-      "LDF_Win_Prob": 79.46,
-      "UDF_Win_Prob": 14.22,
-      "NDA_Win_Prob": 6.32,
+      "Adjusted_LDF": 37.4,
+      "Adjusted_UDF": 31.46,
+      "Adjusted_NDA": 30.59,
+      "LDF_Win_Prob": 77.95,
+      "UDF_Win_Prob": 15.19,
+      "NDA_Win_Prob": 6.86,
       "Category": "Likely LDF",
       "Margin_2021": 23497,
       "Winner_2021": "LDF",
       "Volatility": 4.39,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3842,20 +3842,20 @@
       "Base_LDF": 44.68,
       "Base_UDF": 25.92,
       "Base_NDA": 28.95,
-      "Adjusted_LDF": 35.97,
-      "Adjusted_UDF": 33.3,
-      "Adjusted_NDA": 30.28,
-      "LDF_Win_Prob": 57.75,
-      "UDF_Win_Prob": 32.49,
-      "NDA_Win_Prob": 9.76,
+      "Adjusted_LDF": 35.81,
+      "Adjusted_UDF": 33.4,
+      "Adjusted_NDA": 30.34,
+      "LDF_Win_Prob": 56.62,
+      "UDF_Win_Prob": 33.33,
+      "NDA_Win_Prob": 10.05,
       "Category": "Lean LDF",
       "Margin_2021": 21515,
       "Winner_2021": "LDF",
       "Volatility": 5.43,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3872,8 +3872,8 @@
       "Base_UDF": 71.08,
       "Base_NDA": 27.52,
       "Adjusted_LDF": 1.8,
-      "Adjusted_UDF": 70.8,
-      "Adjusted_NDA": 26.14,
+      "Adjusted_UDF": 70.83,
+      "Adjusted_NDA": 26.11,
       "LDF_Win_Prob": 0.0,
       "UDF_Win_Prob": 100.0,
       "NDA_Win_Prob": 0.0,
@@ -3882,9 +3882,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.73,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3900,20 +3900,20 @@
       "Base_LDF": 38.44,
       "Base_UDF": 25.14,
       "Base_NDA": 35.72,
-      "Adjusted_LDF": 29.77,
-      "Adjusted_UDF": 32.52,
-      "Adjusted_NDA": 37.01,
-      "LDF_Win_Prob": 8.25,
-      "UDF_Win_Prob": 20.61,
-      "NDA_Win_Prob": 71.13,
+      "Adjusted_LDF": 29.59,
+      "Adjusted_UDF": 32.63,
+      "Adjusted_NDA": 37.09,
+      "LDF_Win_Prob": 7.56,
+      "UDF_Win_Prob": 20.76,
+      "NDA_Win_Prob": 71.68,
       "Category": "Likely NDA",
       "Margin_2021": 3949,
       "Winner_2021": "LDF",
       "Volatility": 4.82,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3929,20 +3929,20 @@
       "Base_LDF": 46.11,
       "Base_UDF": 42.63,
       "Base_NDA": 10.62,
-      "Adjusted_LDF": 37.39,
-      "Adjusted_UDF": 49.91,
+      "Adjusted_LDF": 37.24,
+      "Adjusted_UDF": 50.06,
       "Adjusted_NDA": 12.06,
-      "LDF_Win_Prob": 6.27,
-      "UDF_Win_Prob": 93.73,
+      "LDF_Win_Prob": 5.79,
+      "UDF_Win_Prob": 94.22,
       "NDA_Win_Prob": 0.0,
       "Category": "Safe UDF",
       "Margin_2021": 5046,
       "Winner_2021": "LDF",
       "Volatility": 5.8,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3958,20 +3958,20 @@
       "Base_LDF": 48.35,
       "Base_UDF": 32.45,
       "Base_NDA": 18.37,
-      "Adjusted_LDF": 39.62,
-      "Adjusted_UDF": 39.79,
-      "Adjusted_NDA": 19.77,
-      "LDF_Win_Prob": 48.77,
-      "UDF_Win_Prob": 51.23,
+      "Adjusted_LDF": 39.47,
+      "Adjusted_UDF": 39.91,
+      "Adjusted_NDA": 19.79,
+      "LDF_Win_Prob": 47.15,
+      "UDF_Win_Prob": 52.85,
       "NDA_Win_Prob": 0.0,
       "Category": "Toss-up UDF",
       "Margin_2021": 25828,
       "Winner_2021": "LDF",
       "Volatility": 4.42,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -3987,20 +3987,20 @@
       "Base_LDF": 45.74,
       "Base_UDF": 29.71,
       "Base_NDA": 23.84,
-      "Adjusted_LDF": 37.03,
-      "Adjusted_UDF": 37.06,
-      "Adjusted_NDA": 25.2,
-      "LDF_Win_Prob": 49.56,
-      "UDF_Win_Prob": 50.33,
+      "Adjusted_LDF": 36.87,
+      "Adjusted_UDF": 37.18,
+      "Adjusted_NDA": 25.24,
+      "LDF_Win_Prob": 47.89,
+      "UDF_Win_Prob": 52.0,
       "NDA_Win_Prob": 0.11,
       "Category": "Toss-up UDF",
       "Margin_2021": 23231,
       "Winner_2021": "LDF",
       "Volatility": 4.42,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -4016,8 +4016,8 @@
       "Base_LDF": 39.98,
       "Base_UDF": 47.29,
       "Base_NDA": 11.79,
-      "Adjusted_LDF": 31.3,
-      "Adjusted_UDF": 54.54,
+      "Adjusted_LDF": 31.13,
+      "Adjusted_UDF": 54.71,
       "Adjusted_NDA": 13.23,
       "LDF_Win_Prob": 0.02,
       "UDF_Win_Prob": 99.98,
@@ -4027,9 +4027,9 @@
       "Winner_2021": "UDF",
       "Volatility": 4.68,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     },
     {
@@ -4045,47 +4045,47 @@
       "Base_LDF": 47.33,
       "Base_UDF": 37.02,
       "Base_NDA": 15.18,
-      "Adjusted_LDF": 38.61,
-      "Adjusted_UDF": 44.33,
-      "Adjusted_NDA": 16.6,
-      "LDF_Win_Prob": 18.8,
-      "UDF_Win_Prob": 81.2,
+      "Adjusted_LDF": 38.45,
+      "Adjusted_UDF": 44.47,
+      "Adjusted_NDA": 16.61,
+      "LDF_Win_Prob": 17.72,
+      "UDF_Win_Prob": 82.28,
       "NDA_Win_Prob": 0.0,
       "Category": "Likely UDF",
       "Margin_2021": 14262,
       "Winner_2021": "LDF",
       "Volatility": 4.59,
       "Sentiment_Applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     }
   ],
   "summary": {
     "seat_projections": {
       "LDF": {
-        "mean": 45.3,
+        "mean": 44.6,
         "median": 45,
-        "p5": 40,
-        "p25": 43,
+        "p5": 39,
+        "p25": 42,
         "p75": 47,
         "p95": 50,
-        "min": 34,
-        "max": 58
+        "min": 32,
+        "max": 56
       },
       "UDF": {
-        "mean": 92.8,
-        "median": 93,
+        "mean": 93.5,
+        "median": 94,
         "p5": 88,
         "p25": 91,
-        "p75": 95,
-        "p95": 98,
-        "min": 79,
+        "p75": 96,
+        "p95": 99,
+        "min": 83,
         "max": 106
       },
       "NDA": {
-        "mean": 1.8,
+        "mean": 1.9,
         "median": 2,
         "p5": 0,
         "p25": 1,
@@ -4096,12 +4096,12 @@
       }
     },
     "categories": {
-      "Toss-up UDF": 5,
-      "Safe UDF": 67,
+      "Toss-up UDF": 4,
+      "Safe UDF": 69,
       "Likely LDF": 15,
       "Safe LDF": 20,
-      "Lean UDF": 6,
-      "Likely UDF": 18,
+      "Lean UDF": 7,
+      "Likely UDF": 16,
       "Toss-up LDF": 4,
       "Lean LDF": 4,
       "Likely NDA": 1
@@ -4110,9 +4110,9 @@
       "num_simulations": 100000,
       "swing_dampening": 0.45,
       "sentiment_applied": {
-        "LDF": 0.276,
+        "LDF": 0.0,
         "UDF": 0.0,
-        "NDA": 0.041
+        "NDA": 0.0
       }
     }
   }

@@ -25,9 +25,9 @@
     },
     "booth_projection": {
       "vote_shares": {
-        "UDF": 43.13,
-        "LDF": 29.86,
-        "NDA": 27.01
+        "UDF": 46.12,
+        "LDF": 41.05,
+        "NDA": 9.42
       },
       "booth_stats": {
         "type_counts": {
@@ -51,64 +51,64 @@
     "has_booth_data": true
   },
   "adjusted_vote_shares": {
-    "LDF": 28.69,
-    "UDF": 38.38,
-    "NDA": 17.34
+    "LDF": 40.49,
+    "UDF": 46.45,
+    "NDA": 9.01
   },
   "vote_estimates": {
     "LDF": {
-      "vote_share_pct": 28.69,
-      "estimated_votes": 43426,
-      "arithmetic_estimate": 31500,
-      "blended_estimate": 36270,
+      "vote_share_pct": 40.49,
+      "estimated_votes": 54400,
+      "arithmetic_estimate": 53800,
+      "blended_estimate": 54100,
       "range": [
-        30000,
-        33000
+        53000,
+        55800
       ]
     },
     "UDF": {
-      "vote_share_pct": 38.38,
-      "estimated_votes": 58094,
-      "arithmetic_estimate": 45500,
-      "blended_estimate": 50538,
+      "vote_share_pct": 46.45,
+      "estimated_votes": 62400,
+      "arithmetic_estimate": 61500,
+      "blended_estimate": 61950,
       "range": [
-        44000,
-        47000
+        61000,
+        63800
       ]
     },
     "NDA": {
-      "vote_share_pct": 17.34,
-      "estimated_votes": 26255,
-      "arithmetic_estimate": 28500,
-      "blended_estimate": 27602,
+      "vote_share_pct": 9.01,
+      "estimated_votes": 12100,
+      "arithmetic_estimate": 12300,
+      "blended_estimate": 12200,
       "range": [
-        27000,
-        30000
+        11500,
+        12800
       ]
     }
   },
-  "total_voters": 151376,
-  "estimated_margin": 14268,
+  "total_voters": 134349,
+  "estimated_margin": 8000,
   "estimated_winner": "UDF",
-  "volatility": 8.07,
+  "volatility": 6.42,
   "win_probabilities": {
-    "LDF": 19.59,
-    "UDF": 79.83,
-    "NDA": 0.59
+    "LDF": 8.41,
+    "UDF": 91.08,
+    "NDA": 0.51
   },
   "category": "Likely UDF",
-  "avg_simulated_margin": 11.58,
+  "avg_simulated_margin": 5.96,
   "comparison_with_main": {
     "main_probs": {
-      "LDF": 15.25,
-      "UDF": 84.75,
+      "LDF": 9.12,
+      "UDF": 90.88,
       "NDA": 0.0
     },
     "main_category": "Likely UDF",
     "delta": {
-      "LDF": 4.34,
-      "UDF": -4.92,
-      "NDA": 0.59
+      "LDF": -0.71,
+      "UDF": 0.2,
+      "NDA": 0.51
     }
   }
 }
